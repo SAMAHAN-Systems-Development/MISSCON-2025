@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-dark-violet: 52 1 152;
+  --color-violet: 88 71 186;
+  --color-light-violet: 111 97 192; 
+  --color-purple: 183 60 231;
+  --color-green: 0 153 0;
+  --color-red: 222 16 99;
+  --color-orange: 254 76 59;
+  --color-yellow-orange: 255 140 21;
+  --color-yellow: 253 235 71;
+  --color-gray: 217 217 217;
+  --color-white: 255 255 255;
+  --font-abel: 'Abel', sans-serif;
+  --font-adamina: 'Adamina', sans-serif;
+  --font-pirata-one: 'Pirata_One', sans-serif;
+  --font-gill-sans: 'Gill_Sans', sans-serif;
+  --font-inandan: 'Inandan', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: 'border-box';
+}
+
+* {
+  margin: '0';
+}
+
+img {
+  max-width: '100%';
+  display: 'block';
+}
+
+.font-abel {
+  font-family: var(--font-abel);
+}
+
+.font-adamina {
+  font-family: var(--font-adamina);
+}
+
+.font-pirata-one {
+  font-family: var(--font-pirata-one);
+}
+
+.font-gill-sans {
+  font-family: var(--font-gill-sans);
+}
+
+.font-inandan {
+  font-family: var(--font-inandan);
+}
