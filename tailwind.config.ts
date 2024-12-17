@@ -29,6 +29,9 @@ const config: Config = {
       gray: 'rgb(var(--color-gray) / <alpha-value>)',
       white: 'rgb(var(--color-white) / <alpha-value>)',
     },
+    backgroundImage: {
+      'gradient-light-violet': 'linear-gradient(120deg, rgb(var(--color-violet) /100%), rgb(var(--color-light-violet) / 80%), rgb(var(--color-light-violet) / 60%))',
+    },
     screens: {
       xsm: '0px',
       sm: '576px',
