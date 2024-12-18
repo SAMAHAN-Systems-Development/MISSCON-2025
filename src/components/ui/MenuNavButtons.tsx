@@ -15,7 +15,6 @@ export default function MenuNavButtons({ text, href }: ButtonProps) {
         md:text-2xl md:h-12 md:pl-14
         lg:text-3xl lg:h-14 lg:pl-16
         xl:text-4xl xl:h-16 xl:pl-20
-        bg-gradient-to-r from-light-violet from-60% sm:from-30%
         hover:bg-gradient-to-r hover:from-white hover:text-light-violet hover:from-60% hover:sm:from-30%
         "
     >
