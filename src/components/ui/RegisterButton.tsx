@@ -1,19 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 interface RegisterButtonProps {
-  href: string; // Required link for the button
-  text: string;
+  href: string;
+  text?: string;
 }
 
-const RegisterButton: React.FC<RegisterButtonProps> = ({ href, text = "register here" }) => {
+const RegisterButton: React.FC<RegisterButtonProps> = ({ href, text }) => {
   return (
     <a
       href={href}
-      className="inline-block bg-gradient-light-violet text-white font-pirata_one text-lg px-6 py-3 rounded-lg shadow-md transition-all duration-200 hover:shadow-lg hover:bg-purple"
+      className="bg-light-violet text-white font-pirata_one text-lg px-4 py-2 rounded-lg shadow-md transition-all duration-200 hover:shadow-lg hover:bg-dark-violet"
     >
-      {text}
+      {text || 'register here'}
     </a>
   );
+};
+
+RegisterButton.propTypes = {
+  href: PropTypes.string.isRequired,
+  text: PropTypes.string,
 };
 
 export default RegisterButton;
