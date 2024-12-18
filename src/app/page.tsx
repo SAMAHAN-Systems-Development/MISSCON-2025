@@ -1,4 +1,3 @@
-import CountdownTimer from '@/components/Countdown';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
