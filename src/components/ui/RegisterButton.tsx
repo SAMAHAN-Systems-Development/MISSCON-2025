@@ -10,7 +10,7 @@ const RegisterButton: React.FC<RegisterButtonProps> = ({ href, text }) => {
   return (
     <a
       href={href}
-      className="bg-light-violet text-white font-pirata_one text-lg px-4 py-2 rounded-lg shadow-md transition-all duration-200 hover:shadow-lg hover:bg-dark-violet"
+      className="bg-violet text-white font-pirata_one text-5xl px-14 py-2 rounded-2xl shadow-md transition-all duration-200 hover:shadow-lg hover:bg-dark-violet"
     >
       {text || 'register here'}
     </a>

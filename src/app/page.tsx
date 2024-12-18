@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import RegisterButton from '@/components/ui/RegisterButton';
 
 export const metadata: Metadata = {
   title: 'MISSCON 2025',
@@ -12,6 +13,11 @@ export default function Home() {
       {/* add sections here */}
       The official Mindanao International Studies Society Convention (MISSCON)
       2025 Website.
+
+      <div>
+        <RegisterButton href="/register" text="register here" />
+      </div>
+
     </main>
   );
 }
