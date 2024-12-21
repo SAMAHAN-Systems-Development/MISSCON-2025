@@ -1,3 +1,4 @@
+import AboutCountdown from '@/components/section/AboutCountdown';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,6 +13,7 @@ export default function Home() {
       {/* add sections here */}
       The official Mindanao International Studies Society Convention (MISSCON)
       2025 Website.
+      <AboutCountdown/>
     </main>
   );
 }
