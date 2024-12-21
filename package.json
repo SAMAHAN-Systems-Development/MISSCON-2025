@@ -1,5 +1,5 @@
 {
-  "name": "samahan-palaro-2024",
+  "name": "misscon-2025",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,13 +16,7 @@
     "next": "14.2.15",
     "prettier": "^3.3.3",
     "react": "^18",
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
     "react-countdown": "^2.3.6",
-=======
->>>>>>> 5910807 (feat: implemented FAQ Accordion Component #13)
->>>>>>> Stashed changes
     "react-dom": "^18",
     "react-icons": "^5.4.0"
   },
