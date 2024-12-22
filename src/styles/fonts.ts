@@ -59,3 +59,15 @@ export const inandan = localFont({
   variable: '--font-inandan',
   display: 'swap',
 });
+
+export const phetsarath = localFont({
+  src: [
+    {
+      path: '/fonts/Phetsarath-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-phetsarath',
+  display: 'swap',
+});

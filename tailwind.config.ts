@@ -1,3 +1,4 @@
+import { phetsarath } from '@/styles/fonts';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -14,6 +15,7 @@ const config: Config = {
         pirata_one: ['var(--font-pirata-one)'],
         gill_sans: ['var(--font-gill-sans)'],
         inandan: ['var(--font-inandan)'],
+        phetsarath: ['var(--font-phetsarath)'],
       },
       backgroundImage: {
         'gradient-light-violet': 'linear-gradient(120deg, rgb(var(--color-violet) /100%), rgb(var(--color-light-violet) / 80%), rgb(var(--color-light-violet) / 60%))',
