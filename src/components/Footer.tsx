@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <>
       <div
-        className="relative flex flex-col justify-between border border-black w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
+        className="relative flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
         style={{
           backgroundImage: `url(${wbbg2})`,
           backgroundSize: '130%',
@@ -42,69 +42,70 @@ export default function Footer() {
             <div className="h-max w-max flex flex-col z-50">
               <div className=" font-medium text-3xl mb-4 z-50">CONTACT</div>
 
-              <div className="flex flex-col gap-y-2">
-                <div className="flex gap-x-2">
-                  <div className="flex items-center">
-                    <div className="relative w-6 h-6">
-                      <Image
-                        draggable={false}
-                        fill
-                        src={emailIcon}
-                        className="absolute object-cover object-center"
-                        alt="/"
-                      />
+              <div className="flex flex-col gap-y-3">
+                <a href="mailto:misscon2025@gmail.com" className="w-min">
+                  <div className="flex gap-x-2">
+                    <div className="flex items-center">
+                      <div className="relative w-6 h-6">
+                        <Image
+                          draggable={false}
+                          fill
+                          src={emailIcon}
+                          className="absolute object-cover object-center"
+                          alt="/"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex items-center leading-none mb-0 pb-0 underline text-xl z-50">
+                      misscon2025@gmail.com
                     </div>
                   </div>
+                </a>
 
-                  <a
-                    href="mailto:misscon2025@gmail.com"
-                    className="underline text-xl translate-y-[1px] z-100"
-                  >
-                    misscon2025@gmail.com
-                  </a>
-                </div>
-
-                <div className="flex gap-x-2">
-                  <div className="flex items-center justify-center w-6 h-6">
-                    <div className="relative w-[22px] h-[22px]">
-                      <Image
-                        draggable={false}
-                        fill
-                        src={instagramIcon}
-                        className="absolute object-cover object-center"
-                        alt="/"
-                      />
+                <a
+                  href="https://www.instagram.com/misscon_2025/"
+                  className="w-min"
+                >
+                  <div className="flex gap-x-2">
+                    <div className="flex items-center justify-center w-6 h-6">
+                      <div className="relative w-6 h-6">
+                        <Image
+                          draggable={false}
+                          fill
+                          src={instagramIcon}
+                          className="absolute object-cover object-center scale-90"
+                          alt="/"
+                        />
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="underline text-xl z-50">
-                    <a
-                      href="https://www.instagram.com/misscon_2025/"
-                      className=""
-                    >
+                    <div className="flex items-center leading-none mb-0 pb-0 underline text-xl z-50">
                       @misscon_2025
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex gap-x-2">
-                  <div className="flex items-center">
-                    <div className="relative w-6 h-6">
-                      <Image
-                        draggable={false}
-                        fill
-                        src={facebookIcon}
-                        className="absolute object-cover object-center"
-                        alt="/"
-                      />
                     </div>
                   </div>
-                  <div className="text-xl translate-y-1">
-                    <p>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/profile.php?id=61568212792268"
+                  className="w-max"
+                >
+                  <div className="flex gap-x-2">
+                    <div className="flex items-center">
+                      <div className="relative w-6 h-6">
+                        <Image
+                          draggable={false}
+                          fill
+                          src={facebookIcon}
+                          className="absolute object-cover object-center scale-110"
+                          alt="/"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex items-center leading-none mb-0 pb-0 text-xl">
                       Mindanao International Studies Society Convention 2025
-                    </p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div className="h-[3px] 2xl:w-[561px] bg-violet my-7 "></div>
               <div className="text-xl z-50">
