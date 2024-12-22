@@ -1,3 +1,4 @@
+import { phetsarath } from '@/styles/fonts';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -14,7 +15,65 @@ const config: Config = {
         pirata_one: ['var(--font-pirata-one)'],
         gill_sans: ['var(--font-gill-sans)'],
         inandan: ['var(--font-inandan)'],
+        phetsarath: ['var(--font-phetsarath)'],
       },
+      backgroundImage: {
+        'gradient-light-violet': 'linear-gradient(120deg, rgb(var(--color-violet) /100%), rgb(var(--color-light-violet) / 80%), rgb(var(--color-light-violet) / 60%))',
+      },
+      animation: {
+        slideDown: 'slideDown 0.3s ease-in-out',
+        slideUp: 'slideUp 0.3s ease-in-out',
+      },
+      keyframes: {
+        slideDown: {
+          '0%': { maxHeight: '0', opacity: '0' },
+          '5%': { maxHeight: '50px', opacity: '0.05' },
+          '10%': { maxHeight: '100px', opacity: '0.1' },
+          '15%': { maxHeight: '150px', opacity: '0.15' },
+          '20%': { maxHeight: '200px', opacity: '0.2' },
+          '25%': { maxHeight: '250px', opacity: '0.25' },
+          '30%': { maxHeight: '300px', opacity: '0.3' },
+          '35%': { maxHeight: '350px', opacity: '0.35' },
+          '40%': { maxHeight: '400px', opacity: '0.4' },
+          '45%': { maxHeight: '450px', opacity: '0.45' },
+          '50%': { maxHeight: '500px', opacity: '0.5' },
+          '55%': { maxHeight: '550px', opacity: '0.55' },
+          '60%': { maxHeight: '600px', opacity: '0.6' },
+          '65%': { maxHeight: '650px', opacity: '0.65' },
+          '70%': { maxHeight: '700px', opacity: '0.7' },
+          '75%': { maxHeight: '750px', opacity: '0.75' },
+          '80%': { maxHeight: '800px', opacity: '0.8' },
+          '85%': { maxHeight: '850px', opacity: '0.85' },
+          '90%': { maxHeight: '900px', opacity: '0.9' },
+          '95%': { maxHeight: '950px', opacity: '0.95' },
+          '100%': { maxHeight: '1000px', opacity: '1' },
+        },
+        slideUp: {
+          '0%': { maxHeight: '1000px', opacity: '1' },
+          '5%': { maxHeight: '950px', opacity: '0.95' },
+          '10%': { maxHeight: '900px', opacity: '0.9' },
+          '15%': { maxHeight: '850px', opacity: '0.85' },
+          '20%': { maxHeight: '800px', opacity: '0.8' },
+          '25%': { maxHeight: '750px', opacity: '0.75' },
+          '30%': { maxHeight: '700px', opacity: '0.7' },
+          '35%': { maxHeight: '650px', opacity: '0.65' },
+          '40%': { maxHeight: '600px', opacity: '0.6' },
+          '45%': { maxHeight: '550px', opacity: '0.55' },
+          '50%': { maxHeight: '500px', opacity: '0.5' },
+          '55%': { maxHeight: '450px', opacity: '0.45' },
+          '60%': { maxHeight: '400px', opacity: '0.4' },
+          '65%': { maxHeight: '350px', opacity: '0.35' },
+          '70%': { maxHeight: '300px', opacity: '0.3' },
+          '75%': { maxHeight: '250px', opacity: '0.25' },
+          '80%': { maxHeight: '200px', opacity: '0.2' },
+          '85%': { maxHeight: '150px', opacity: '0.15' },
+          '90%': { maxHeight: '100px', opacity: '0.1' },
+          '95%': { maxHeight: '50px', opacity: '0.05' },
+          '100%': { maxHeight: '0', opacity: '0' },
+        },
+      },
+      
+      
     },
     colors: {
       'dark-violet': 'rgb(var(--color-dark-violet) / <alpha-value>)',
@@ -28,9 +87,6 @@ const config: Config = {
       yellow: 'rgb(var(--color-yellow) / <alpha-value>)',
       gray: 'rgb(var(--color-gray) / <alpha-value>)',
       white: 'rgb(var(--color-white) / <alpha-value>)',
-    },
-    backgroundImage: {
-      'gradient-light-violet': 'linear-gradient(120deg, rgb(var(--color-violet) /100%), rgb(var(--color-light-violet) / 80%), rgb(var(--color-light-violet) / 60%))',
     },
     screens: {
       xsm: '0px',
