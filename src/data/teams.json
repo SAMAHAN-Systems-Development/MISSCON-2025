@@ -1,0 +1,263 @@
+{
+    "category": [
+      {
+        "title": "The MissCon 2025 Team",
+        "description": "",
+        "members": [
+          {
+            "imageUrl": "ExecutiveDirector.jpg",
+            "name": "Hannah Nicole Bitana",
+            "position": "Executive Coordinator",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Hojilla_AssistantExecutiveDirector.jpg",
+            "name": "Czar Julius Hojilla",
+            "position": "Assistant Executive Director",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "GacayanAssistantExecutiveDirector.jpg",
+            "name": "Heart Haezel Gacayan",
+            "position": "Assistant Executive Director",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "ExecutiveSecretary.jpg",
+            "name": "Nicole Alexa Faith Adolfo",
+            "position": "Executive Secretary",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Internals Committee",
+        "description": "This committee is tasked to mobilize the volunteers, assist the executive directors in overseeing the overall progress of the team, ensure that all deliverables are covered, and other related tasks.",
+        "members": [
+          {
+            "imageUrl": "GacayanAssistantExecutiveDirector.jpg",
+            "name": "Heart Haezel Gacayan",
+            "position": "VP for Internal Affairs",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Madroñero_AssistantVPforInternalAffairs.jpg",
+            "name": "Karla Ylena Madroñero",
+            "position": "Assistant VP for Internal Affairs",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "AssistantVPforInternalAffairs.jpg",
+            "name": "Ryka Chariz Aguilar",
+            "position": "Assistant VP for Internal Affairs",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Externals Committee",
+        "description": "This committee is tasked to contact and coordinate with the event's roster of speakers, accommodate their needs, and assist them throughout the duration of the event, and other related tasks.",
+        "members": [
+          {
+            "imageUrl": "Hojilla_AssistantExecutiveDirector.jpg",
+            "name": "Czar Julius Hojilla",
+            "position": "VP for External Affairs",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "AssistantVPforExternalAffairs.jpg",
+            "name": "Syed Hisham Ampatuan",
+            "position": "Assistant VP for External Affairs",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Tolog_AssistantVPforExternalAffairs.jpg",
+            "name": "Mikaila Czarina Tolog",
+            "position": "Assistant VP for External Affairs",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Secretariat Committee",
+        "description": "This committee is tasked to create different documents needed in mobilizing the event, coordinate with different committees regarding the documents they need, mobilize reservation efforts, and handle email concerns, other related tasks.",
+        "members": [
+          {
+            "imageUrl": "Muhalli_VPforSecretariat.jpg",
+            "name": "Juelianna Muhalli",
+            "position": "VP for Secretariat",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Pamat_AssistantVPforSecretariat.jpg",
+            "name": "Krizia Dale Pamat",
+            "position": "Assistant VP for Secretariat",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Finance Committee",
+        "description": "This committee is tasked to spearhead the making of the budget proposal, create liquidation reports and other budget-related documents, oversee the inflow and outflow of money used for the event, and other related tasks.",
+        "members": [
+          {
+            "imageUrl": "Pagangpang_VPforFinance.jpg",
+            "name": "Mauriz Pagangpang",
+            "position": "VP for Finance",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Pausta_AssistantVPforFinance.jpg",
+            "name": "Carylle Hyacinth Pausta",
+            "position": "Assistant VP for Finance",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Communications Committee",
+        "description": "This committee is tasked to create posting-related captions, co-create the event’s PR scheme, spearhead email blast efforts, and other related tasks.",
+        "members": [
+          {
+            "imageUrl": "Mencidor_VPforCommunications.jpg",
+            "name": "Tchad Julian Mencidor",
+            "position": "VP for Communications",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Salut_AssistantVPforCommunications.jpg",
+            "name": "Carlo Salut",
+            "position": "Assistant VP for Communications",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Publicity and Promotions Committee",
+        "description": "This committee is tasked to oversee the overall social media presence of MISSCON 2025, create marketing strategies for the event, co-create the event’s PR scheme, and other related tasks.",
+        "members": [
+          {
+            "imageUrl": "Manalili_VPforPublicityandPromotions.jpg",
+            "name": "Eznaira Shienna Manalili",
+            "position": "VP for Publicity and Promotions",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Mebrano_AssistantVPforPublicityandPromotions.jpg",
+            "name": "Precious Mebrano",
+            "position": "Assistant VP for Publicity and Promotions",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Sponsorships Committee",
+        "description": "This committee is tasked to contact partner organizations within AdDU, connect with partner schools and universities, secure brand and media sponsors, and other related tasks.",
+        "members": [
+          {
+            "imageUrl": "Sedentario_VPforSponsorships.jpg",
+            "name": "Mary Angelica Sedentario",
+            "position": "VP for Sponsorships",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Gales_AssistantVPforSponsorships.jpg",
+            "name": "Diwani Ma. Rosemina Gales",
+            "position": "Assistant VP for Sponsorships",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Creatives Committee",
+        "description": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor ",
+        "members": [
+          {
+            "imageUrl": "Lim_VPforCreatives.jpg",
+            "name": "Marjorie Shayne Lim",
+            "position": "VP for Creatives",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Ramiso_AssistantVPforGraphicsandBranding.jpg",
+            "name": "Audrey Bianca Ramiso",
+            "position": "Assistant VP for Graphics and Branding",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Pagaduan_AssistantVPforPhotoandDocumentation.jpg",
+            "name": "Jabez Ethan Pagaduan",
+            "position": "Assistant VP for Photo and Documentation",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Lacorte_AssistantVPforVideography.jpg",
+            "name": "Nicole Kayte Lacorte",
+            "position": "Assistant VP for Videography",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Delegations and Support Committee",
+        "description": "This committee is tasked to create the delegates' database, prepare the delegates' modules and kits, prepare other documents in relation to the delegates, and other related tasks.",
+        "members": [
+          {
+            "imageUrl": "VPforDelegationsandSupport.jpg",
+            "name": "Danika Maria Sandra Corias",
+            "position": "VP for Delegations and Support",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Guiamadil_AssistantVPforDelegationsandSupport.jpg",
+            "name": "Norhanie Guiamadil",
+            "position": "Assistant VP for Delegations and Support (Facilitator)",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Ducao_AssistantVPforDelegationsandSupport.jpg",
+            "name": "Beatrix Marie Ducao",
+            "position": "Assistant VP for Delegations and Support (Member)",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Productions Committee",
+        "description": "This committee is tasked to oversee the overall course and flow of the event proper, ensure that all pre-event productions-related documents are made (host script, schedules, etc.), needed equipment are reserved and secured (in coordination with Secretariat), and other related tasks.",
+        "members": [
+          {
+            "imageUrl": "Dalangin_VPforProductionsandTechnicals.jpg",
+            "name": "Keishanna Jae Dalangin",
+            "position": "VP for Productions and Technicals",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Tuyod_AssistantVPforProductions.jpg",
+            "name": "Zusette Tuyod",
+            "position": "Assistant VP for Productions",
+            "event": "MissCon 2025"
+          }
+        ]
+      },
+      {
+        "title": "Logistics Committee",
+        "description": "This committee is tasked to procure needed materials (as well as food) for the whole duration of the event, coordinate with other committees regarding needed materials, overall manpower, and other related tasks.",
+        "members": [
+          {
+            "imageUrl": "Cutin_VPforLogistics.jpg",
+            "name": "Odessa Lorraine Cutin",
+            "position": "VP for Logistics",
+            "event": "MissCon 2025"
+          },
+          {
+            "imageUrl": "Rosal_AssistantVPforLogistics.jpg",
+            "name": "Rainne Rosal",
+            "position": "Assistant VP for Logistics",
+            "event": "MissCon 2025"
+          }
+        ]
+      }
+    ]
+  }
+  
