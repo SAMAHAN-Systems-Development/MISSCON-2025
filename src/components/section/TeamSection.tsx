@@ -5,13 +5,21 @@ import Card from '@/components/ui/Card';
 
 const Team = () => {
   return (
-    <div className="min-h-screen py-6 px-8 md:py-16 md:px-28 lg:py-20 lg:px-52">
+    <div className="min-h-screen py-6 px-8 md:py-16 md:px-28 lg:py-20 lg:px-56">
       {teamData.category.map((section, index) => (
         <div key={index} className="mb-48">
           {/* Section Title */}
-          <h2 className="text-4xl sm:text-5xl lg:text-7xl text-center bg-gradient-to-r from-violet to-orange bg-clip-text text-transparent mb-2 md:mb-6 font-pirata_one">
+          <h2
+            className="text-4xl sm:text-5xl lg:text-7xl text-center mb-2 md:mb-6 font-pirata_one"
+            style={{
+              background: 'linear-gradient(to bottom, #DE1063, #5847BA)',
+              WebkitBackgroundClip: 'text',
+              color: 'transparent',
+            }}
+          >
             {section.title}
           </h2>
+
           {/* Section Description */}
           <p className="md:text-3xl text-xl text-dark-violet font-gill_sans text-center mb-36">
             {section.description}
