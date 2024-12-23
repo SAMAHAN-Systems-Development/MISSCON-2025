@@ -30,7 +30,7 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
     >
       <div className="relative flex justify-center items-center w-44 h-44">
         <div
-          className={`relative flex justify-center items-center rounded-full p-[5px] w-min h-min bg-gradient-to-b from-red to-violet $ v`}
+          className={`relative flex justify-center items-center rounded-full p-[5px] w-min h-min bg-gradient-to-b from-red to-violet`}
         >
           <div
             className={`relative w-min h-min rounded-full ${
