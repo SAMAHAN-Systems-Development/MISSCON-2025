@@ -46,7 +46,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 
             {/* Arrow icon */}
             <BiSolidRightArrow
-              className={`absolute right-4 transform transition-transform duration-300 ${
+              className={`absolute right-10 sm:right-20 md:right-36 transform transition-transform duration-300 ${
                 isAccordionOpen ? 'rotate-90' : ''
               }`}
             />
