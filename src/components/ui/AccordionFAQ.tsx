@@ -32,18 +32,21 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
       >
         <Accordion.Header>
           <Accordion.Trigger
-            className={`flex justify-between items-center w-full p-2 py-4 text-left cursor-pointer text-dark-violet transition-colors duration-300 hover:text-white hover:bg-gradient-to-r hover:from-white hover:via-light-violet hover:to-white ${
+            className={`relative flex items-center w-full h-12 md:h-14 lg:h-16 p-2 py-4 text-left cursor-pointer text-dark-violet transition-colors duration-300 hover:text-white hover:bg-gradient-to-r hover:from-white hover:via-light-violet hover:to-white ${
               isAccordionOpen
                 ? 'bg-gradient-to-r from-white via-light-violet to-white text-white'
                 : ''
             }`}
             onClick={handleAccordionClick}
           >
-            <span className="ml-28 pr-2 flex-1 text-center text-base sm:text-lg 2xl:text-2xl 2xl:max-w-2xl">
+            {/* Centered span */}
+            <span className="absolute left-0 right-0 text-center text-base sm:text-lg 2xl:text-2xl 2xl:max-w-2xl mx-auto">
               {question}
             </span>
+
+            {/* Arrow icon */}
             <BiSolidRightArrow
-              className={`mr-10 transform transition-transform duration-300 ${
+              className={`absolute right-4 transform transition-transform duration-300 ${
                 isAccordionOpen ? 'rotate-90' : ''
               }`}
             />
@@ -59,7 +62,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
           }`}
         >
           {answer === 'location' ? (
-            <div className="flex flex-col sm:flex-row items-center sm:items-start px-4 gap-x-10">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-center px-4 gap-x-10">
               {locationData.map((location, index) => (
                 <div
                   key={index}
@@ -81,7 +84,11 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
             </div>
           ) : (
             <div>
-              <p className="px-4 text-dark-violet text-center text-xs lg:text-base">
+              {/* bottom */}
+              <p
+                className="
+              text-dark-violet text-center text-xs lg:text-base"
+              >
                 {answer}
               </p>
             </div>
