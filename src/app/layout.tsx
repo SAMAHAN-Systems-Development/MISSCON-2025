@@ -15,7 +15,7 @@ export default function RootLayout({
       >
         <div className="relative min-h-screen">
           <SlideMenu />
-          <div className="relative z-10">{children}</div>
+          <div className="relative">{children}</div>
           <Footer />
         </div>
       </body>

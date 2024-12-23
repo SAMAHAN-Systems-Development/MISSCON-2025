@@ -16,7 +16,7 @@ export default function SlideMenu() {
   return (
     <>
       <div
-        className="w-full h-screen transition-all duration-300 fixed top-0 left-0 z-50"
+        className="w-max h-screen transition-all duration-300 fixed top-0 left-0 z-50"
         style={
           openSlideMenu
             ? {
@@ -26,7 +26,7 @@ export default function SlideMenu() {
             : undefined
         }
       >
-        <div className="pt-12 pl-10 mb-5">
+        <div className="pt-12 pl-10 mb-5 z-50">
           <MenuButton
             active={openSlideMenu}
             onClick={onMenuButtonClick}
@@ -34,7 +34,7 @@ export default function SlideMenu() {
         </div>
 
         {openSlideMenu && (
-          <div className="flex">
+          <div className="flex w-screen">
             <div className="w-4/5">
               <MenuNavButtons href="" text="About"></MenuNavButtons>
               <MenuNavButtons href="" text="Registration"></MenuNavButtons>
