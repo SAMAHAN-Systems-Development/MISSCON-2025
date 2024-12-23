@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { IoMdDownload } from 'react-icons/io';
 
@@ -9,10 +9,7 @@ interface DownloadPrimerButtonProps {
 }
 
 const DownloadPrimerButton: React.FC<DownloadPrimerButtonProps> = ({ onClick }) => {
-  const [isVariant2, setIsVariant2] = useState(false);
-
   const handleClick = () => {
-    setIsVariant2(true);
     if (onClick) {
       onClick();
     }
@@ -25,7 +22,7 @@ const DownloadPrimerButton: React.FC<DownloadPrimerButtonProps> = ({ onClick }) 
         relative flex items-center gap-2 
         text-white font-light font-abel tracking-wider uppercase text-2xl
         transition-all duration-300 ease-in-out
-        ${isVariant2 ? 'underline' : ''}
+        hover:underline
       `}
     >
       <span>Download Primer</span>
