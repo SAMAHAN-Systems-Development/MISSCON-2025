@@ -7,7 +7,7 @@ const Team = () => {
   return (
     <div className="min-h-screen justify-items-center py-6 px-8 md:py-16 md:px-28 lg:py-20 lg:px-56">
       {teamData.category.map((section, index) => (
-        <div key={index} className="mb-48 w-4/5">
+        <div key={index} className="mb-48 w-11/12">
           {/* Section Title */}
           <h2
             className="text-4xl sm:text-5xl lg:text-7xl text-center mb-2 md:mb-6 font-pirata_one leading-10 lg:leading-snug"
