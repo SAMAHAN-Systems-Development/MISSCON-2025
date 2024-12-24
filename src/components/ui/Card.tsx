@@ -26,8 +26,8 @@ export default function Card({ imageUrl, name, position, event }: CardProps) {
 
         <div className="font-gill_sans text-dark-violet w-64 mt-2">
           <p className="text-2xl font-bold">{name}</p>
-          <p className="text-lg mt-[-2px]">{position}</p>
-          <p className="text-lg italic mt-[-5px]">{event}</p>
+          <p className="text-lg leading-tight mt-1">{position}</p>
+          <p className="text-lg italic">{event}</p>
         </div>
       </div>
     </>
