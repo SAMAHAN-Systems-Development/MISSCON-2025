@@ -1,5 +1,3 @@
-import TeamSection from '@/components/section/TeamSection';
-import RuleCards from '@/components/ui/RuleCards';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
