@@ -16,8 +16,9 @@ const SpeakerList: React.FC<{ speakersData: SpeakerData[] }> = ({
 }) => {
   const [activeSpeakerId, setActiveSpeakerId] = useState<number | null>(null);
 
+  // Toggle active speaker
   const handleSpeakerClick = (id: number) => {
-    setActiveSpeakerId((prev) => (prev === id ? null : id)); // Toggle active speaker
+    setActiveSpeakerId((prev) => (prev === id ? null : id));
   };
 
   return (
