@@ -1,14 +1,15 @@
-"use client";
+'use client';
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { IoMdDownload } from 'react-icons/io';
 
 interface DownloadPrimerButtonProps {
   onClick?: () => void;
 }
 
-const DownloadPrimerButton: React.FC<DownloadPrimerButtonProps> = ({ onClick }) => {
+const DownloadPrimerButton: React.FC<DownloadPrimerButtonProps> = ({
+  onClick,
+}) => {
   const handleClick = () => {
     if (onClick) {
       onClick();
@@ -29,10 +30,6 @@ const DownloadPrimerButton: React.FC<DownloadPrimerButtonProps> = ({ onClick }) 
       <IoMdDownload className="w-6 h-6" />
     </button>
   );
-};
-
-DownloadPrimerButton.propTypes = {
-  onClick: PropTypes.func,
 };
 
 export default DownloadPrimerButton;

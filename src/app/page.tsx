@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main>
       {/* add sections here */}
       The official Mindanao International Studies Society Convention (MISSCON)
       2025 Website.
