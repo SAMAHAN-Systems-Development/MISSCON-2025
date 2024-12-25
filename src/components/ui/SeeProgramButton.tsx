@@ -35,9 +35,9 @@ const SeeProgramButton: React.FC<AccordionComponentProps> = ({ imageUrl }) => {
             className="relative flex items-center justify-center w-full h-10 sm:h-12 md:h-14 lg:h-16 p-2 py-0 sm:py-2 text-left cursor-pointer text-white transition-colors duration-300 gap-2 sm:gap-4"
             onClick={handleAccordionClick}
           >
-            <span className="text-base sm:text-lg 2xl:text-2xl 2xl:max-w-2xl">
+            <div className="font-gill_sans text-base sm:text-lg 2xl:text-2xl 2xl:max-w-2xl 2xl:mb-[-7px]">
               SEE PROGRAM
-            </span>
+            </div>
             <ImArrowRight
               className={`transform transition-transform duration-300 ${
                 isAccordionOpen ? 'rotate-90' : ''
