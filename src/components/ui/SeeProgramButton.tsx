@@ -19,7 +19,7 @@ const SeeProgramButton: React.FC<AccordionComponentProps> = ({ imageUrl }) => {
     <Accordion.Root
       type="single"
       collapsible
-      className="py-2 px-4 flex justify-center"
+      className="py-2 px-4 flex justify-center 2xl:w-[900px] "
     >
       <Accordion.Item
         value="item-1"

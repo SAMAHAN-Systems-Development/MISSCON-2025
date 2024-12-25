@@ -1,4 +1,5 @@
 import SpeakerList from '@/components/SpeakerList';
+import SeeProgramButton from '@/components/ui/SeeProgramButton';
 
 interface EventDayDetailsProps {
   dayNumber: string;
@@ -15,9 +16,12 @@ export default async function EventDayDetails({
       <div className="flex flex-col justify-center items-center">
         <div className="font-pirata_one text-violet">
           <p className="text-5xl text-center mb-8">day 0{dayNumber}</p>
-          <p className="text-3xl text-center">Program Flow</p>
+          <p className="text-3xl text-center mb-4">Program Flow</p>
         </div>
-        <p className="text-3xl text-center">See Program Button</p>
+        <SeeProgramButton
+          imageUrl={`/images/ProgramFlowDay${dayNumber}.png`}
+        ></SeeProgramButton>
+        <div className="h-4"></div>
         <SpeakerList speakersData={speakersData}></SpeakerList>
       </div>
     </>
