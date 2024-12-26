@@ -70,8 +70,14 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
       </div>
 
       <div className="text-dark-violet mt-6 flex flex-col gap-y-2">
-        <p className="text-center font-inandan text-4xl max-w-48">{name}</p>
-        <p className="text-xl text-center font-gill_sans">{position}</p>
+        <p className="text-center font-inandan text-4xl w-64">{name}</p>
+        <div className="text-base text-center font-gill_sans">
+          {position.split('\n').map((line, index) => (
+            <div key={index} className="w-64 italic">
+              {line}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
