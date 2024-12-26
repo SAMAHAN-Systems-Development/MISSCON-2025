@@ -13,7 +13,6 @@ export default function Home() {
       {/* add sections here */}
       The official Mindanao International Studies Society Convention (MISSCON)
       2025 Website.
-      <AboutCountdown/>
     </main>
   );
 }
