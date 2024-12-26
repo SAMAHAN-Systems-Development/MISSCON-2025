@@ -1,9 +1,15 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Countdown, { CountdownRenderProps } from 'react-countdown';
 import { FaSquareFull } from "react-icons/fa";
 
 const CountdownTimer: React.FC = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const targetDate = new Date('2025-02-24T17:00:00');
 
   const Diamond = () => (
@@ -14,8 +20,7 @@ const CountdownTimer: React.FC = () => {
   );
 
   const time = ({ days, hours, minutes, seconds }: CountdownRenderProps) => (
-    //remove gray background
-    <div className="flex flex-col items-center justify-center bg-gray text-white p-4 sm:p-8 rounded-md shadow-lg max-w-xl sm:max-w-2xl mx-auto">
+    <div className="flex flex-col items-center justify-center text-white p-4 sm:p-8 max-w-xl sm:max-w-2xl mx-auto">
       <div className="flex flex-wrap justify-center items-start space-x-2 sm:space-x-4 text-5xl md:text-6xl lg:text-[110px] font-pirata_one font-medium">
        
         {/* Days */}
@@ -51,6 +56,8 @@ const CountdownTimer: React.FC = () => {
     </div>
   );
 
+
+  if (!isClient) return null;
   return <Countdown date={targetDate} renderer={time} />;
 };
 
