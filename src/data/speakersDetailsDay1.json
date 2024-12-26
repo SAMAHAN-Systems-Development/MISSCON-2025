@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Mr. John Harvey D. Gamas, MA",
+        "position": "Assistant Professor IV, International Studies Department, Ateneo de Davao University",
+        "imageUrl": "/images/speakers/Gamas.jpg",
+        "bionote": "John Harvey D. Gamas is assistant professor of the International Studies Department, Ateneo de Davao University. He previously served as chair of the said department from 2015-2023 and is currently the managing editor of Tambara. He earned his bachelor's degree in International Studies, major in Asian Studies and minor in Philosophy, Magna Cum Laude, from the same institution. He obtained his Master of Arts in International Studies, major in European Studies, from De La Salle University. In 2017, he was selected by the US State Department to attend the Study of the United States Institute (SUSI) on US Foreign Policy at Bard College, New York. He is a member of the board of trustees and Vice President for Conferences of the Philippine International Studies Organization (PHISO). He is also a member of the Board of Trustees of the European Studies Association of the Philippines (ESAP) and the Asian Studies Association of the Philippines (AsiaPhil). His research interest focuses on Non-Western International Relations, international history, Southeast Asian and Mindanao Studies."
+    },
+    {
+        "id": 2,
+        "name": "Mr. Nassef Manabilang Adiong, PhD",
+        "position": "Director II, Policy Research and Legal Services \n BARMM Bangsamoro Transition Authority Professional Lecturer III, Asian Center, University of the Philippines - Diliman",
+        "imageUrl": "",
+        "bionote": ""
+    }
+]

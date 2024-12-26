@@ -8,7 +8,7 @@ type SpeakerData = {
   name: string;
   position: string;
   imageUrl: string;
-  credentials: string[];
+  bionote: string;
 };
 
 const SpeakerList: React.FC<{ speakersData: SpeakerData[] }> = ({
@@ -47,7 +47,7 @@ const SpeakerList: React.FC<{ speakersData: SpeakerData[] }> = ({
       </div>
 
       <div
-        className={`w-[900px] p-10 h-min bg-white rounded-xl transition-opacity duration-500 ${activeSpeakerId ? 'opacity 100' : 'opacity-0'}`}
+        className={`border border-black shadow-md flex items-center w-[900px] p-10 h-[752px] bg-white rounded-xl transition-opacity duration-500 ${activeSpeakerId ? 'opacity-100' : 'opacity-0'}`}
       >
         {speakersData
           .filter((speaker) => speaker.id === activeSpeakerId)
@@ -77,13 +77,15 @@ const SpeakerList: React.FC<{ speakersData: SpeakerData[] }> = ({
               <div className="flex flex-col text-dark-violet gap-y-3">
                 <p className="font-inandan text-4xl">{speaker.name}</p>
                 <p className="font-medium text-xl font-gill_sans">
-                  {speaker.position}
-                </p>
-                <ul className="font-gill_sans list-disc list-inside text-lg">
-                  {speaker.credentials.map((credential, index) => (
-                    <li key={index}>{credential}</li>
+                  {speaker.position.split('\n').map((line, index) => (
+                    <div key={index}>{line}</div>
                   ))}
-                </ul>
+                </p>
+                <div className="font-gill_sans text-lg flex flex-col gap-y-4 text-justify">
+                  {speaker.bionote.split('\n').map((line, index) => (
+                    <div key={index}>{line}</div>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
