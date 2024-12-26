@@ -1,4 +1,3 @@
-import AboutCountdown from '@/components/section/AboutCountdown';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
