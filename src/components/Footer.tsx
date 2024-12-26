@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <>
       <div
-        className="relative 2xl:hidden flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
+        className="relative xl:hidden flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
         style={{
           backgroundImage: `url(${wbbg2})`,
           backgroundSize: '1000%',
@@ -151,7 +151,7 @@ export default function Footer() {
       </div>
 
       <div
-        className="relative hidden 2xl:flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
+        className="relative hidden xl:flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
         style={{
           backgroundImage: `url(${wbbg2})`,
           backgroundSize: '130%',
@@ -167,8 +167,8 @@ export default function Footer() {
             backgroundPosition: 'center',
           }}
         ></div>
-        <div className="h-min mt-16 flex justify-center items-center px-10 gap-x-16">
-          <div className="relative 2xl:w-72 2xl:h-72">
+        <div className="h-min mt-16 flex justify-center items-center px-10 xl:gap-x-16 2xl:gap-x-16 ">
+          <div className="relative w-72 h-72">
             <Image
               draggable={false}
               fill
@@ -246,7 +246,7 @@ export default function Footer() {
                   </div>
                 </a>
               </div>
-              <div className="h-[3px] 2xl:w-[561px] bg-violet my-7 "></div>
+              <div className="h-[3px] 2xl:w-[500px] bg-violet my-7 "></div>
               <div className="text-xl z-40">
                 <p>6/F Community Center of the First Companions, </p>
                 <p>Ateneo de Davao University,</p>
@@ -255,7 +255,7 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-y-5 ml-20 font-medium text-3xl">
+            <div className="flex flex-col gap-y-5 xl:ml-20 2xl:ml-20 font-medium text-2xl">
               <a href="" className="hover:underline hover:cursor-pointer z-40">
                 About
               </a>
@@ -285,7 +285,7 @@ export default function Footer() {
             draggable={false}
             fill
             src={bg}
-            className="absolute object-cover object-top opacity-40 scale-150 mt-7"
+            className="absolute object-cover object-top opacity-40 scale-150 mt-7 xl:mt-20 2xl:mt-7"
             alt="/"
           />
           <div
