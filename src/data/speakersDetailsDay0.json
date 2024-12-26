@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Attorney Joy Marie Capistrano",
+        "position": "Dummy",
+        "imageUrl": "/images/speakers/dayX/Capistrano.png",
+        "credentials": ["Graduate at AdDU", "Co-founder of Capistrano Law Firm", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus venenatis arcu id mattis."]
+    },
+    {
+        "id": 2,
+        "name": "Atty. Capistran",
+        "position": "Dummy",
+        "imageUrl": "/images/speakers/dayX/Capistrano.png",
+        "credentials": ["Graduate at AdDU", "Co-founder of Capistrano Law Firm", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus venenatis arcu id mattis."]
+    },
+    {
+        "id": 3,
+        "name": "Atty. Capistra",
+        "position": "Dummy",
+        "imageUrl": "/images/speakers/dayX/Capistrano.png",
+        "credentials": ["Graduate at AdDU", "Co-founder of Capistrano Law Firm", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus venenatis arcu id mattis."]
+    },
+    {
+        "id": 4,
+        "name": "Atty. Capistr",
+        "position": "Dummy",
+        "imageUrl": "/images/speakers/dayX/Capistrano.png",
+        "credentials": ["Graduate at AdDU", "Co-founder of Capistrano Law Firm", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus venenatis arcu id mattis."]
+    }
+]

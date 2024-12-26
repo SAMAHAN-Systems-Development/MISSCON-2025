@@ -5,7 +5,7 @@
 :root {
   --color-dark-violet: 52 1 152;
   --color-violet: 88 71 186;
-  --color-light-violet: 111 97 192; 
+  --color-light-violet: 111 97 192;
   --color-purple: 183 60 231;
   --color-green: 0 153 0;
   --color-red: 222 16 99;
@@ -53,4 +53,8 @@ img {
 
 .font-inandan {
   font-family: var(--font-inandan);
+}
+
+.font-phetsarath {
+  font-family: var(--font-phetsarath);
 }

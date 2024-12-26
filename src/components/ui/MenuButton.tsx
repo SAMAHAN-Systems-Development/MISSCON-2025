@@ -20,6 +20,7 @@ export default function MenuButton({ active, onClick }: MenuButtonProps) {
       onMouseLeave={() => setIsHovered(false)}
       onClick={onClick}
     >
+      {/* Default state */}
       <Image
         draggable={false}
         fill
@@ -30,22 +31,28 @@ export default function MenuButton({ active, onClick }: MenuButtonProps) {
         alt="Menu Button"
       />
 
+      {/* Hover state */}
       <Image
         draggable={false}
         fill
         src={menuButtonHovered}
         className={`absolute inset-0 w-min h-min rounded-card object-cover object-center transition-opacity duration-300 ${
-          active || !isHovered ? 'opacity-0' : 'opacity-100'
+          active && isHovered
+            ? 'opacity-100'
+            : active || !isHovered
+              ? 'opacity-0'
+              : 'opacity-100'
         }`}
         alt="Menu Button Hovered"
       />
 
+      {/* Active state */}
       <Image
         draggable={false}
         fill
         src={menuButtonActive}
-        className={`absolute inset-0 w-min h-min rounded-card object-cover object-center scale-[0.72] mt-[-2.5px] ${
-          active ? 'opacity-100' : 'opacity-0'
+        className={`absolute inset-0 w-min h-min rounded-card object-cover object-center scale-[0.72] mt-[-2.5px] transition-opacity duration-300 ${
+          active && !isHovered ? 'opacity-100' : 'opacity-0'
         }`}
         alt="Menu Button Active"
       />
