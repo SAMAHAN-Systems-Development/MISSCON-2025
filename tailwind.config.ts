@@ -19,6 +19,8 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-light-violet': 'linear-gradient(120deg, rgb(var(--color-violet) /100%), rgb(var(--color-light-violet) / 80%), rgb(var(--color-light-violet) / 60%))',
+        'custom-gradient-15%': 'linear-gradient(to right, rgb(111,97,192) 15%, transparent)',
+        'custom-gradient-45%': 'linear-gradient(to right, rgb(111,97,192) 45%, rgba(111,97,192,0.93) 53%, rgba(111,97,192,0.85) 60%, rgba(111,97,192,0.7) 70%, transparent)',
       },
       animation: {
         slideDown: 'slideDown 0.3s ease-in-out',

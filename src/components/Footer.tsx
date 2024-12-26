@@ -40,50 +40,50 @@ export default function Footer() {
           </div>
           <div className="font-medium text-xl mb-4">QUICK LINKS</div>
           <div className="flex flex-col justify-center items-center text-center gap-y-2 font-medium text-base">
-            <a href="" className="hover:underline hover:cursor-pointer z-50">
+            <a href="" className="hover:underline hover:cursor-pointer z-40">
               About
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-50">
+            <a href="" className="hover:underline hover:cursor-pointer z-40">
               Program Flow
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-50">
+            <a href="" className="hover:underline hover:cursor-pointer z-40">
               Speakers
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-50">
+            <a href="" className="hover:underline hover:cursor-pointer z-40">
               House Rules
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-50">
+            <a href="" className="hover:underline hover:cursor-pointer z-40">
               FAQs
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-50">
+            <a href="" className="hover:underline hover:cursor-pointer z-40">
               The Team
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-50">
+            <a href="" className="hover:underline hover:cursor-pointer z-40">
               Meet the Developers
             </a>
           </div>
           <div className="h-[2px] w-72 bg-violet my-9 "></div>
           <div className="font-medium text-xl mb-4">ADDRESS</div>
-          <div className="text-sm z-50 flex flex-col items-center w-40 text-center mb-9">
+          <div className="text-sm z-40 flex flex-col items-center w-40 text-center mb-9">
             <p>6/F Community Center of the First Companions, </p>
             <p>Ateneo de Davao University,</p>
             <p>Roxas Ave, Poblacion District, Davao City, 8000 Davao del Sur</p>
           </div>
 
           <div className="font-medium text-xl mb-2">Telephone</div>
-          <div className="text-sm z-50 flex flex-col items-center w-40 text-center mb-7">
+          <div className="text-sm z-40 flex flex-col items-center w-40 text-center mb-7">
             <p>+63 921 392 4001</p>
           </div>
 
           <div className="font-medium text-xl mb-2">Email</div>
-          <div className="text-sm z-50 flex flex-col items-center w-40 text-center mb-7">
+          <div className="text-sm z-40 flex flex-col items-center w-40 text-center mb-7">
             <a href="mailto:misscon2025@gmail.com" className="w-min">
               <p>misscon2025@gmail.com</p>
             </a>
           </div>
 
           <div className="font-medium text-xl mb-2">Socials</div>
-          <div className="z-50 flex  items-center mb-32 gap-x-4">
+          <div className="z-40 flex  items-center mb-32 gap-x-4">
             <a href="https://www.instagram.com/misscon_2025/" className="w-min">
               <div className="flex gap-x-2">
                 <div className="flex items-center justify-center w-6 h-6">
@@ -178,8 +178,8 @@ export default function Footer() {
             />
           </div>
           <div className="h-full w-max flex items-center">
-            <div className="h-max w-max flex flex-col z-50">
-              <div className=" font-medium text-3xl mb-4 z-50">CONTACT</div>
+            <div className="h-max w-max flex flex-col z-40">
+              <div className=" font-medium text-3xl mb-4 z-40">CONTACT</div>
 
               <div className="flex flex-col gap-y-3">
                 <a href="mailto:misscon2025@gmail.com" className="w-min">
@@ -195,7 +195,7 @@ export default function Footer() {
                         />
                       </div>
                     </div>
-                    <div className="flex items-center leading-none mb-0 pb-0 underline text-xl z-50">
+                    <div className="flex items-center leading-none mb-0 pb-0 underline text-xl z-40">
                       misscon2025@gmail.com
                     </div>
                   </div>
@@ -218,7 +218,7 @@ export default function Footer() {
                       </div>
                     </div>
 
-                    <div className="flex items-center leading-none mb-0 pb-0 underline text-xl z-50">
+                    <div className="flex items-center leading-none mb-0 pb-0 underline text-xl z-40">
                       @misscon_2025
                     </div>
                   </div>
@@ -247,7 +247,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="h-[3px] 2xl:w-[561px] bg-violet my-7 "></div>
-              <div className="text-xl z-50">
+              <div className="text-xl z-40">
                 <p>6/F Community Center of the First Companions, </p>
                 <p>Ateneo de Davao University,</p>
                 <p>
@@ -256,25 +256,25 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex flex-col gap-y-5 ml-20 font-medium text-3xl">
-              <a href="" className="hover:underline hover:cursor-pointer z-50">
+              <a href="" className="hover:underline hover:cursor-pointer z-40">
                 About
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-50">
+              <a href="" className="hover:underline hover:cursor-pointer z-40">
                 Program Flow
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-50">
+              <a href="" className="hover:underline hover:cursor-pointer z-40">
                 Speakers
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-50">
+              <a href="" className="hover:underline hover:cursor-pointer z-40">
                 House Rules
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-50">
+              <a href="" className="hover:underline hover:cursor-pointer z-40">
                 FAQs
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-50">
+              <a href="" className="hover:underline hover:cursor-pointer z-40">
                 The Team
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-50">
+              <a href="" className="hover:underline hover:cursor-pointer z-40">
                 Meet the Developers
               </a>
             </div>
