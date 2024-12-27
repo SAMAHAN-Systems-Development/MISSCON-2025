@@ -5,11 +5,11 @@ import rulesData from '@/data/rules.json';
 const RuleCards = () => {
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-20 gap-x-10 w-max">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-20 gap-x-10">
         {rulesData.map((rule, index) => (
           <div
             key={index}
-            className="flex flex-col hover:bg-light-violet text-center bg-gradient-light-violet transition-all duration-200 items-center rounded-2xl py-5 px-4 shadow-xl w-[473px] h-[225px]"
+            className="flex flex-col hover:bg-light-violet text-center bg-gradient-light-violet transition-all duration-200 items-center rounded-2xl py-5 px-4 shadow-xl md:w-3/4 lg:w-[473px] h-[225px]"
           >
             <header className="text-white font-inandan text-3xl font-medium">
               {rule.heading}
