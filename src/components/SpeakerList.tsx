@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import SpeakerCard from '@/components/ui/SpeakerCard';
 import Image from 'next/image';
 
-type SpeakerData = {
+export type SpeakerData = {
   id: number;
   name: string;
   position: string;
@@ -47,7 +47,7 @@ const SpeakerList: React.FC<{ speakersData: SpeakerData[] }> = ({
       </div>
 
       <div
-        className={`border border-black shadow-md flex items-center w-[900px] p-10 h-[752px] bg-white rounded-xl transition-opacity duration-500 ${activeSpeakerId ? 'opacity-100' : 'opacity-0'}`}
+        className={`z-10 shadow-md hidden lg:flex items-center w-[900px] p-10 h-[752px] bg-white rounded-xl transition-opacity duration-500 ${activeSpeakerId ? 'opacity-100' : 'opacity-0'}`}
       >
         {speakersData
           .filter((speaker) => speaker.id === activeSpeakerId)

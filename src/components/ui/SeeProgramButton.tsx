@@ -23,7 +23,7 @@ const SeeProgramButton: React.FC<AccordionComponentProps> = ({ imageUrl }) => {
     >
       <Accordion.Item
         value="item-1"
-        className={`w-full flex flex-col items-center justify-center sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl bg-violet rounded-md
+        className={`flex flex-col items-center justify-center w-80  lg:w-[868px] bg-violet rounded-[4px] lg:rounded-md
         ${
           isAccordionOpen
             ? 'text-white bg-gradient-to-b from-violet to-white'
@@ -32,14 +32,14 @@ const SeeProgramButton: React.FC<AccordionComponentProps> = ({ imageUrl }) => {
       >
         <Accordion.Header className="w-full">
           <Accordion.Trigger
-            className="relative flex items-center justify-center w-full h-10 sm:h-12 md:h-14 lg:h-16 p-2 py-0 sm:py-2 text-left cursor-pointer text-white transition-colors duration-300 gap-2 sm:gap-4"
+            className="relative flex items-center justify-center w-full h-7 lg:h-14 p-2 py-0 sm:py-2 text-left cursor-pointer text-white transition-colors duration-300 lg:gap-2 gap-1"
             onClick={handleAccordionClick}
           >
-            <div className="font-gill_sans text-base sm:text-lg 2xl:text-2xl 2xl:max-w-2xl 2xl:mb-[-7px]">
+            <div className="font-gill_sans text-[10px] lg:text-2xl lg:max-w-2xl mb-[-3px] lg:mb-[-7px]">
               SEE PROGRAM
             </div>
             <ImArrowRight
-              className={`transform transition-transform duration-300 ${
+              className={`transform transition-transform duration-300 scale-50 lg:scale-100  ${
                 isAccordionOpen ? 'rotate-90' : ''
               }`}
             />

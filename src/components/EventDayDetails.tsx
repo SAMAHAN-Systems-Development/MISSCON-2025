@@ -1,5 +1,6 @@
 import SpeakerList from '@/components/SpeakerList';
 import SeeProgramButton from '@/components/ui/SeeProgramButton';
+import { SpeakerData } from '@/components/SpeakerList';
 
 interface EventDayDetailsProps {
   dayNumber: string;
@@ -8,32 +9,35 @@ interface EventDayDetailsProps {
 export default async function EventDayDetails({
   dayNumber,
 }: EventDayDetailsProps) {
-  const data = await import(`@/data/speakersDetailsDay${dayNumber}.json`);
-  const speakersData = JSON.parse(JSON.stringify(data.default));
+  let speakersData: SpeakerData[] | null = null;
 
-  const bg = '/images/BG.png';
+  if (dayNumber !== '0') {
+    const data = await import(`@/data/speakersDetailsDay${dayNumber}.json`);
+    speakersData = JSON.parse(JSON.stringify(data.default));
+  }
 
   return (
-    <div className="relative flex flex-col justify-center items-center mb-20">
-      {/* Background */}
-      <div
-        className="absolute top-56 left-0 w-full h-full bg-cover bg-center bg-no-repeat z-[-1] opacity-20 rotate-180"
-        style={{
-          backgroundImage: `url(${bg})`,
-          backgroundSize: '175%', // Adjust the scale
-        }}
-      ></div>
-
-      {/* Content */}
+    <div
+      className={`relative flex flex-col items-center ${speakersData ? 'pb-96 lg:pb-20' : 'pb-52 lg:pb-[600px]'}  min-h-64 lg:min-h-[600px]`}
+    >
       <div className="font-pirata_one text-violet">
-        <p className="text-5xl text-center mb-8">day 0{dayNumber}</p>
-        <p className="text-3xl text-center mb-4">Program Flow</p>
+        <p className="text-4xl lg:text-5xl text-center mb-4 lg:mb-8">
+          day 0{dayNumber}
+        </p>
+        <p className="text-2xl lg:text-3xl text-center mb-2 lg:mb-4">
+          Program Flow
+        </p>
       </div>
       <SeeProgramButton
-        imageUrl={`/images/ProgramFlowDay${dayNumber}.png`}
+        imageUrl={`/images/ProgramFlowDay0.png`}
+        // imageUrl={`/images/ProgramFlowDay${dayNumber}.png`}
       ></SeeProgramButton>
       <div className="h-4"></div>
-      <SpeakerList speakersData={speakersData}></SpeakerList>
+      {speakersData !== null ? (
+        <SpeakerList speakersData={speakersData}></SpeakerList>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

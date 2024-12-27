@@ -30,8 +30,14 @@ export default function SlideMenu() {
             <div className="w-4/5">
               <MenuNavButtons href="" text="About"></MenuNavButtons>
               <MenuNavButtons href="" text="Registration"></MenuNavButtons>
-              <MenuNavButtons href="" text="Program Flow"></MenuNavButtons>
-              <MenuNavButtons href="" text="Speakers"></MenuNavButtons>
+              <MenuNavButtons
+                href="program-flow"
+                text="Program Flow"
+              ></MenuNavButtons>
+              <MenuNavButtons
+                href="program-flow/#speakers"
+                text="Speakers"
+              ></MenuNavButtons>
               <MenuNavButtons href="" text="House Rules"></MenuNavButtons>
               <MenuNavButtons href="" text="FAQs"></MenuNavButtons>
               <MenuNavButtons href="" text="The Team"></MenuNavButtons>
