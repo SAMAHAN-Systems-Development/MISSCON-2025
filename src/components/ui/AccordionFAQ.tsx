@@ -32,24 +32,29 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
       >
         <Accordion.Header>
           <Accordion.Trigger
-            className={`relative flex items-center w-full h-12 md:h-14 lg:h-16 p-2 py-4 text-left cursor-pointer text-dark-violet transition-colors duration-300 hover:text-white hover:bg-gradient-to-r hover:from-white hover:via-light-violet hover:to-white ${
+            className={`relative flex items-center w-full min-h-12 md:min-h-14 lg:min-h-16 px-4 py-3 text-left cursor-pointer text-dark-violet transition-colors duration-300 hover:text-white hover:bg-gradient-to-r hover:from-white hover:via-light-violet hover:to-white ${
               isAccordionOpen
                 ? 'bg-gradient-to-r from-white via-light-violet to-white text-white'
                 : ''
             }`}
             onClick={handleAccordionClick}
           >
-            {/* Centered span */}
-            <span className="absolute left-0 right-0 text-center text-base sm:text-lg 2xl:text-2xl 2xl:max-w-2xl mx-auto">
+            {/* Left spacer */}
+            <span className="flex-1"></span>
+
+            {/* Centered question */}
+            <span className="text-base sm:text-lg 2xl:text-2xl text-center whitespace-normal max-w-[calc(100%-4rem)] sm:max-w-[calc(100%-5rem)] md:max-w-[calc(100%-6rem)] lg:max-w-[calc(100%-8rem)]">
               {question}
             </span>
 
-            {/* Arrow icon */}
-            <BiSolidRightArrow
-              className={`absolute right-10 sm:right-20 md:right-36 transform transition-transform duration-300 ${
-                isAccordionOpen ? 'rotate-90' : ''
-              }`}
-            />
+            {/* Right arrow */}
+            <span className="flex-1 flex justify-center pl-2 pr-4">
+              <BiSolidRightArrow
+                className={`transform transition-transform duration-300 ${
+                  isAccordionOpen ? 'rotate-90' : ''
+                }`}
+              />
+            </span>
           </Accordion.Trigger>
         </Accordion.Header>
 
