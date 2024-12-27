@@ -1,20 +1,27 @@
+'use client';
 import SpeakerList from '@/components/SpeakerList';
 import SeeProgramButton from '@/components/ui/SeeProgramButton';
 import { SpeakerData } from '@/components/SpeakerList';
+import { useEffect, useState } from 'react';
 
 interface EventDayDetailsProps {
   dayNumber: string;
+  setSpeakersDayXOverlay: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default async function EventDayDetails({
+export default function EventDayDetails({
   dayNumber,
+  setSpeakersDayXOverlay,
 }: EventDayDetailsProps) {
-  let speakersData: SpeakerData[] | null = null;
+  const [speakersData, setSpeakersData] = useState<SpeakerData[] | null>(null);
 
-  if (dayNumber !== '0') {
-    const data = await import(`@/data/speakersDetailsDay${dayNumber}.json`);
-    speakersData = JSON.parse(JSON.stringify(data.default));
-  }
+  useEffect(() => {
+    if (dayNumber !== '0') {
+      import(`@/data/speakersDetailsDay${dayNumber}.json`).then((data) =>
+        setSpeakersData(data.default)
+      );
+    }
+  }, [dayNumber]);
 
   return (
     <div
@@ -34,7 +41,10 @@ export default async function EventDayDetails({
       ></SeeProgramButton>
       <div className="h-4"></div>
       {speakersData !== null ? (
-        <SpeakerList speakersData={speakersData}></SpeakerList>
+        <SpeakerList
+          speakersData={speakersData}
+          setSpeakersDayXOverlay={setSpeakersDayXOverlay}
+        ></SpeakerList>
       ) : (
         <></>
       )}

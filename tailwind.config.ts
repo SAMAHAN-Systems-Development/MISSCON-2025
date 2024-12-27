@@ -25,6 +25,8 @@ const config: Config = {
       animation: {
         slideDown: 'slideDown 0.3s ease-in-out',
         slideUp: 'slideUp 0.3s ease-in-out',
+        slideRight: 'slideRight 0.3s ease-in-out',
+        slideLeft: 'slideLeft 0.3s ease-in-out',
       },
       keyframes: {
         slideDown: {

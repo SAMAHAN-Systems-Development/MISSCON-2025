@@ -1,5 +1,6 @@
 [
     {
+        "day": 2,
         "id": 1,
         "name": "Mr. Lucio Blanco Pitlo III, MA",
         "position": "President, Philippine Association for Chinese Studies \n Research Fellow, Asia-Pacific Pathways to Progress Foundation",
@@ -7,6 +8,7 @@
         "bionote": "Lucio Blanco Pitlo III is a foreign policy and security analayst. He is the President of the Philippine Association for Chinese Studies and a Research Fellow at the Asia-Pacific Pathways to Progress Foundation. \n He was a Taiwan Fellow and a Visiting Scholar at the National Chengchi University Department of Diplomacy and Center for Foreign Policy Studies in Taipei. He was a lecturer at the Chinese Studies Program of the Ateneo de Manila University and the International Studies Department of De La Salle University. \n Mr. Pitlo was formerly a technical assistant with the National Coast Watch Council Secretariat, now known as the Presidential Office for Maritime Concerns. He also served as a research associate and consultant for several projects on maritime issues and Philippine foreign policy. \n He obtained his Master of Laws from Peking University. His commentaries and analyses on Philippine security and foreign policy and Southeast Asian affairs appear in the South China Morning Post, China-US Focus, Asia Times, CSIS Asia Maritime Transparency Initiative, and The Diplomat."
     },
     {
+        "day": 2,
         "id": 2,
         "name": "Atty. Archill Niña Faller-Capistrano",
         "position": "Assistant Professor, University of the Philippines - Cebu",
@@ -15,6 +17,7 @@
     },
     
     {
+        "day": 2,
         "id": 3,
         "name": "Dr. Manuel R. Enverga III",
         "position": "Director of European Studies Program, Ateneo de Manila University",

@@ -1,9 +1,10 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SpeakerCard from '@/components/ui/SpeakerCard';
 import Image from 'next/image';
 
 export type SpeakerData = {
+  day: number;
   id: number;
   name: string;
   position: string;
@@ -11,15 +12,24 @@ export type SpeakerData = {
   bionote: string;
 };
 
-const SpeakerList: React.FC<{ speakersData: SpeakerData[] }> = ({
-  speakersData,
-}) => {
+const SpeakerList: React.FC<{
+  speakersData: SpeakerData[];
+  setSpeakersDayXOverlay: React.Dispatch<React.SetStateAction<number>>;
+}> = ({ speakersData, setSpeakersDayXOverlay }) => {
   const [activeSpeakerId, setActiveSpeakerId] = useState<number | null>(null);
 
   // Toggle active speaker
   const handleSpeakerClick = (id: number) => {
     setActiveSpeakerId((prev) => (prev === id ? null : id));
   };
+
+  useEffect(() => {
+    if (activeSpeakerId) {
+      setSpeakersDayXOverlay(activeSpeakerId);
+    } else {
+      setSpeakersDayXOverlay(-1);
+    }
+  }, [activeSpeakerId]);
 
   return (
     <div className="flex flex-col items-center space-y-8">
