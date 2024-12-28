@@ -3,7 +3,7 @@ import EventDayDetails from '@/components/EventDayDetails';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-export default function programFlow() {
+export default function ProgramFlow() {
   const bg = '/images/pagebg.png';
   const lines = '/images/BG.png';
 
@@ -31,6 +31,7 @@ export default function programFlow() {
           backgroundRepeat: 'no-repeat',
         }}
       >
+        {/* for testing day 1 speakers only. does not pass data yet */}
         {speakersDayXOverlay == 1 && (
           <div
             className={`fixed inset-0 z-50 duration-300 ${
@@ -39,21 +40,12 @@ export default function programFlow() {
                 : 'animate-slideUp hidden'
             }`}
             style={{
-              backgroundImage: `url(${bg})`, // Keep the background image
+              backgroundImage: `url(${bg})`,
               backgroundSize: '500%',
               backgroundPosition: 'top',
               backgroundRepeat: 'no-repeat',
             }}
           >
-            {/* Overlay Background */}
-            <div
-              className="fixed inset-0 bg-black bg-opacity-50"
-              onClick={() => {
-                setSpeakerOverlayOpen(false);
-                setSpeakersDayXOverlay(-1);
-              }}
-            ></div>
-
             {/* Close Button */}
             <div
               className="absolute top-8 right-4 w-20 h-20 hover:cursor-pointer z-50"
@@ -71,16 +63,14 @@ export default function programFlow() {
               />
             </div>
 
-            {/* Modal Content */}
             <div className="relative h-full w-full overflow-y-auto mx-auto p-4">
-              {/* Example Content */}
-              {[...Array(10)].map((_, index) => (
-                <div key={index} className="mt-10 h-96">
-                  <p className="font-pirata_one text-violet text-4xl text-center mb-4">
-                    day 0{index + 1}
-                  </p>
-                </div>
-              ))}
+              <p className="h-40">dummy</p>
+              <p className="h-40">dummy</p>
+              <p className="h-40">dummy</p>
+              <p className="h-40">dummy</p>
+              <p className="h-40">dummy</p>
+              <p className="h-40">dummy</p>
+              <p className="h-40">dummy</p>
             </div>
           </div>
         )}

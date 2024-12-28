@@ -25,11 +25,11 @@ const SpeakerList: React.FC<{
 
   useEffect(() => {
     if (activeSpeakerId) {
-      setSpeakersDayXOverlay(activeSpeakerId);
+      setSpeakersDayXOverlay(speakersData[0].day);
     } else {
       setSpeakersDayXOverlay(-1);
     }
-  }, [activeSpeakerId]);
+  }, [activeSpeakerId, setSpeakersDayXOverlay, speakersData]);
 
   return (
     <div className="flex flex-col items-center space-y-8">
