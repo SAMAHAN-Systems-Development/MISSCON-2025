@@ -1,8 +1,6 @@
 'use client';
-import RuleCards from '@/components/ui/RuleCards';
 import Image from 'next/image';
 import bg from '../../../public/images/BG.png';
-import WBup from '../../../public/images/BG.png';
 import BackgroundImage from '../../../public/images/the-team-bg.png';
 import Team from '@/components/section/TeamSection';
 
