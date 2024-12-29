@@ -12,7 +12,7 @@ export default function AboutCountdown() {
   return (
     <div className="relative w-full h-full pt-20 pb-72">
       {/* Background Image Section */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute z-0">
         <Image src={BackgroundImage} alt={'background'} fill />
       </div>
 
