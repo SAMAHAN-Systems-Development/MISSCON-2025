@@ -65,34 +65,33 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ type }) => {
           >
             {type === 'general' && data.indexOf(faq) === 1 ? (
               <div className="flex flex-col items-center px-4 gap-y-6">
-              {/* FAQ Answer */}
-              <p className="text-dark-violet text-center text-xs lg:text-base px-4">
-                {faq.answer}
-              </p>
-            
-              {/* Location Map */}
-              <div className="flex flex-row flex-wrap gap-x-10 justify-center items-center">
-                {locationData.map((location, locIndex) => (
-                  <div
-                    key={locIndex}
-                    className="flex flex-col items-center justify-center"
-                  >
-                    <Image
-                      src={location.image}
-                      alt={location.title}
-                      width={100}
-                      height={100}
-                      className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-60 xl:h-60 2xl:w-64 2xl:h-64 object-cover"
-                      unoptimized
-                    />
-                    <p className="py-4 text-dark-violet text-center text-xs lg:text-base font-bold w-24 sm:w-36 md:w-40 lg:w-44 xl:w-64 2xl:w-68 px-4">
-                      {location.title}
-                    </p>
-                  </div>
-                ))}
+                {/* FAQ Answer */}
+                <p className="text-dark-violet text-center text-xs lg:text-base px-4">
+                  {faq.answer}
+                </p>
+
+                {/* Location Map */}
+                <div className="flex flex-row flex-wrap gap-x-10 justify-center items-center">
+                  {locationData.map((location, locIndex) => (
+                    <div
+                      key={locIndex}
+                      className="flex flex-col items-center justify-center"
+                    >
+                      <Image
+                        src={location.image}
+                        alt={location.title}
+                        width={100}
+                        height={100}
+                        className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-60 xl:h-60 2xl:w-64 2xl:h-64 object-cover"
+                        unoptimized
+                      />
+                      <p className="py-4 text-dark-violet text-center text-xs lg:text-base font-bold w-24 sm:w-36 md:w-40 lg:w-44 xl:w-64 2xl:w-68 px-4">
+                        {location.title}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-            
             ) : (
               <p className="px-4 text-dark-violet text-center text-xs lg:text-base">
                 {faq.answer}
