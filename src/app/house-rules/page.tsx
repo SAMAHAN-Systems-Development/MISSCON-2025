@@ -49,6 +49,13 @@ export default function HouseRules() {
           src={bg}
           className="absolute object-cover object-top opacity-40 scale-150 mt-20 2xl:mt-7"
         />
+        <div
+          className="absolute inset-0 opacity-80"
+          style={{
+            background:
+              'linear-gradient(to top, rgb(256,256,256) 10%, transparent)',
+          }}
+        ></div>
       </div>
     </div>
   );
