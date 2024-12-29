@@ -24,8 +24,15 @@ export default function HouseRules() {
         <Image
           fill
           src={bg}
-          className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-28px] xl:mt-[-80px] 2xl:mt-[-28px]"
+          className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-80px]"
           alt={'foreground'}
+        />
+         <div
+          className="absolute inset-0 opacity-50"
+          style={{
+            background:
+              'linear-gradient(to bottom, rgb(88,71,186) 1%, transparent)',
+          }}
         />
       </div>
 
@@ -38,7 +45,7 @@ export default function HouseRules() {
           draggable={false}
           fill
           src={bg}
-          className="absolute object-cover object-top opacity-40 scale-150 mt-7 xl:mt-20 2xl:mt-7"
+          className="absolute object-cover object-top opacity-40 scale-150 mt-20 xl:mt-20 2xl:mt-7"
           alt="/"
         />
       </div>
