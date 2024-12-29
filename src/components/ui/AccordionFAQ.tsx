@@ -6,12 +6,21 @@ import Image from 'next/image';
 import locationData from '@/data/locationsFAQ.json';
 import faqData from '@/data/questionFAQ.json';
 
-const AccordionComponent = () => {
-  const [openItem, setOpenItem] = useState<string | null>(null);
+type FAQType = 'general' | 'sponsorship';
 
-  const handleAccordionClick = (value: string) => {
-    setOpenItem(openItem === value ? null : value);
+type AccordionComponentProps = {
+  type: FAQType;
+};
+
+const AccordionComponent: React.FC<AccordionComponentProps> = ({ type }) => {
+  const [isAccordionOpen, setIsAccordionOpen] = useState<number | null>(null);
+
+  const handleAccordionClick = (index: number) => {
+    setIsAccordionOpen(isAccordionOpen === index ? null : index);
   };
+
+  const data =
+    type === 'general' ? faqData.generalFAQs : faqData.sponsorshipFAQs;
 
   return (
     <Accordion.Root
@@ -19,7 +28,7 @@ const AccordionComponent = () => {
       collapsible
       className="py-2 px-4 flex flex-col items-center"
     >
-      {faqData.generalFAQs.map((faq, index) => (
+      {data.map((faq, index) => (
         <Accordion.Item
           key={index}
           value={`item-${index}`}
@@ -27,46 +36,45 @@ const AccordionComponent = () => {
         >
           <Accordion.Header>
             <Accordion.Trigger
-              className={`relative flex items-center w-full min-h-12 md:min-h-14 lg:min-h-16 px-4 py-3 text-left cursor-pointer text-dark-violet transition-colors duration-300 hover:text-white hover:bg-gradient-to-r hover:from-white hover:via-light-violet hover:to-white ${
-                openItem === `item-${index}`
-                  ? 'bg-gradient-to-r from-white via-light-violet to-white text-white'
+              className={`relative grid items-center grid-cols-[1fr_4fr_1fr] w-full min-h-12 md:min-h-14 lg:min-h-16 px-4 py-3 text-left cursor-pointer text-dark-violet transition-colors duration-300 hover:text-white hover:bg-gradient-to-r hover:from-white/0 hover:via-light-violet hover:to-white/0 ${
+                isAccordionOpen === index
+                  ? 'bg-gradient-to-r from-white/0 via-light-violet to-white/0 text-white'
                   : ''
               }`}
-              onClick={() => handleAccordionClick(`item-${index}`)}
+              onClick={() => handleAccordionClick(index)}
             >
-              {/* Left spacer */}
-              <span className="flex-1"></span>
-
-              {/* Centered question */}
-              <span className="text-base sm:text-lg 2xl:text-2xl text-center whitespace-normal max-w-[calc(100%-4rem)] sm:max-w-[calc(100%-5rem)] md:max-w-[calc(100%-6rem)] lg:max-w-[calc(100%-8rem)]">
+              <span></span>
+              <span className="text-base sm:text-lg 2xl:text-2xl text-center whitespace-normal px-2">
                 {faq.question}
               </span>
-
-              {/* Right arrow */}
-              <span className="flex-1 flex justify-center pl-2 pr-4">
+              <span className="flex justify-center">
                 <BiSolidRightArrow
                   className={`transform transition-transform duration-300 ${
-                    openItem === `item-${index}` ? 'rotate-90' : ''
+                    isAccordionOpen === index ? 'rotate-90' : ''
                   }`}
                 />
               </span>
             </Accordion.Trigger>
           </Accordion.Header>
-
-          {/* Accordion Content */}
           <Accordion.Content
             className={`pt-8 pb-6 overflow-hidden duration-300 ${
-              openItem === `item-${index}`
+              isAccordionOpen === index
                 ? 'max-h-screen animate-slideDown'
                 : 'max-h-0 animate-slideUp'
             }`}
           >
-            {faq.answer === faqData.generalFAQs[1].answer ? (
-              <div className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-center px-4 gap-x-10">
-                <p className="text-dark-violet text-center">{faq.answer}</p>
-                {locationData.map((location, idx) => (
+            {type === 'general' && data.indexOf(faq) === 1 ? (
+              <div className="flex flex-col items-center px-4 gap-y-6">
+              {/* FAQ Answer */}
+              <p className="text-dark-violet text-center text-xs lg:text-base px-4">
+                {faq.answer}
+              </p>
+            
+              {/* Location Map */}
+              <div className="flex flex-row flex-wrap gap-x-10 justify-center items-center">
+                {locationData.map((location, locIndex) => (
                   <div
-                    key={idx}
+                    key={locIndex}
                     className="flex flex-col items-center justify-center"
                   >
                     <Image
@@ -83,12 +91,12 @@ const AccordionComponent = () => {
                   </div>
                 ))}
               </div>
+            </div>
+            
             ) : (
-              <div>
-                <p className="text-dark-violet text-center text-xs lg:text-base">
-                  {faq.answer}
-                </p>
-              </div>
+              <p className="px-4 text-dark-violet text-center text-xs lg:text-base">
+                {faq.answer}
+              </p>
             )}
           </Accordion.Content>
         </Accordion.Item>
