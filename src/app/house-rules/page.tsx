@@ -21,7 +21,7 @@ export default function HouseRules() {
         <Image
           fill
           src={bg}
-          className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-28px] xl:mt-[-80px] 2xl:mt-[-28px]"
+          className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-28px]"
           alt={'foreground'}
         />
         <div
@@ -47,7 +47,7 @@ export default function HouseRules() {
           alt={'foreground'}
           fill
           src={bg}
-          className="absolute object-cover object-top opacity-40 scale-150 mt-7 xl:mt-20 2xl:mt-7"
+          className="absolute object-cover object-top opacity-40 scale-150 mt-20 2xl:mt-7"
         />
       </div>
     </div>
