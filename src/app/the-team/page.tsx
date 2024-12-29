@@ -25,7 +25,7 @@ export default function HouseRules() {
           className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-80px]"
           alt={'foreground'}
         />
-         <div
+        <div
           className="absolute inset-0 opacity-50"
           style={{
             background:
@@ -46,6 +46,13 @@ export default function HouseRules() {
           className="absolute object-cover object-top opacity-40 scale-150 mt-20 xl:mt-20 2xl:mt-7"
           alt="/"
         />
+        <div
+          className="absolute inset-0 opacity-80"
+          style={{
+            background:
+              'linear-gradient(to top, rgb(256,256,256) 10%, transparent)',
+          }}
+        ></div>
       </div>
     </div>
   );
