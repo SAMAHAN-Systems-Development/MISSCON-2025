@@ -72,21 +72,21 @@ export default function ProgramFlow() {
         </div>
 
         <div
-          className={`absolute top-[370px] lg:top-[500px] 2xl:top-[450px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
+          className={`absolute top-[370px] sm:top-[340px] smd:top-[310px] lg:top-[500px] 2xl:top-[450px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
           style={{
             backgroundImage: `url(${lines})`,
             backgroundSize: '175%',
           }}
         ></div>
         <div
-          className={`absolute top-[1000px] lg:top-[1850px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
+          className={`absolute top-[1000px] smd:top-[930px] lg:top-[1850px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
           style={{
             backgroundImage: `url(${lines})`,
             backgroundSize: '175%',
           }}
         ></div>
         <div
-          className={`absolute top-[1850px] xsm:top-[1750px] md:top-[1800px] lg:top-[3350px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
+          className={`absolute top-[1850px] xsm:top-[1600px] smd:top-[1550px] md:top-[1700px] lg:top-[3350px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
           style={{
             backgroundImage: `url(${lines})`,
             backgroundSize: '175%',
@@ -116,9 +116,9 @@ export default function ProgramFlow() {
           activeSpeakerId={activeSpeakerId}
           setActiveSpeakerId={setActiveSpeakerId}
         ></EventDayDetails>
-        <div className="relative w-full h-[150px] md:h-[160px] lg:h-[130px] xl:h-[160px] 2xl:h-[170px] overflow-hidden left-0">
+        <div className="relative w-full h-[100px] md:h-[130px] lg:h-[160px] overflow-hidden left-0">
           <div
-            className={`absolute overflow-hidden w-full h-full bg-cover bg-bottom bg-no-repeat bottom-line-bg-default-position scale-[2] md:scale-150 lg:scale-110 xl:scale-100 z-0 opacity-20`}
+            className={`absolute w-full h-full bg-cover bg-bottom bg-no-repeat top-line-bg-default-position scale-[2] md:scale-150 lg:scale-110 xl:scale-100 z-0 opacity-20`}
             style={{
               backgroundImage: `url(${lines})`,
               backgroundSize: '175%',
@@ -167,6 +167,23 @@ export default function ProgramFlow() {
             />
           </div>
 
+          <div className="relative w-full h-[100px] md:h-[130px] lg:h-[160px] overflow-hidden left-0">
+            <div
+              className={`absolute w-full h-full bg-cover bg-bottom bg-no-repeat top-line-bg-default-position scale-[2] md:scale-150 lg:scale-110 xl:scale-100 z-0 opacity-20 rotate-180`}
+              style={{
+                backgroundImage: `url(${lines})`,
+                backgroundSize: '175%',
+              }}
+            ></div>
+            <div
+              className="absolute w-full h-full inset-0 opacity-35"
+              style={{
+                background:
+                  'linear-gradient(to bottom, rgb(88,71,186) 0.15%, transparent)',
+              }}
+            ></div>
+          </div>
+
           <div className="h-full w-full p-4 z-50 flex flex-col items-center">
             <p className="text-4xl text-violet font-pirata_one mb-12">
               day 0{speakersDayXOverlay}
@@ -185,6 +202,9 @@ export default function ProgramFlow() {
                   {index < day1Speakers.length - 1 && (
                     <div className="w-[337px] h-[2px] bg-violet my-12 rounded-sm"></div>
                   )}
+                  {index == day1Speakers.length - 1 && (
+                    <div className="h-[2px] my-12"></div>
+                  )}
                 </div>
               ))}
             {speakersDayXOverlay === 2 &&
@@ -199,6 +219,9 @@ export default function ProgramFlow() {
                   />
                   {index < day2Speakers.length - 1 && (
                     <div className="w-[337px] h-[2px] bg-violet my-12 rounded-sm"></div>
+                  )}
+                  {index == day2Speakers.length - 1 && (
+                    <div className="h-[2px] my-12"></div>
                   )}
                 </div>
               ))}

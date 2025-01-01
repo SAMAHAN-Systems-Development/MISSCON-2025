@@ -121,6 +121,7 @@ const config: Config = {
       '2xsm': '390px',
       xsm: '528px',
       sm: '576px',
+      smd: '680px',
       md: '768px',
       lg: '992px',
       xl: '1200px',

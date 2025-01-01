@@ -76,9 +76,24 @@ img {
   }
 }
 
+@media (min-width: 425px) {
+  .top-line-bg-default-position {
+    background-position: 50% -80%;
+  }
+}
+
+@media (min-width: 480px) {
+  .top-line-bg-default-position {
+    background-position: 50% -50%;
+  }
+  .bottom-line-bg-default-position {
+    background-position: 50% 550%;
+  }
+}
+
 @media (min-width: 500px) {
   .bottom-line-bg-default-position {
-    background-position: 50% -100%;
+    background-position: 50% 8500%;
   }
 }
 
