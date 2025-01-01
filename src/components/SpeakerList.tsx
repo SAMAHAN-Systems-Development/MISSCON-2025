@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SpeakerCard from '@/components/ui/SpeakerCard';
 import Image from 'next/image';
 
@@ -36,15 +36,37 @@ const SpeakerList: React.FC<{
     }
   };
 
+  const [detailCardVisibility, setDetailCardVisibility] = useState(false);
+
+  useEffect(() => {
+    // Dynamically set the class based on activeSpeakerId
+    const activeSpeaker = speakersData.find(
+      (speaker) => speaker.id === activeSpeakerId
+    );
+    if (activeSpeaker) {
+      setDetailCardVisibility(true);
+    } else {
+      setDetailCardVisibility(false);
+    }
+  }, [activeSpeakerId, speakersData]);
+
   return (
     <div className="flex flex-col items-center space-y-8">
       <div className="flex flex-wrap justify-center gap-6">
         {speakersData.map((speaker) => {
           let state: 'normal' | 'active' | 'inactive' = 'normal';
-          if (activeSpeakerId === speaker.id) {
-            state = 'active';
-          } else if (activeSpeakerId !== null) {
-            state = 'inactive';
+          if (activeSpeakerId) {
+            if (
+              activeSpeakerId
+                .toString()
+                .startsWith(speaker.id.toString().slice(0, 1))
+            ) {
+              if (activeSpeakerId === speaker.id) {
+                state = 'active';
+              } else if (activeSpeakerId !== null) {
+                state = 'inactive';
+              }
+            }
           }
 
           return (
@@ -63,7 +85,7 @@ const SpeakerList: React.FC<{
       </div>
 
       <div
-        className={`z-10 shadow-md hidden lg:flex items-center w-[900px] p-10 h-[752px] bg-white rounded-xl transition-opacity duration-500 ${activeSpeakerId ? 'opacity-100' : 'opacity-0'}`}
+        className={`z-10 shadow-md hidden lg:flex items-center w-[900px] p-10 h-[752px] bg-white rounded-xl transition-opacity duration-500 ${detailCardVisibility ? 'opacity-100' : 'opacity-0'}`}
       >
         {speakersData
           .filter((speaker) => speaker.id === activeSpeakerId)
