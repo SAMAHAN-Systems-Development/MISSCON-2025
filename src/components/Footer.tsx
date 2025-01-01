@@ -15,7 +15,7 @@ export default function Footer() {
         className="relative xl:hidden flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
         style={{
           backgroundImage: `url(${wbbg2})`,
-          backgroundSize: '1000%',
+          backgroundSize: '1100%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}

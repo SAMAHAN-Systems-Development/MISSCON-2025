@@ -117,7 +117,9 @@ const config: Config = {
       white: 'rgb(var(--color-white) / <alpha-value>)',
     },
     screens: {
-      xsm: '0px',
+      '3xsm': '0px',
+      '2xsm': '390px',
+      xsm: '528px',
       sm: '576px',
       md: '768px',
       lg: '992px',

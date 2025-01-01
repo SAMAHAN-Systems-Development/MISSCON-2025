@@ -54,22 +54,39 @@ export default function ProgramFlow() {
           backgroundRepeat: 'no-repeat',
         }}
       >
+        <div className="relative w-full h-[100px] md:h-[130px] lg:h-[160px] overflow-hidden left-0">
+          <div
+            className={`absolute w-full h-full bg-cover bg-bottom bg-no-repeat top-line-bg-default-position scale-[2] md:scale-150 lg:scale-110 xl:scale-100 z-0 opacity-20 rotate-180`}
+            style={{
+              backgroundImage: `url(${lines})`,
+              backgroundSize: '175%',
+            }}
+          ></div>
+          <div
+            className="absolute w-full h-full inset-0 opacity-35"
+            style={{
+              background:
+                'linear-gradient(to bottom, rgb(88,71,186) 0.15%, transparent)',
+            }}
+          ></div>
+        </div>
+
         <div
-          className={`absolute top-[410px] xl:top-[500px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
+          className={`absolute top-[370px] lg:top-[500px] 2xl:top-[450px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
           style={{
             backgroundImage: `url(${lines})`,
             backgroundSize: '175%',
           }}
         ></div>
         <div
-          className={`absolute top-[1150px] xl:top-[2000px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
+          className={`absolute top-[1000px] lg:top-[1850px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
           style={{
             backgroundImage: `url(${lines})`,
             backgroundSize: '175%',
           }}
         ></div>
         <div
-          className={`absolute top-[2200px] xl:top-[3500px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
+          className={`absolute top-[1850px] xsm:top-[1750px] md:top-[1800px] lg:top-[3350px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
           style={{
             backgroundImage: `url(${lines})`,
             backgroundSize: '175%',
@@ -77,7 +94,7 @@ export default function ProgramFlow() {
         ></div>
 
         <div className="font-pirata_one text-6xl text-violet flex justify-center">
-          <p className="mt-44 mb-10">Program Flow</p>
+          <p className="mt-10 mb-10">Program Flow</p>
         </div>
         <EventDayDetails
           dayNumber="0"
@@ -99,6 +116,22 @@ export default function ProgramFlow() {
           activeSpeakerId={activeSpeakerId}
           setActiveSpeakerId={setActiveSpeakerId}
         ></EventDayDetails>
+        <div className="relative w-full h-[150px] md:h-[160px] lg:h-[130px] xl:h-[160px] 2xl:h-[170px] overflow-hidden left-0">
+          <div
+            className={`absolute overflow-hidden w-full h-full bg-cover bg-bottom bg-no-repeat bottom-line-bg-default-position scale-[2] md:scale-150 lg:scale-110 xl:scale-100 z-0 opacity-20`}
+            style={{
+              backgroundImage: `url(${lines})`,
+              backgroundSize: '175%',
+            }}
+          ></div>
+          <div
+            className="absolute w-full h-full inset-0 opacity-60"
+            style={{
+              background:
+                'linear-gradient(to top, rgb(198,203,210) 40%, transparent)',
+            }}
+          ></div>
+        </div>
       </div>
 
       {/* for testing day 1 speakers only. does not pass data yet */}
