@@ -58,3 +58,74 @@ img {
 .font-phetsarath {
   font-family: var(--font-phetsarath);
 }
+
+.top-line-bg-default-position {
+  background-position: 50% -50%;
+}
+
+.bottom-line-bg-default-position {
+  background-position: 50% 800%;
+}
+
+@media (min-width: 390px) {
+  .top-line-bg-default-position {
+    background-position: 50% -150%;
+  }
+  .bottom-line-bg-default-position {
+    background-position: 50% 180%;
+  }
+}
+
+@media (min-width: 425px) {
+  .top-line-bg-default-position {
+    background-position: 50% -80%;
+  }
+}
+
+@media (min-width: 480px) {
+  .top-line-bg-default-position {
+    background-position: 50% -50%;
+  }
+  .bottom-line-bg-default-position {
+    background-position: 50% 550%;
+  }
+}
+
+@media (min-width: 500px) {
+  .bottom-line-bg-default-position {
+    background-position: 50% 8500%;
+  }
+}
+
+@media (min-width: 576px) {
+  .top-line-bg-default-position {
+    background-position: 50% -30%;
+  }
+  .bottom-line-bg-default-position {
+    background-position: 50% -150%;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-line-bg-default-position {
+    background-position: 50% -30%;
+  }
+  .bottom-line-bg-default-position {
+    background-position: 50% 0%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-line-bg-default-position {
+    background-position: 50% -30%;
+  }
+  .bottom-line-bg-default-position {
+    background-position: 50% 0%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .top-line-bg-default-position {
+    background-position: 50% 0%;
+  }
+}

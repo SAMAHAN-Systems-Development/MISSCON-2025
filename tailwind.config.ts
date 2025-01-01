@@ -25,6 +25,8 @@ const config: Config = {
       animation: {
         slideDown: 'slideDown 0.3s ease-in-out',
         slideUp: 'slideUp 0.3s ease-in-out',
+        slideRight: 'slideRight 0.3s ease-in-out',
+        slideLeft: 'slideLeft 0.3s ease-in-out',
       },
       keyframes: {
         slideDown: {
@@ -73,6 +75,30 @@ const config: Config = {
           '95%': { maxHeight: '50px', opacity: '0.05' },
           '100%': { maxHeight: '0', opacity: '0' },
         },
+        slideRight: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '5%': { transform: 'translateX(-95%)', opacity: '0.05' },
+          '10%': { transform: 'translateX(-90%)', opacity: '0.1' },
+          '15%': { transform: 'translateX(-85%)', opacity: '0.15' },
+          '20%': { transform: 'translateX(-80%)', opacity: '0.2' },
+          '25%': { transform: 'translateX(-75%)', opacity: '0.25' },
+          '30%': { transform: 'translateX(-70%)', opacity: '0.3' },
+          '35%': { transform: 'translateX(-65%)', opacity: '0.35' },
+          '40%': { transform: 'translateX(-60%)', opacity: '0.4' },
+          '45%': { transform: 'translateX(-55%)', opacity: '0.45' },
+          '50%': { transform: 'translateX(-50%)', opacity: '0.5' },
+          '55%': { transform: 'translateX(-45%)', opacity: '0.55' },
+          '60%': { transform: 'translateX(-40%)', opacity: '0.6' },
+          '65%': { transform: 'translateX(-35%)', opacity: '0.65' },
+          '70%': { transform: 'translateX(-30%)', opacity: '0.7' },
+          '75%': { transform: 'translateX(-25%)', opacity: '0.75' },
+          '80%': { transform: 'translateX(-20%)', opacity: '0.8' },
+          '85%': { transform: 'translateX(-15%)', opacity: '0.85' },
+          '90%': { transform: 'translateX(-10%)', opacity: '0.9' },
+          '95%': { transform: 'translateX(-5%)', opacity: '0.95' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        
       },
       
       
@@ -91,8 +117,11 @@ const config: Config = {
       white: 'rgb(var(--color-white) / <alpha-value>)',
     },
     screens: {
-      xsm: '0px',
+      '3xsm': '0px',
+      '2xsm': '390px',
+      xsm: '528px',
       sm: '576px',
+      smd: '680px',
       md: '768px',
       lg: '992px',
       xl: '1200px',

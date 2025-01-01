@@ -15,7 +15,7 @@ export default function Footer() {
         className="relative xl:hidden flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
         style={{
           backgroundImage: `url(${wbbg2})`,
-          backgroundSize: '1000%',
+          backgroundSize: '1100%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
@@ -43,10 +43,16 @@ export default function Footer() {
             <a href="" className="hover:underline hover:cursor-pointer z-40">
               About
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-40">
+            <a
+              href="program-flow"
+              className="hover:underline hover:cursor-pointer z-40"
+            >
               Program Flow
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-40">
+            <a
+              href="program-flow/#speakers"
+              className="hover:underline hover:cursor-pointer z-40"
+            >
               Speakers
             </a>
             <a href="" className="hover:underline hover:cursor-pointer z-40">
@@ -119,9 +125,9 @@ export default function Footer() {
             </a>
           </div>
           <div className="">
-            <p>
-              <span className="font-semibold">Organized by: </span>Lorem Ipsum
-              Dolor
+            <p className="text-center">
+              <span className="font-semibold text-center">Organized by: </span>
+              Ateneo International Studies Students Organization
             </p>
           </div>
 
@@ -154,7 +160,7 @@ export default function Footer() {
         className="relative hidden xl:flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
         style={{
           backgroundImage: `url(${wbbg2})`,
-          backgroundSize: '130%',
+          backgroundSize: '150%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
@@ -167,7 +173,7 @@ export default function Footer() {
             backgroundPosition: 'center',
           }}
         ></div>
-        <div className="h-min mt-16 flex justify-center items-center px-10 xl:gap-x-16 2xl:gap-x-16 ">
+        <div className="h-min mt-16 flex justify-center items-center px-10 xl:gap-x-16 2xl:gap-x-28 ">
           <div className="relative w-72 h-72">
             <Image
               draggable={false}
@@ -177,7 +183,7 @@ export default function Footer() {
               alt="/"
             />
           </div>
-          <div className="h-full w-max flex items-center">
+          <div className="h-full w-max flex items-center 2xl:gap-x-10">
             <div className="h-max w-max flex flex-col z-40">
               <div className=" font-medium text-3xl mb-4 z-40">CONTACT</div>
 
@@ -259,10 +265,16 @@ export default function Footer() {
               <a href="" className="hover:underline hover:cursor-pointer z-40">
                 About
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-40">
+              <a
+                href="program-flow"
+                className="hover:underline hover:cursor-pointer z-40"
+              >
                 Program Flow
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-40">
+              <a
+                href="program-flow/#speakers"
+                className="hover:underline hover:cursor-pointer z-40"
+              >
                 Speakers
               </a>
               <a href="" className="hover:underline hover:cursor-pointer z-40">
@@ -299,7 +311,10 @@ export default function Footer() {
           {/* Bottom-left text */}
           <div className="absolute bottom-5 left-5 text-white font-gill_sans">
             <p>
-              Organized by: <span className="font-bold">Lorem Ipsum Dolor</span>
+              Organized by:{' '}
+              <span className="font-bold">
+                Ateneo International Studies Students Organization
+              </span>
             </p>
           </div>
 
