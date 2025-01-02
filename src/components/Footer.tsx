@@ -40,7 +40,10 @@ export default function Footer() {
           </div>
           <div className="font-medium text-xl mb-4">QUICK LINKS</div>
           <div className="flex flex-col justify-center items-center text-center gap-y-2 font-medium text-base">
-            <a href="" className="hover:underline hover:cursor-pointer z-40">
+            <a
+              href="/#about"
+              className="hover:underline hover:cursor-pointer z-40"
+            >
               About
             </a>
             <a
@@ -73,7 +76,10 @@ export default function Footer() {
             >
               The Team
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-40">
+            <a
+              href="meet-the-developers"
+              className="hover:underline hover:cursor-pointer z-40"
+            >
               Meet the Developers
             </a>
           </div>
@@ -271,7 +277,10 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex flex-col gap-y-5 xl:ml-20 2xl:ml-20 font-medium text-2xl">
-              <a href="" className="hover:underline hover:cursor-pointer z-40">
+              <a
+                href="/#about"
+                className="hover:underline hover:cursor-pointer z-40"
+              >
                 About
               </a>
               <a
@@ -304,7 +313,10 @@ export default function Footer() {
               >
                 The Team
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-40">
+              <a
+                href="meet-the-developers"
+                className="hover:underline hover:cursor-pointer z-40"
+              >
                 Meet the Developers
               </a>
             </div>

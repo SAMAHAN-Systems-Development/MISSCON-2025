@@ -12,7 +12,7 @@ export default function AboutCountdown() {
   return (
     <div className="relative w-full h-full pt-20 pb-72">
       {/* Background Image Section */}
-      <div className="absolute z-0">
+      <div className="absolute inset-0 z-0">
         <Image src={BackgroundImage} alt={'background'} fill />
       </div>
 
@@ -22,13 +22,16 @@ export default function AboutCountdown() {
       </div>
 
       {/* Text and Content Section */}
-      <div className="relative z-30 text-center px-4 md:px-12 lg:px-20 flex flex-col items-center justify-center h-full text-white">
+      <div
+        className="relative z-30 text-center px-4 md:px-12 lg:px-20 flex flex-col items-center justify-center h-full text-white"
+        id="about"
+      >
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-pirata_one">
           About
         </h1>
         <Image src={MissconLogo} alt={'foreground'} height={130} width={130} />
 
-        <div className="flex flex-col items-center mt-28 md:mt-44 w-full sm:w-5/6 lg:w-4/6 font-gill_sans">
+        <div className="flex flex-col items-center mt-28 md:mt-44 w-5/6 lg:w-4/6 font-gill_sans">
           <p className="mb-8 text-base md:text-lg lg:text-2xl text-center font-gill_sans">
             The study of the international in Mindanao thrives and continues to
             integrate nascent transboundary trends into our understanding of the
@@ -47,7 +50,7 @@ export default function AboutCountdown() {
         </div>
 
         {/* Countdown and Registration Section */}
-        <div className="mt-48 md:mt-64">
+        <div className="mt-48 md:mt-64" id="register">
           <h2 className="text-3xl md:text-5xl lg:text-7xl mb-3 font-pirata_one">
             Feeling excited?
           </h2>
