@@ -55,13 +55,22 @@ export default function Footer() {
             >
               Speakers
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-40">
+            <a
+              href="house-rules"
+              className="hover:underline hover:cursor-pointer z-40"
+            >
               House Rules
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-40">
+            <a
+              href="faqs"
+              className="hover:underline hover:cursor-pointer z-40"
+            >
               FAQs
             </a>
-            <a href="" className="hover:underline hover:cursor-pointer z-40">
+            <a
+              href="the-team"
+              className="hover:underline hover:cursor-pointer z-40"
+            >
               The Team
             </a>
             <a href="" className="hover:underline hover:cursor-pointer z-40">
@@ -277,13 +286,22 @@ export default function Footer() {
               >
                 Speakers
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-40">
+              <a
+                href="house-rules"
+                className="hover:underline hover:cursor-pointer z-40"
+              >
                 House Rules
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-40">
+              <a
+                href="faqs"
+                className="hover:underline hover:cursor-pointer z-40"
+              >
                 FAQs
               </a>
-              <a href="" className="hover:underline hover:cursor-pointer z-40">
+              <a
+                href="the-team"
+                className="hover:underline hover:cursor-pointer z-40"
+              >
                 The Team
               </a>
               <a href="" className="hover:underline hover:cursor-pointer z-40">

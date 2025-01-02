@@ -38,9 +38,12 @@ export default function SlideMenu() {
                 href="program-flow/#speakers"
                 text="Speakers"
               ></MenuNavButtons>
-              <MenuNavButtons href="" text="House Rules"></MenuNavButtons>
-              <MenuNavButtons href="" text="FAQs"></MenuNavButtons>
-              <MenuNavButtons href="" text="The Team"></MenuNavButtons>
+              <MenuNavButtons
+                href="house-rules"
+                text="House Rules"
+              ></MenuNavButtons>
+              <MenuNavButtons href="faqs" text="FAQs"></MenuNavButtons>
+              <MenuNavButtons href="the-team" text="The Team"></MenuNavButtons>
             </div>
             <div onClick={onMenuButtonClick} className="w-1/5"></div>
           </div>
