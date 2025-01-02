@@ -1,4 +1,5 @@
 import AboutCountdown from '@/components/section/AboutCountdown';
+import HeroSection from '@/components/section/HeroSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
+      <HeroSection></HeroSection>
       <AboutCountdown></AboutCountdown>
     </main>
   );
