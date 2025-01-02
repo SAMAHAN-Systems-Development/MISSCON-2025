@@ -22,7 +22,10 @@ export default function AboutCountdown() {
       </div>
 
       {/* Text and Content Section */}
-      <div className="relative z-30 text-center px-4 md:px-12 lg:px-20 flex flex-col items-center justify-center h-full text-white">
+      <div
+        className="relative z-30 text-center px-4 md:px-12 lg:px-20 flex flex-col items-center justify-center h-full text-white"
+        id="about"
+      >
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-pirata_one">
           About
         </h1>
@@ -47,7 +50,7 @@ export default function AboutCountdown() {
         </div>
 
         {/* Countdown and Registration Section */}
-        <div className="mt-48 md:mt-64">
+        <div className="mt-48 md:mt-64" id="register">
           <h2 className="text-3xl md:text-5xl lg:text-7xl mb-3 font-pirata_one">
             Feeling excited?
           </h2>

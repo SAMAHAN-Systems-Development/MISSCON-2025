@@ -28,8 +28,11 @@ export default function SlideMenu() {
         {openSlideMenu && (
           <div className={`flex w-screen ${openSlideMenu ? '' : 'hidden'}`}>
             <div className="w-4/5">
-              <MenuNavButtons href="" text="About"></MenuNavButtons>
-              <MenuNavButtons href="" text="Registration"></MenuNavButtons>
+              <MenuNavButtons href="/#about" text="About"></MenuNavButtons>
+              <MenuNavButtons
+                href="/#register"
+                text="Registration"
+              ></MenuNavButtons>
               <MenuNavButtons
                 href="program-flow"
                 text="Program Flow"

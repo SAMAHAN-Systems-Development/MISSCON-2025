@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 interface ButtonProps {
@@ -7,7 +8,7 @@ interface ButtonProps {
 
 export default function MenuNavButtons({ text, href }: ButtonProps) {
   return (
-    <a href={href} className="relative group w-full h-[70px] block">
+    <Link href={href} className="relative group w-full h-[70px] block">
       <div
         className="
           absolute inset-0 bg-white transition-opacity duration-300 opacity-0
@@ -25,6 +26,6 @@ export default function MenuNavButtons({ text, href }: ButtonProps) {
       >
         {text}
       </div>
-    </a>
+    </Link>
   );
 }
