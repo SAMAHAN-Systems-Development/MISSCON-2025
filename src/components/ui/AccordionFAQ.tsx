@@ -44,7 +44,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ type }) => {
               onClick={() => handleAccordionClick(index)}
             >
               <span></span>
-              <span className="text-base sm:text-lg 2xl:text-2xl text-center whitespace-normal px-2">
+              <span className="text-base sm:text-lg md:text-xl 2xl:text-2xl text-center whitespace-normal px-2">
                 {faq.question}
               </span>
               <span className="flex justify-center">
@@ -59,14 +59,14 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ type }) => {
           <Accordion.Content
             className={`pt-8 pb-6 overflow-hidden duration-300 ${
               isAccordionOpen === index
-                ? 'max-h-screen animate-slideDown'
+                ? 'animate-slideDown'
                 : 'max-h-0 animate-slideUp'
             }`}
           >
             {type === 'general' && data.indexOf(faq) === 1 ? (
               <div className="flex flex-col items-center px-4 gap-y-6">
                 {/* FAQ Answer */}
-                <p className="text-dark-violet text-center text-xs lg:text-base px-4">
+                <p className="text-dark-violet text-center text-sm sm:text-base md:text-lg 2xl:text-xl px-4">
                   {faq.answer}
                 </p>
 
@@ -85,7 +85,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ type }) => {
                         className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-60 xl:h-60 2xl:w-64 2xl:h-64 object-cover"
                         unoptimized
                       />
-                      <p className="py-4 text-dark-violet text-center text-xs lg:text-base font-bold w-24 sm:w-36 md:w-40 lg:w-44 xl:w-64 2xl:w-68 px-4">
+                      <p className="py-4 text-dark-violet text-center text-xs sm:text-base md:text-lg 2xl:text-xl font-bold w-24 sm:w-36 md:w-40 lg:w-44 xl:w-64 2xl:w-68 px-4">
                         {location.title}
                       </p>
                     </div>
@@ -93,9 +93,11 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ type }) => {
                 </div>
               </div>
             ) : (
-              <p className="px-4 text-dark-violet text-center text-xs lg:text-base">
-                {faq.answer}
-              </p>
+                <p
+                  className="px-4 text-dark-violet text-center text-sm sm:text-base md:text-lg 2xl:text-xl"
+                  dangerouslySetInnerHTML={{ __html: faq.answer }}
+                >
+                </p>
             )}
           </Accordion.Content>
         </Accordion.Item>
