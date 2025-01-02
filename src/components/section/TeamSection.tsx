@@ -28,7 +28,7 @@ const Team = () => {
             className={`grid ${
               section.members.length % 3 === 0
                 ? 'grid-cols-2 gap-y-14 md:gap-x-24 lg:gap-y-24 justify-items-center'
-                : 'grid-cols-2 justify-items-center gap-x-8 gap-y-14 md:gap-x-24 lg:gap-y-24'
+                : 'grid-cols-2 justify-items-center gap-x-8 gap-y-14 md:gap-x-24 lg:gap-y-24 lg:gap-x-60'
             }`}
           >
             {section.members.map((member, index) => (
