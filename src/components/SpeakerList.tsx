@@ -85,7 +85,7 @@ const SpeakerList: React.FC<{
       </div>
 
       <div
-        className={`z-10 shadow-md hidden lg:flex items-center w-[900px] p-10 h-[752px] bg-white rounded-xl transition-opacity duration-500 ${detailCardVisibility ? 'opacity-100' : 'opacity-0'}`}
+        className={`z-10 shadow-md hidden lg:flex items-center w-[900px] px-10 h-[550px] bg-white rounded-xl transition-opacity duration-500 ${detailCardVisibility ? 'opacity-100' : 'opacity-0'}`}
       >
         {speakersData
           .filter((speaker) => speaker.id === activeSpeakerId)
@@ -112,7 +112,7 @@ const SpeakerList: React.FC<{
                 </div>
               </div>
 
-              <div className="flex flex-col text-dark-violet gap-y-3">
+              <div className="flex flex-col text-dark-violet gap-y-3 h-[450px] overflow-y-scroll">
                 <p className="font-inandan text-4xl">{speaker.name}</p>
                 <div className="font-medium text-xl font-gill_sans">
                   {speaker.position.split('\n').map((line, index) => (
