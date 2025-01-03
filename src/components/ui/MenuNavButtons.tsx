@@ -4,11 +4,16 @@ import React from 'react';
 interface ButtonProps {
   text: string;
   href: string;
+  onClick: () => void;
 }
 
-export default function MenuNavButtons({ text, href }: ButtonProps) {
+export default function MenuNavButtons({ text, href, onClick }: ButtonProps) {
   return (
-    <Link href={href} className="relative group w-full h-[70px] block">
+    <Link
+      href={href}
+      className="relative group w-full h-[70px] block"
+      onClick={onClick}
+    >
       <div
         className="
           absolute inset-0 bg-white transition-opacity duration-300 opacity-0

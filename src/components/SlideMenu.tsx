@@ -28,25 +28,41 @@ export default function SlideMenu() {
         {openSlideMenu && (
           <div className={`flex w-screen ${openSlideMenu ? '' : 'hidden'}`}>
             <div className="w-4/5">
-              <MenuNavButtons href="/#about" text="About"></MenuNavButtons>
+              <MenuNavButtons
+                href="/#about"
+                text="About"
+                onClick={onMenuButtonClick}
+              ></MenuNavButtons>
               <MenuNavButtons
                 href="/#register"
                 text="Registration"
+                onClick={onMenuButtonClick}
               ></MenuNavButtons>
               <MenuNavButtons
                 href="program-flow"
                 text="Program Flow"
+                onClick={onMenuButtonClick}
               ></MenuNavButtons>
               <MenuNavButtons
                 href="program-flow/#speakers"
                 text="Speakers"
+                onClick={onMenuButtonClick}
               ></MenuNavButtons>
               <MenuNavButtons
                 href="house-rules"
                 text="House Rules"
+                onClick={onMenuButtonClick}
               ></MenuNavButtons>
-              <MenuNavButtons href="faqs" text="FAQs"></MenuNavButtons>
-              <MenuNavButtons href="the-team" text="The Team"></MenuNavButtons>
+              <MenuNavButtons
+                href="faqs"
+                text="FAQs"
+                onClick={onMenuButtonClick}
+              ></MenuNavButtons>
+              <MenuNavButtons
+                href="the-team"
+                text="The Team"
+                onClick={onMenuButtonClick}
+              ></MenuNavButtons>
             </div>
             <div onClick={onMenuButtonClick} className="w-1/5"></div>
           </div>
