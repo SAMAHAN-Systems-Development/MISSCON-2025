@@ -15,6 +15,7 @@ export default function MeetTheDevelopers() {
     { imageUrl: '/images/devs/5.jpg', name: 'Arabella Mejorada', position: 'Front End Developer', event: 'MISSCON 2025' },
     { imageUrl: '/images/devs/6.jpg', name: 'Niña Paraiso', position: 'Front End Developer', event: 'MISSCON 2025' },
     { imageUrl: '/images/devs/7.jpg', name: 'Mae Espera', position: 'Front End Developer', event: 'MISSCON 2025' },
+    { imageUrl: '/images/devs/8.jpg', name: 'Jiyo Valmoria', position: 'QA & Back End Developer', event: 'MISSCON 2025'}
   ];
 
   return (
@@ -71,7 +72,7 @@ export default function MeetTheDevelopers() {
         </div>
 
         {/* Remaining Cards: Grid Layout */}
-        <div className="grid grid-cols-2 gap-y-10 md:gap-x-24 lg:gap-y-24 lg:gap-x-60 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 md:gap-x-24 lg:gap-y-24 lg:gap-x-60 justify-items-center">
             {developers.slice(1).map((dev, index) => (
             <Card
                 key={index}
