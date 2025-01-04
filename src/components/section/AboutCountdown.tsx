@@ -37,7 +37,7 @@ export default function AboutCountdown() {
         className="relative z-30 text-center px-4 md:px-12 lg:px-20 flex flex-col items-center justify-center h-full text-white"
         id="about"
       >
-        <h1 className="text-4xl md:text-6xl lg:text-8xl font-pirata_one">
+        <h1 className="text-6xl lg:text-8xl font-pirata_one">
           About
         </h1>
         <Image src={MissconLogo} alt={'foreground'} height={130} width={130} />
