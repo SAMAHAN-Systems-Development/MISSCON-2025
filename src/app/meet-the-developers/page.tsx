@@ -8,14 +8,54 @@ import Card from '@/components/ui/Card';
 
 export default function MeetTheDevelopers() {
   const developers = [
-    { imageUrl: '/images/devs/1.jpg', name: 'Martina Angeles', position: 'Project Manager', event: 'MISSCON 2025' },
-    { imageUrl: '/images/devs/3.jpg', name: 'John Michael Rivera', position: 'UI/UX Design Head', event: 'MISSCON 2025' },
-    { imageUrl: '/images/devs/2.jpg', name: 'John Kyle Lampa', position: 'Front End Head', event: 'MISSCON 2025' },
-    { imageUrl: '/images/devs/4.jpg', name: 'Sarah Haw', position: 'UI/UX Designer', event: 'MISSCON 2025' },
-    { imageUrl: '/images/devs/5.jpg', name: 'Arabella Mejorada', position: 'Front End Developer', event: 'MISSCON 2025' },
-    { imageUrl: '/images/devs/6.jpg', name: 'Niña Paraiso', position: 'Front End Developer', event: 'MISSCON 2025' },
-    { imageUrl: '/images/devs/7.jpg', name: 'Mae Espera', position: 'Front End Developer', event: 'MISSCON 2025' },
-    { imageUrl: '/images/devs/8.jpg', name: 'Jiyo Valmoria', position: 'QA & Back End Developer', event: 'MISSCON 2025' }
+    {
+      imageUrl: '/images/devs/1.jpg',
+      name: 'Martina Angeles',
+      position: 'Project Manager',
+      event: 'MISSCON 2025',
+    },
+    {
+      imageUrl: '/images/devs/3.jpg',
+      name: 'John Michael Rivera',
+      position: 'UI/UX Design Head',
+      event: 'MISSCON 2025',
+    },
+    {
+      imageUrl: '/images/devs/2.jpg',
+      name: 'John Kyle Lampa',
+      position: 'Front End Head',
+      event: 'MISSCON 2025',
+    },
+    {
+      imageUrl: '/images/devs/4.jpg',
+      name: 'Sarah Haw',
+      position: 'UI/UX Designer',
+      event: 'MISSCON 2025',
+    },
+    {
+      imageUrl: '/images/devs/5.jpg',
+      name: 'Arabella Mejorada',
+      position: 'Front End Developer',
+      event: 'MISSCON 2025',
+    },
+    {
+      imageUrl: '/images/devs/6.jpg',
+      name: 'Niña Paraiso',
+      position: 'Front End Developer',
+      event: 'MISSCON 2025',
+    },
+    {
+      imageUrl: '/images/devs/7.jpg',
+      name: 'Mae Espera',
+      position: 'Front End Developer',
+      event: 'MISSCON 2025',
+    },
+    {
+      imageUrl: '/images/devs/8.jpg',
+      name: 'Jiyo Valmoria',
+      position: 'QA & Back End Developer',
+      event: 'MISSCON 2025',
+    },
   ];
 
   return (
