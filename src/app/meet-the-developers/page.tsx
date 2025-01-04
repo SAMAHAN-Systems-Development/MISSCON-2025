@@ -15,7 +15,7 @@ export default function MeetTheDevelopers() {
     { imageUrl: '/images/devs/5.jpg', name: 'Arabella Mejorada', position: 'Front End Developer', event: 'MISSCON 2025' },
     { imageUrl: '/images/devs/6.jpg', name: 'Niña Paraiso', position: 'Front End Developer', event: 'MISSCON 2025' },
     { imageUrl: '/images/devs/7.jpg', name: 'Mae Espera', position: 'Front End Developer', event: 'MISSCON 2025' },
-    { imageUrl: '/images/devs/8.jpg', name: 'Jiyo Valmoria', position: 'QA & Back End Developer', event: 'MISSCON 2025'}
+    { imageUrl: '/images/devs/8.jpg', name: 'Jiyo Valmoria', position: 'QA & Back End Developer', event: 'MISSCON 2025' }
   ];
 
   return (
@@ -61,29 +61,18 @@ export default function MeetTheDevelopers() {
 
       {/* Cards Layout */}
       <div className="relative z-10 py-6 px-8 md:py-16 md:px-28 lg:py-20 lg:px-56">
-        {/* First Row: Single Card */}
-        <div className="flex justify-center mb-14 md:mb-40 lg:mb-40">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-10 md:gap-x-16 lg:gap-y-16 lg:gap-x-24 justify-items-center">
+          {developers.map((dev, index) => (
             <Card
-            imageUrl={developers[0].imageUrl}
-            name={developers[0].name}
-            position={developers[0].position}
-            event={developers[0].event}
+              key={index}
+              imageUrl={dev.imageUrl}
+              name={dev.name}
+              position={dev.position}
+              event={dev.event}
             />
+          ))}
         </div>
-
-        {/* Remaining Cards: Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 md:gap-x-24 lg:gap-y-24 lg:gap-x-60 justify-items-center">
-            {developers.slice(1).map((dev, index) => (
-            <Card
-                key={index}
-                imageUrl={dev.imageUrl}
-                name={dev.name}
-                position={dev.position}
-                event={dev.event}
-            />
-            ))}
-        </div>
-        </div>
+      </div>
 
       <div className="relative w-full h-36 overflow-hidden">
         <Image
