@@ -1,11 +1,12 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import React from 'react';
 import CountdownTimer from '@/components/Countdown';
 // import WBup from '../../../public/images/WB-art-2-up.png';
 import BackgroundImage from '../../../public/images/AboutCountdownBg.png';
 import MissconLogo from '../../../public/images/WB-misscon-text.png';
+import MainButton from '@/components/ui/MainButton';
 import DownloadPrimerButton from '../ui/DownloadPrimerButton';
 
 export default function AboutCountdown() {
@@ -68,9 +69,9 @@ export default function AboutCountdown() {
           <div>
             <CountdownTimer />
           </div>
-          <button className="bg-violet py-2 md:py-3 px-6 md:px-12 rounded-xl text-lg md:text-2xl lg:text-4xl font-pirata_one mt-6">
-            <Link href="http://tiny.cc/f8qtzz">register here</Link>
-          </button>
+          <div className="flex justify-center mt-8">
+            <MainButton href="http://tiny.cc/f8qtzz" text="register here" />
+          </div>
         </div>
       </div>
     </div>
