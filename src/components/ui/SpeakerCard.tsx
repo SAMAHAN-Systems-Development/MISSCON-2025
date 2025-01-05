@@ -30,17 +30,19 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => onClick(id, day)}
     >
-      <div className="relative flex justify-center items-center w-20 lg:w-44 h-20 lg:h-44">
+      <div className="relative flex justify-center items-center w-24 lg:w-36 xl:w-44 h-24 lg:h-36 xl:h-44">
         <div
-          className={`relative flex justify-center items-center rounded-full p-[3px] lg:p-[5px] w-min h-min bg-gradient-to-b from-red to-violet`}
+          className={`relative flex justify-center items-center rounded-full p-[3px] lg:p-1 xl:p-[5px] w-min h-min bg-gradient-to-b from-red to-violet`}
         >
           <div
             className={`relative w-min h-min rounded-full ${
-              isHovered ? 'border-[3px] lg:border-[5px] border-white' : ''
+              isHovered
+                ? 'border-[3px] lg:border-[4px] xl:border-[5px] border-white'
+                : ''
             }`}
           >
             <div
-              className={`relative w-20 lg:w-40 h-20 lg:h-40 overflow-hidden rounded-full`}
+              className={`relative w-20 lg:w-32 xl:w-40 h-20 lg:h-32 xl:h-40 overflow-hidden rounded-full`}
             >
               <Image
                 draggable={false}
@@ -64,7 +66,7 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
             }`}
           ></div>
           <div
-            className={`absolute inset-0 opacity-0 transition-opacity rounded-full flex justify-center items-center text-white font-inandan text-[10px] lg:text-2xl ${
+            className={`absolute inset-0 opacity-0 transition-opacity rounded-full flex justify-center items-center text-white font-inandan text-[10px] xl:text-2xl ${
               isHovered ? 'opacity-100' : ''
             } ${state === 'inactive' ? 'hidden' : ''}`}
           >
@@ -73,13 +75,13 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
         </div>
       </div>
 
-      <div className="text-dark-violet mt-3 lg:mt-6 flex flex-col gap-y-2">
-        <p className="text-center font-gill_sans font-medium text-xl lg:text-3xl w-32 lg:w-64">
+      <div className="text-dark-violet mt-3 lg:mt-4 xl:mt-6 flex flex-col gap-y-2 items-center">
+        <p className="text-center font-gill_sans font-medium text-lg lg:text-2xl xl:text-3xl w-32 lg:w-40 xl:w-64">
           {name}
         </p>
-        <div className="text-xs lg:text-base text-center font-gill_sans">
+        <div className="text-xs lg:text-sm xl:text-base text-center font-gill_sans">
           {position.split('\n').map((line, index) => (
-            <div key={index} className="w-32 lg:w-64 italic">
+            <div key={index} className="w-32 lg:w-40 xl:w-64 italic">
               {line}
             </div>
           ))}

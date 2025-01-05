@@ -72,7 +72,7 @@ export default function ProgramFlow() {
           ></div>
         </div>
 
-        <div className="font-pirata_one text-6xl text-violet flex justify-center">
+        <div className="font-pirata_one text-4xl md:text-[42px] lg:text-5xl xl:text-6xl text-violet flex justify-center">
           <p className="mt-10 mb-10">Program Flow</p>
         </div>
         <EventDayDetails
