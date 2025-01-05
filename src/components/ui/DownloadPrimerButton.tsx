@@ -20,14 +20,14 @@ const DownloadPrimerButton: React.FC<DownloadPrimerButtonProps> = ({
     <button
       onClick={handleClick}
       className={`
-        relative flex items-center gap-2 
-        text-white font-light font-abel tracking-wider uppercase text-2xl
+        relative flex items-center gap-1 
+        text-white font-light font-abel tracking-wider uppercase text-3xl
         transition-all duration-300 ease-in-out
         hover:underline w-min
       `}
     >
-      <span className="w-[200px]">Download Primer</span>
-      <IoMdDownload className="w-6 h-6" />
+      <span className="w-64">Download Primer</span>
+      <IoMdDownload className="w-7 h-7" />
     </button>
   );
 };
