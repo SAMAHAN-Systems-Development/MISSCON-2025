@@ -55,7 +55,7 @@ const SpeakerList: React.FC<{
   return (
     <div className="flex flex-col items-center space-y-8">
       <div className="grid grid-cols-1 xsm:grid-cols-2 smd:grid-cols-3 justify-center gap-6 lg:gap-8">
-        {speakersData.map((speaker) => {
+        {speakersData.map((speaker, index) => {
           let state: 'normal' | 'active' | 'inactive' = 'normal';
           if (activeSpeakerId) {
             if (
@@ -72,7 +72,10 @@ const SpeakerList: React.FC<{
           }
 
           return (
-            <>
+            <div
+              key={index}
+              className={`${index === 2 ? 'col-span-1 xsm:col-span-2 smd:col-span-1 flex justify-center' : ''}`}
+            >
               <SpeakerCard
                 day={speaker.day}
                 key={speaker.id}
@@ -83,7 +86,7 @@ const SpeakerList: React.FC<{
                 state={state}
                 onClick={handleSpeakerClick}
               />
-            </>
+            </div>
           );
         })}
       </div>
