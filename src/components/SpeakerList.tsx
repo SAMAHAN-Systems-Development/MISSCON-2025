@@ -23,6 +23,8 @@ const SpeakerList: React.FC<{
   activeSpeakerId,
   setActiveSpeakerId,
 }) => {
+  const bg = '/images/pagebg.png';
+
   // Toggle active speaker
   const handleSpeakerClick = (id: number, day: number) => {
     const isBelowLg = window.innerWidth < 992;
@@ -85,8 +87,21 @@ const SpeakerList: React.FC<{
       </div>
 
       <div
-        className={`z-10 shadow-md hidden lg:flex items-center w-[900px] px-10 h-[550px] bg-white rounded-xl transition-opacity duration-500 ${detailCardVisibility ? 'opacity-100' : 'opacity-0'}`}
+        className={`relative z-10 shadow-lg hidden lg:flex items-center w-[900px] h-min bg-white rounded-xl transition-opacity duration-300 ${detailCardVisibility ? 'opacity-100 p-10' : 'opacity-0'}`}
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: '500%',
+          backgroundPosition: 'top',
+          backgroundRepeat: 'no-repeat',
+        }}
       >
+        <div
+          className="absolute inset-0 opacity-10 rounded-xl "
+          style={{
+            background:
+              'linear-gradient(to right, rgb(88,71,186) 10%, transparent, rgb(88,71,186) 90%)',
+          }}
+        ></div>
         {speakersData
           .filter((speaker) => speaker.id === activeSpeakerId)
           .map((speaker) => (
@@ -112,8 +127,10 @@ const SpeakerList: React.FC<{
                 </div>
               </div>
 
-              <div className="flex flex-col text-dark-violet gap-y-3 h-[450px] overflow-y-scroll">
-                <p className="font-inandan text-4xl">{speaker.name}</p>
+              <div className="flex flex-col text-dark-violet gap-y-3 h-min">
+                <p className="font-gill_sans font-medium text-4xl">
+                  {speaker.name}
+                </p>
                 <div className="font-medium text-xl font-gill_sans">
                   {speaker.position.split('\n').map((line, index) => (
                     <div key={index}>{line}</div>

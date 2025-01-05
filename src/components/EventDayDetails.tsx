@@ -28,9 +28,7 @@ export default function EventDayDetails({
   }, [dayNumber]);
 
   return (
-    <div
-      className={`relative flex flex-col items-center ${speakersData ? 'pb-40 md:pb-72 lg:pb-20' : 'pb-36 md:pb-[220px] lg:pb-[400px] xl:pb-[450px]'}  min-h-64 lg:min-h-[600px]`}
-    >
+    <div className={`relative flex flex-col items-center h-min mb-28`}>
       <div className="font-pirata_one text-violet">
         <p className="text-4xl lg:text-5xl text-center mb-4 lg:mb-8">
           day 0{dayNumber}

@@ -71,28 +71,6 @@ export default function ProgramFlow() {
           ></div>
         </div>
 
-        <div
-          className={`absolute top-[370px] sm:top-[340px] smd:top-[310px] lg:top-[500px] 2xl:top-[450px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
-          style={{
-            backgroundImage: `url(${lines})`,
-            backgroundSize: '175%',
-          }}
-        ></div>
-        <div
-          className={`absolute top-[1000px] smd:top-[930px] lg:top-[1800px] 2xl:top-[1750px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
-          style={{
-            backgroundImage: `url(${lines})`,
-            backgroundSize: '175%',
-          }}
-        ></div>
-        <div
-          className={`absolute top-[1850px] xsm:top-[1600px] smd:top-[1550px] md:top-[1700px] lg:top-[3100px] 2xl:top-[3050px] left-0 w-full h-[600px] bg-cover bg-bottom bg-no-repeat z-0 opacity-20 rotate-180`}
-          style={{
-            backgroundImage: `url(${lines})`,
-            backgroundSize: '175%',
-          }}
-        ></div>
-
         <div className="font-pirata_one text-6xl text-violet flex justify-center">
           <p className="mt-10 mb-10">Program Flow</p>
         </div>

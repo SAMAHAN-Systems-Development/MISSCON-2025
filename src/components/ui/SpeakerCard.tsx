@@ -74,7 +74,7 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
       </div>
 
       <div className="text-dark-violet mt-3 lg:mt-6 flex flex-col gap-y-2">
-        <p className="text-center font-inandan text-xl lg:text-4xl w-32 lg:w-64">
+        <p className="text-center font-gill_sans font-medium text-xl lg:text-3xl w-32 lg:w-64">
           {name}
         </p>
         <div className="text-xs lg:text-base text-center font-gill_sans">
