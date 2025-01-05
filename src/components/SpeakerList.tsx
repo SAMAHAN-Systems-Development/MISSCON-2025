@@ -87,7 +87,7 @@ const SpeakerList: React.FC<{
       </div>
 
       <div
-        className={`relative z-10 shadow-lg hidden lg:flex items-center w-[900px] h-min bg-white rounded-xl transition-opacity duration-300 ${detailCardVisibility ? 'opacity-100 p-10' : 'opacity-0'}`}
+        className={`relative z-10 shadow-lg hidden lg:flex items-center lg:w-[700px] xl:w-[900px] h-min bg-white rounded-xl transition-opacity duration-300 ${detailCardVisibility ? 'opacity-100 lg:p-9 xl:p-14' : 'opacity-0'}`}
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: '500%',
@@ -107,10 +107,10 @@ const SpeakerList: React.FC<{
           .map((speaker) => (
             <div
               key={speaker.id}
-              className="flex justify-center items-center gap-x-14"
+              className="flex flex-col xl:flex-row justify-center items-center xl:gap-x-14"
             >
               <div
-                className={`relative flex justify-center items-center rounded-full p-[5px] w-min h-min bg-gradient-to-b from-red to-violet`}
+                className={`relative flex justify-center items-center rounded-full w-min h-min p-[7px] bg-gradient-to-b from-red to-violet`}
               >
                 <div className={`relative w-min h-min rounded-full`}>
                   <div
@@ -128,15 +128,15 @@ const SpeakerList: React.FC<{
               </div>
 
               <div className="flex flex-col text-dark-violet gap-y-3 h-min">
-                <p className="font-gill_sans font-medium text-4xl">
+                <p className="font-gill_sans font-medium lg:text-3xl xl:text-4xl text-center xl:text-left">
                   {speaker.name}
                 </p>
-                <div className="font-medium text-xl font-gill_sans">
+                <div className="font-medium lg:text-lg xl:text-xl font-gill_sans text-center xl:text-left">
                   {speaker.position.split('\n').map((line, index) => (
                     <div key={index}>{line}</div>
                   ))}
                 </div>
-                <div className="font-gill_sans text-lg flex flex-col gap-y-4 text-justify">
+                <div className="font-gill_sans lg:text-md xl:text-lg flex flex-col gap-y-4 text-justify">
                   {speaker.bionote.split('\n').map((line, index) => (
                     <div key={index}>{line}</div>
                   ))}
