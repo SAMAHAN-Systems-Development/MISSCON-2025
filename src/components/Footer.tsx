@@ -147,9 +147,9 @@ export default function Footer() {
           </div>
 
           <div className="mb-12">
-            <p>
-              <span className="font-semibold">Developed by: </span>SAMAHAN
-              Systems Development
+            <p className="text-center">
+              <span className="font-semibold">Developed by: </span>
+              SAMAHAN Systems Development
             </p>
           </div>
         </div>

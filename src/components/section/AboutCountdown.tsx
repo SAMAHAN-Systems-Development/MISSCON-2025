@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import CountdownTimer from '@/components/Countdown';
-import WBup from '../../../public/images/WB-art-2-up.png';
+// import WBup from '../../../public/images/WB-art-2-up.png';
 import BackgroundImage from '../../../public/images/AboutCountdownBg.png';
 import MissconLogo from '../../../public/images/WB-misscon-text.png';
 import DownloadPrimerButton from '../ui/DownloadPrimerButton';
@@ -16,9 +16,20 @@ export default function AboutCountdown() {
         <Image src={BackgroundImage} alt={'background'} fill />
       </div>
 
-      {/* Foreground Image Section */}
+      {/* Foreground Image Section
       <div className="absolute inset-x-0 inset-y-0 z-20">
         <Image src={WBup} alt={'foreground'} height={100} width={1500} />
+      </div> */}
+
+      {/* Foreground */}
+      <div className="absolute top-0 left-0 w-full z-20">
+        <Image
+          src="/images/WB-art-2-up.png"
+          alt="Foreground Art"
+          width={1920}
+          height={300}
+          className="object-cover"
+        />
       </div>
 
       {/* Text and Content Section */}
@@ -58,7 +69,7 @@ export default function AboutCountdown() {
             <CountdownTimer />
           </div>
           <button className="bg-violet py-2 md:py-3 px-6 md:px-12 rounded-xl text-lg md:text-2xl lg:text-4xl font-pirata_one mt-6">
-            <Link href="/register">register here</Link>
+            <Link href="http://tiny.cc/f8qtzz">register here</Link>
           </button>
         </div>
       </div>
