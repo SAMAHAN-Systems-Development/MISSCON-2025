@@ -42,6 +42,7 @@ const HeroSection = () => {
               layout="fill"
               objectFit="cover"
               className="opacity-80"
+              unoptimized
             />
           </div>
         ))}
@@ -55,7 +56,7 @@ const HeroSection = () => {
         <Image
           src="/images/WB-art-2-down.png"
           alt="Foreground Art"
-          width={1920}
+          width={3000}
           height={300}
           className="object-cover"
         />

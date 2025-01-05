@@ -26,7 +26,7 @@ export default function AboutCountdown() {
         <Image
           src="/images/WB-art-2-up.png"
           alt="Foreground Art"
-          width={1920}
+          width={3000}
           height={300}
           className="object-cover"
         />
