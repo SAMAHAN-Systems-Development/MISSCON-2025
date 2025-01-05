@@ -69,7 +69,7 @@ export default function AboutCountdown() {
             <CountdownTimer />
           </div>
           <button className="bg-violet py-2 md:py-3 px-6 md:px-12 rounded-xl text-lg md:text-2xl lg:text-4xl font-pirata_one mt-6">
-            <Link href="/register">register here</Link>
+            <Link href="http://tiny.cc/f8qtzz">register here</Link>
           </button>
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function Card({ imageUrl, name, position, event }: CardProps) {
               draggable={false}
               fill
               src={imageUrl}
-              className="rounded-card object-cover object-center scale-150"
+              className="rounded-card object-cover object-center"
               alt="/"
             />
           </div>
