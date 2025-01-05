@@ -37,10 +37,17 @@ export default function AboutCountdown() {
         className="relative z-30 text-center px-4 md:px-12 lg:px-20 flex flex-col items-center justify-center h-full text-white"
         id="about"
       >
-        <h1 className="text-4xl md:text-6xl lg:text-8xl font-pirata_one">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-pirata_one -mb-1">
           About
         </h1>
-        <Image src={MissconLogo} alt={'foreground'} height={130} width={130} />
+        <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-[130px] xl:h-[130px]">
+          <Image
+            src={MissconLogo}
+            alt="foreground"
+            fill
+            className="object-contain"
+          />
+        </div>
 
         <div className="flex flex-col items-center mt-28 md:mt-44 w-5/6 lg:w-4/6 font-gill_sans">
           <p className="mb-8 text-base md:text-lg lg:text-2xl text-center font-gill_sans">
