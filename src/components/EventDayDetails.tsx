@@ -40,8 +40,8 @@ export default function EventDayDetails({
         </p>
       </div>
       <SeeProgramButton
-        imageUrl={`/images/ProgramFlowDay0.png`}
-        // imageUrl={`/images/ProgramFlowDay${dayNumber}.png`}
+        day='2'
+        // date={`${dayNumber}`}
       ></SeeProgramButton>
       <div className="h-4"></div>
       {speakersData !== null ? (
