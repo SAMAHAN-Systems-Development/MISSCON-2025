@@ -107,7 +107,7 @@ export default function MeetTheDevelopers() {
         <p className="mt-2">
           SAMAHAN Systems Development is dedicated to creating innovative solutions that empower the Ateneo community.
         </p>
-        <a
+        <p
           className="text-violet inline-block mt-2"
         >
           Follow us on {' '}
@@ -119,7 +119,7 @@ export default function MeetTheDevelopers() {
               Facebook
           </a>
           {' '} for more.
-        </a>
+        </p>
       </div>
 
       {/* Cards Layout */}
