@@ -43,11 +43,28 @@ export default function ProgramFlow() {
 
   const closeButtonMobile = '/images/X with BG.png';
 
-  const backgroundSize = () => {
-    if (window.innerWidth < 640) return '2000%';
-    if (window.innerWidth < 1024) return '500%';
-    return '600%';
-  };
+  const [backgroundSize, setBackgroundSize] = useState('100%'); // Default size
+
+  useEffect(() => {
+    const updateBackgroundSize = () => {
+      if (window.innerWidth < 640) {
+        setBackgroundSize('2000%');
+      } else if (window.innerWidth < 1024) {
+        setBackgroundSize('200%');
+      } else {
+        setBackgroundSize('100%');
+      }
+    };
+
+    // Set initial background size
+    updateBackgroundSize();
+
+    // Add resize event listener
+    window.addEventListener('resize', updateBackgroundSize);
+
+    // Cleanup event listener on unmount
+    return () => window.removeEventListener('resize', updateBackgroundSize);
+  }, []);
 
   return (
     <div className="relative">
@@ -55,7 +72,7 @@ export default function ProgramFlow() {
         className={`relative w-full h-full`}
         style={{
           backgroundImage: `url(${bg})`,
-          backgroundSize: backgroundSize(),
+          backgroundSize: backgroundSize,
           backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
         }}
