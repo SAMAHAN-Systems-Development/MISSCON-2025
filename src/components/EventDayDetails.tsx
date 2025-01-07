@@ -40,7 +40,7 @@ export default function EventDayDetails({
         </p>
       </div>
       <SeeProgramButton
-        day='2'
+        day={dayNumber}
         // date={`${dayNumber}`}
       ></SeeProgramButton>
       <div className="h-4"></div>
