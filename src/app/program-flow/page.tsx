@@ -43,13 +43,19 @@ export default function ProgramFlow() {
 
   const closeButtonMobile = '/images/X with BG.png';
 
+  const backgroundSize = () => {
+    if (window.innerWidth < 640) return '2000%';
+    if (window.innerWidth < 1024) return '500%';
+    return '600%';
+  };
+
   return (
     <div className="relative">
       <div
         className={`relative w-full h-full`}
         style={{
           backgroundImage: `url(${bg})`,
-          backgroundSize: '500%',
+          backgroundSize: backgroundSize(),
           backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
         }}
