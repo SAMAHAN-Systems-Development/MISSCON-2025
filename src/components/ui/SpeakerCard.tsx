@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 type SpeakerProps = {
   day: number;
-  id: number;
+  id: string;
   name: string;
   position: string;
   imageUrl: string;
   state: 'normal' | 'active' | 'inactive';
-  onClick: (id: number) => void;
+  onClick: (id: string) => void;
 };
 
 const SpeakerCard: React.FC<SpeakerProps> = ({

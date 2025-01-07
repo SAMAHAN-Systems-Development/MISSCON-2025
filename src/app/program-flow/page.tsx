@@ -7,7 +7,7 @@ import lines from '../../../public/images/BG.png';
 export default function ProgramFlow() {
   const bg = '/images/pagebg.png';
 
-  const [activeSpeakerId, setActiveSpeakerId] = useState<number | null>(null);
+  const [activeSpeakerId, setActiveSpeakerId] = useState<string | null>(null);
 
   const [backgroundSize, setBackgroundSize] = useState('100%'); // Default size
 

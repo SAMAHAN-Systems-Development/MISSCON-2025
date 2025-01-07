@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react';
 
 interface EventDayDetailsProps {
   dayNumber: string;
-  activeSpeakerId: number | null;
-  setActiveSpeakerId: React.Dispatch<React.SetStateAction<number | null>>;
+  activeSpeakerId: string | null;
+  setActiveSpeakerId: React.Dispatch<React.SetStateAction<string | null>>;
 }
 
 export default function EventDayDetails({
@@ -18,7 +18,7 @@ export default function EventDayDetails({
   const [speakersData, setSpeakersData] = useState<SpeakerData[] | null>(null);
 
   useEffect(() => {
-    if (dayNumber !== '0') {
+    if (dayNumber) {
       import(`@/data/speakersDetailsDay${dayNumber}.json`).then((data) =>
         setSpeakersData(data.default)
       );

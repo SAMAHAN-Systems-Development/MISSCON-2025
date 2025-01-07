@@ -1,7 +1,7 @@
 [
     {
         "day": 2,
-        "id": 21,
+        "id": "21",
         "name": "Mr. Lucio Blanco Pitlo III, MA",
         "position": "President, Philippine Association for Chinese Studies \n Research Fellow, Asia-Pacific Pathways to Progress Foundation",
         "imageUrl": "/images/speakers/Pitlo.jpg",
@@ -9,7 +9,7 @@
     },
     {
         "day": 2,
-        "id": 22,
+        "id": "22",
         "name": "Atty. Archill Niña Faller-Capistrano",
         "position": "Assistant Professor, University of the Philippines - Cebu",
         "imageUrl": "/images/speakers/Capistrano.png",
@@ -18,7 +18,7 @@
     
     {
         "day": 2,
-        "id": 23,
+        "id": "23",
         "name": "Dr. Manuel R. Enverga III",
         "position": "Director of European Studies Program, Ateneo de Manila University",
         "imageUrl": "/images/speakers/Enverga.jpg",
