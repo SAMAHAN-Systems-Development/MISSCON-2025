@@ -10,12 +10,7 @@ const FaqPage = () => {
     <div className="relative w-full h-full min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src={BackgroundImage}
-          alt="background"
-          fill
-          className=""
-        />
+        <Image src={BackgroundImage} alt="background" fill className="" />
       </div>
       {/* Foreground Image Section (Top) */}
       <div className="relative w-full h-36 overflow-hidden">
@@ -59,7 +54,7 @@ const FaqPage = () => {
           className="absolute inset-0 opacity-80"
           style={{
             background:
-              'linear-gradient(to top, rgb(256,256,256) 10%, transparent)',
+              'linear-gradient(to top, rgb(198,203,210) 10%, transparent)',
           }}
         ></div>
       </div>

@@ -1,11 +1,12 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import React from 'react';
 import CountdownTimer from '@/components/Countdown';
 // import WBup from '../../../public/images/WB-art-2-up.png';
 import BackgroundImage from '../../../public/images/AboutCountdownBg.png';
 import MissconLogo from '../../../public/images/WB-misscon-text.png';
+import MainButton from '@/components/ui/MainButton';
 import DownloadPrimerButton from '../ui/DownloadPrimerButton';
 
 export default function AboutCountdown() {
@@ -26,7 +27,7 @@ export default function AboutCountdown() {
         <Image
           src="/images/WB-art-2-up.png"
           alt="Foreground Art"
-          width={1920}
+          width={3000}
           height={300}
           className="object-cover"
         />
@@ -37,10 +38,17 @@ export default function AboutCountdown() {
         className="relative z-30 text-center px-4 md:px-12 lg:px-20 flex flex-col items-center justify-center h-full text-white"
         id="about"
       >
-        <h1 className="text-4xl md:text-6xl lg:text-8xl font-pirata_one">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-pirata_one -mb-1">
           About
         </h1>
-        <Image src={MissconLogo} alt={'foreground'} height={130} width={130} />
+        <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-[130px] xl:h-[130px]">
+          <Image
+            src={MissconLogo}
+            alt="foreground"
+            fill
+            className="object-contain"
+          />
+        </div>
 
         <div className="flex flex-col items-center mt-28 md:mt-44 w-5/6 lg:w-4/6 font-gill_sans">
           <p className="mb-8 text-base md:text-lg lg:text-2xl text-center font-gill_sans">
@@ -68,9 +76,9 @@ export default function AboutCountdown() {
           <div>
             <CountdownTimer />
           </div>
-          <button className="bg-violet py-2 md:py-3 px-6 md:px-12 rounded-xl text-lg md:text-2xl lg:text-4xl font-pirata_one mt-6">
-            <Link href="http://tiny.cc/f8qtzz">register here</Link>
-          </button>
+          <div className="flex justify-center mt-8">
+            <MainButton href="http://tiny.cc/f8qtzz" text="register here" />
+          </div>
         </div>
       </div>
     </div>
