@@ -89,7 +89,7 @@ export default function MeetTheDevelopers() {
 
       {/* Page Title */}
       <div
-        className="text-4xl sm:text-5xl lg:text-7xl text-center mt-10 mb-4 md:mb-6 font-pirata_one leading-10 lg:leading-snug relative z-10"
+        className="text-4xl sm:text-5xl lg:text-7xl text-center mt-5 smd:mt-10 mb-6 font-pirata_one leading-10 lg:leading-snug relative z-10"
         style={{
           background: 'linear-gradient(to bottom, #DE1063, #5847BA)',
           WebkitBackgroundClip: 'text',
@@ -97,6 +97,29 @@ export default function MeetTheDevelopers() {
         }}
       >
         Meet the Developers
+      </div>
+
+      {/* Body Text */}
+      <div className="text-center text-dark-violet font-gill_sans font-light text-sm sm:text-base lg:text-lg xl:text-xl mx-6 md:mx-12 lg:mx-20 mb-5 relative z-10">
+        <p className="font-semibold">
+          Made possible by SAMAHAN Systems Development
+        </p>
+        <p className="mt-2">
+          SAMAHAN Systems Development is dedicated to creating innovative
+          solutions that empower the Ateneo community.
+        </p>
+        <p className="inline-block mt-2">
+          Follow us on{' '}
+          <a
+            href="https://www.facebook.com/SAMAHANSysDev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-violet font-medium hover:underline hover:text-dark-violet inline-block"
+          >
+            Facebook
+          </a>{' '}
+          for more.
+        </p>
       </div>
 
       {/* Cards Layout */}
@@ -109,6 +132,7 @@ export default function MeetTheDevelopers() {
               name={dev.name}
               position={dev.position}
               event={dev.event}
+              type="developer"
             />
           ))}
         </div>
