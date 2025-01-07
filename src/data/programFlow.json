@@ -1,0 +1,494 @@
+[
+  {
+    "day": "0",
+    "date": "February 24",
+    "sections": [
+      {
+        "title": "Day 0 - Afternoon",
+        "rows": [
+          { "time": "2:00 PM", "event": "Hotel Check-in", "dressCode": "N/A" }
+        ]
+      },
+      {
+        "title": "Day 0 - Evening",
+        "rows": [
+          {
+            "time": "5:00 - 5:30 PM",
+            "event": "Call Time and Registration",
+            "dressCode": "Organization Shirt"
+          },
+          {
+            "time": "5:30 – 5:35 PM",
+            "event": "Preliminaries",
+            "details": ["Opening Prayer", "National Anthem"],
+            "dressCode": ""
+          },
+          {
+            "time": "5:35 – 5:40 PM",
+            "event": "Opening Spiels",
+            "dressCode": ""
+          },
+          {
+            "time": "5:40 – 5:45 PM",
+            "event": "Opening Remarks",
+            "details": {
+              "speaker": "Fr. Karel San Juan, SJ",
+              "position": "President",
+              "organization": "Ateneo de Davao University"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "5:45 – 6:00 PM",
+            "event": "The Genesis of the Mindanao International Studies Society Convention",
+            "details": {
+              "speaker": "Fr. Eric Anthony S. Escandor, SJ",
+              "position": "Chair, International Studies Department",
+              "organization": "Ateneo de Davao University"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "6:00 – 6:40 PM",
+            "event": "Introduction of MISS Member-Schools and their Organizations",
+            "details": [
+              "Ateneo de Davao University",
+              "Ateneo de Zamboanga University",
+              "Liceo de Cagayan University",
+              "Mindanao Kokusai Daigaku",
+              "RC Al Khwarizmi International College Foundation Inc.",
+              "University of Southern Mindanao – Main Campus",
+              "Xavier University"
+            ],
+            "dressCode": ""
+          },
+          {
+            "time": "6:40 – 6:45 PM",
+            "event": "Prayer for the Food",
+            "dressCode": ""
+          },
+          {
+            "time": "6:45 – 7:30 PM",
+            "event": "Socials Night Dinner",
+            "dressCode": ""
+          },
+          { "time": "7:30 – 7:45 PM", "event": "Activity", "dressCode": "" },
+          {
+            "time": "7:45 – 7:50 PM",
+            "event": "Closing Spiels",
+            "dressCode": ""
+          },
+          {
+            "time": "7:50 – 7:55 PM",
+            "event": "Photo Opportunity",
+            "dressCode": ""
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "day": "1",
+    "date": "February 25",
+    "sections": [
+      {
+        "title": "Day 1 - Morning",
+        "rows": [
+          {
+            "time": "7:15 - 7:30 AM",
+            "event": "Event Preparations",
+            "dressCode": "Business Casual"
+          },
+          {
+            "time": "7:15 - 7:30 AM",
+            "event": "Call Time for Assembly of Delegates",
+            "dressCode": ""
+          },
+          { "time": "7:30 - 8:30 AM", "event": "Breakfast", "dressCode": "" },
+          {
+            "time": "9:30 - 9:40 AM",
+            "event": "Preliminaries",
+            "details": ["Opening Prayer", "National Anthem"],
+            "dressCode": ""
+          },
+          {
+            "time": "9:40 - 9:45 AM",
+            "event": "Opening Spiels",
+            "dressCode": ""
+          },
+          {
+            "time": "9:45 - 9:50 AM",
+            "event": "Opening Remarks",
+            "details": {
+              "speaker": "Ms. Krizza Janica B. Mahinay",
+              "position": "Chair, International Studies Department",
+              "organization": "Ateneo de Davao University"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "9:50 - 9:55 AM",
+            "event": "Introduction to the Plenary Session and Speakers",
+            "details": {
+              "speaker": "Day 1 Theme: Reconnecting Mindanao International Studies",
+              "position": "",
+              "organization": ""
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "9:55 - 10:25 PM",
+            "event": "Plenary Session #1: International Studies from the Pheriphery: The Past, Present, and Prospects of Mindanao International Studies Programs",
+            "details": {
+              "speaker": "Mr. John Harvey D. Games, MA",
+              "position": "Assistant Professor IV, International Studies Department",
+              "organization": "Ateneo de Davao University"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "10:25 - 10:35 AM",
+            "event": "Snacks",
+            "dressCode": ""
+          },
+          {
+            "time": "10:35 - 11:05 PM",
+            "event": "Plenary Session #2: Decolonizing International Studies through Mindanao",
+            "details": {
+              "speaker": "Nassef Manalibang Adiong, PhD",
+              "positions": [
+                {
+                  "position": "Director II, Policy Research and Legal Services",
+                  "organization": "BARMM Bangsamoro Transition Authority"
+                },
+                {
+                  "position": "Professional Lecturer III,",
+                  "organization": "Asian Center, University of the Philippines - Diliman"
+                }
+              ]
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "11:05 - 11:35 AM",
+            "event": "Open Forum",
+            "dressCode": ""
+          },
+          {
+            "time": "11:35 - 11:40 AM",
+            "event": "Announcements and Closing Spiels",
+            "dressCode": ""
+          },
+          {
+            "time": "11:40 - 11:45 AM",
+            "event": "Prayer for Lunch",
+            "dressCode": ""
+          },
+          {
+            "time": "11:45 - 12:45 PM",
+            "event": "Lunch",
+            "dressCode": ""
+          }
+        ]
+      },
+      {
+        "title": "Day 1 - Afternoon",
+        "rows": [
+          {
+            "time": "12:45 - 1:00 PM",
+            "event": "Call Time for Assembly of Delegates",
+            "dressCode": "Business Casual"
+          },
+          {
+            "time": "1:00 - 1:15 PM",
+            "event": "Ice Breaker",
+            "dressCode": ""
+          },
+          {
+            "time": "1:15 - 4:00 PM",
+            "event": "Activity: Weaving our Stories Together",
+            "details": {
+              "speaker": "Ms. Hazel Meghan Hamille",
+              "position": "Assistant Professor",
+              "organization": "Ateneo de Davao University"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "4:00 - 5:45 PM",
+            "event": "Free Time",
+            "dressCode": ""
+          }
+        ]
+      },
+      {
+        "title": "Day 1 - Evening",
+        "rows": [
+          {
+            "time": "5:45 – 6:00 PM",
+            "event": "Call Time for Delegates",
+            "dressCode": "Conference Shirt"
+          },
+          {
+            "time": "6:00 - 6:05 PM",
+            "event": "Opening Spiels",
+            "dressCode": ""
+          },
+          {
+            "time": "6:05 - 6:15 PM",
+            "event": "Message/s of Support",
+            "details": {
+              "speaker": "Faculty/Guest Speaker",
+              "position": "",
+              "organization": ""
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "6:15 - 6:20 PM",
+            "event": "Prayer for Dinner",
+            "dressCode": ""
+          },
+          {
+            "time": "6:20 - 7:20 PM",
+            "event": "Socials Night Dinner",
+            "dressCode": ""
+          },
+          {
+            "time": "7:20 - 8:05 PM",
+            "event": "Presentations per School",
+            "details": [
+              "Xavier University",
+              "University of Southern Mindanao – Main Campus",
+              "RC Al Khwarizmi International College Foundation Inc.",
+              "Mindanao Kokusai Daigaku",
+              "Liceo de Cagayan University",
+              "Ateneo de Zamboanga University",
+              "Ateneo de Davao University"
+            ],
+            "dressCode": ""
+          },
+          {
+            "time": "8:05 - 8:10 PM",
+            "event": "Photo Opportunity",
+            "dressCode": ""
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "day": "2",
+    "date": "February 26",
+    "sections": [
+      {
+        "title": "Day 2 - Morning",
+        "rows": [
+          {
+            "time": "7:15 - 7:30 AM",
+            "event": "Event Preparations",
+            "dressCode": "Business Casual"
+          },
+          {
+            "time": "7:15 - 7:30 AM",
+            "event": "Call Time for Assembly of Delegates",
+            "dressCode": ""
+          },
+          { "time": "7:30 - 8:30 AM", "event": "Breakfast", "dressCode": "" },
+          {
+            "time": "9:00 - 9:10 AM",
+            "event": "Preliminaries",
+            "details": ["Opening Prayer"],
+            "dressCode": ""
+          },
+          {
+            "time": "9:10 - 9:15 AM",
+            "event": "Opening Spiels",
+            "dressCode": ""
+          },
+          {
+            "time": "9:15 - 9:50 AM",
+            "event": "Introduction to the Plenary Session and Speakers",
+            "details": {
+              "speaker": "Day 2 Theme: Reconnecting with the Global Realities, Uncertainties, and Frontiers",
+              "position": "",
+              "organization": ""
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "9:20 - 9:50 PM",
+            "event": "Plenary Session #3: Regional and Global Security Trends and Outlook",
+            "details": {
+              "speaker": "Mr. Lucio Blanco Pitlo, III, MA",
+              "positions": [
+                {
+                  "position": "President",
+                  "organization": "Philippine Association for Chinese Studies"
+                },
+                {
+                  "position": "Research Fellow",
+                  "organization": "Asia-Pacific Pathways to Progress Foundation"
+                }
+              ]
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "9:50 - 10:00 AM",
+            "event": "Open Forum",
+            "dressCode": ""
+          },
+          {
+            "time": "10:00 - 10:30 PM",
+            "event": "Plenary Session #4: Gender and International Security",
+            "details": {
+              "speaker": "Atty. Archill Niña Faller-Capistrano",
+              "position": "Assistant Professor",
+              "organization": "University of the Philippines - Cebu"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "10:30  - 10:40 AM",
+            "event": "Open Forum and Snacks",
+            "dressCode": ""
+          },
+          {
+            "time": "10:40 - 11:10 PM",
+            "event": "Plenary Session #5: International Relatins and Social Media",
+            "details": {
+              "speaker": "Dr. Manuel R. Enverga III",
+              "position": "Director of European Studies Program",
+              "organization": "Ateneo de Manila University"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "11:10  - 11:20 AM",
+            "event": "Open Forum",
+            "dressCode": ""
+          },
+          {
+            "time": "11:20 - 11:25 AM",
+            "event": "Prayer for Lunch",
+            "dressCode": ""
+          },
+          {
+            "time": "11:25 - 12:45 PM",
+            "event": "Lunch",
+            "dressCode": ""
+          }
+        ]
+      },
+      {
+        "title": "Day 2 - Afternoon",
+        "rows": [
+          {
+            "time": "12:45 - 1:00 PM",
+            "event": "Call Time for Assembly of Delegates",
+            "dressCode": "Business Casual"
+          },
+          {
+            "time": "1:00 - 1:15 PM",
+            "event": "Ice Breaker",
+            "dressCode": ""
+          },
+          {
+            "time": "1:15 - 4:00 PM",
+            "event": "Activity",
+            "details": {
+              "speaker": "Ms. Hazel Meghan Hamille",
+              "position": "Assistant Professor",
+              "organization": "Ateneo de Davao University"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "4:00 - 5:30 PM",
+            "event": "Free Time",
+            "dressCode": ""
+          }
+        ]
+      },
+      {
+        "title": "Day 2 - Evening",
+        "rows": [
+          {
+            "time": "5:30 – 5:45 PM",
+            "event": "Call Time for Delegates",
+            "dressCode": "National Costume"
+          },
+          {
+            "time": "5:45 - 5:50 PM",
+            "event": "Opening Spiels",
+            "dressCode": ""
+          },
+          {
+            "time": "5:50 - 6:00 PM",
+            "event": "Message/s of Support",
+            "details": {
+              "speaker": "Faculty/Guest Speaker",
+              "position": "",
+              "organization": ""
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "6:00 - 6:05 PM",
+            "event": "Prayer for Dinner",
+            "dressCode": ""
+          },
+          {
+            "time": "6:05 - 7:05 PM",
+            "event": "Socials Night Dinner",
+            "dressCode": ""
+          },
+          {
+            "time": "7:05 - 7:35 PM",
+            "event": "Awarding Ceremony",
+            "dressCode": ""
+          },
+          {
+            "time": "7:35 - 7:45 PM",
+            "event": "Turn-Over of MISSCON Hosting",
+            "dressCode": ""
+          },
+          {
+            "time": "7:45 - 7:50 PM",
+            "event": "Closing Remarks",
+            "details": {
+              "speaker": "Ms. Hannah Nicole Bitana",
+              "position": "Executive Director",
+              "organization": "Mindanao International Studies Society Convention (MISSCON) 2025"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "7:50 - 8:00 PM",
+            "event": "Photo Opportunity and Egress",
+            "dressCode": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "3",
+    "date": "February 27",
+    "sections": [
+      {
+        "title": "Day 2 - Morning",
+        "rows": [
+          {
+            "time": "11:00 AM",
+            "event": "Hotel Check-out",
+            "dressCode": "N/A"
+          }
+        ]
+      }
+    ]
+  }
+]

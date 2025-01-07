@@ -25,13 +25,50 @@ export default function ProgramFlow() {
     console.log('speakersDayXOverlay: ', speakersDayXOverlay);
   }, [isSpeakerOverlayOpen, speakersDayXOverlay]);
 
+  useEffect(() => {
+    // Toggle scrolling on the body element
+    if (isSpeakerOverlayOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    // Cleanup to prevent side effects
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isSpeakerOverlayOpen]);
+
+  const [backgroundSize, setBackgroundSize] = useState('100%'); // Default size
+
+  useEffect(() => {
+    const updateBackgroundSize = () => {
+      if (window.innerWidth < 640) {
+        setBackgroundSize('2000%');
+      } else if (window.innerWidth < 1024) {
+        setBackgroundSize('200%');
+      } else {
+        setBackgroundSize('100%');
+      }
+    };
+
+    // Set initial background size
+    updateBackgroundSize();
+
+    // Add resize event listener
+    window.addEventListener('resize', updateBackgroundSize);
+
+    // Cleanup event listener on unmount
+    return () => window.removeEventListener('resize', updateBackgroundSize);
+  }, []);
+
   return (
     <div className="relative">
       <div
         className={`relative w-full h-full`}
         style={{
           backgroundImage: `url(${bg})`,
-          backgroundSize: '600%',
+          backgroundSize: backgroundSize,
           backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
         }}
