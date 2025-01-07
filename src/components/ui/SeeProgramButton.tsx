@@ -37,7 +37,7 @@ const SeeProgramButton: React.FC<SeeProgramButtonProps> = ({ day }) => {
             className="relative flex items-center justify-center w-full h-7 lg:h-14 p-2 py-0 sm:py-4 text-center cursor-pointer text-white transition-colors duration-300 lg:gap-2 gap-1 "
             onClick={handleAccordionClick}
           >
-            <div className="font-gill_sans text-sm sm:text-lg lg:text-2xl lg:max-w-2xl  ">
+            <div className="font-gill_sans -mb-[4px] lg:-mb-[6px] xl:-mb-[8px] text-sm sm:text-lg lg:text-2xl lg:max-w-2xl">
               SEE PROGRAM
             </div>
             <ImArrowRight
