@@ -39,8 +39,6 @@ export default function ProgramFlow() {
     };
   }, [isSpeakerOverlayOpen]);
 
-  const closeButtonMobile = '/images/X with BG.png';
-
   const [backgroundSize, setBackgroundSize] = useState('100%'); // Default size
 
   useEffect(() => {
