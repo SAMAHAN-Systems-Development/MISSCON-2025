@@ -14,28 +14,14 @@ export type SpeakerData = {
 
 const SpeakerList: React.FC<{
   speakersData: SpeakerData[];
-  setSpeakersDayXOverlay: React.Dispatch<React.SetStateAction<number>>;
   activeSpeakerId: number | null;
   setActiveSpeakerId: React.Dispatch<React.SetStateAction<number | null>>;
-}> = ({
-  speakersData,
-  setSpeakersDayXOverlay,
-  activeSpeakerId,
-  setActiveSpeakerId,
-}) => {
+}> = ({ speakersData, activeSpeakerId, setActiveSpeakerId }) => {
   const bg = '/images/pagebg.png';
 
   // Toggle active speaker
-  const handleSpeakerClick = (id: number, day: number) => {
-    const isBelowLg = window.innerWidth < 992;
-
+  const handleSpeakerClick = (id: number) => {
     setActiveSpeakerId((prev) => (prev === id ? null : id));
-    if (isBelowLg) {
-      console.log('speakersData[0].day:', speakersData[0].day);
-      setSpeakersDayXOverlay(day);
-    } else {
-      setSpeakersDayXOverlay(-1);
-    }
   };
 
   const [detailCardVisibility, setDetailCardVisibility] = useState(false);

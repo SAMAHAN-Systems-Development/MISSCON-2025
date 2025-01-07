@@ -6,49 +6,19 @@ import lines from '../../../public/images/BG.png';
 
 export default function ProgramFlow() {
   const bg = '/images/pagebg.png';
-  // const lines = '/images/BG.png';
 
-  const [speakersDayXOverlay, setSpeakersDayXOverlay] = useState<number>(-1);
-  const [isSpeakerOverlayOpen, setSpeakerOverlayOpen] = useState(false);
   const [activeSpeakerId, setActiveSpeakerId] = useState<number | null>(null);
-
-  useEffect(() => {
-    if (speakersDayXOverlay !== -1) {
-      setSpeakerOverlayOpen(true);
-    } else {
-      setSpeakerOverlayOpen(false);
-    }
-  }, [speakersDayXOverlay]);
-
-  useEffect(() => {
-    console.log('overlay open?: ', isSpeakerOverlayOpen);
-    console.log('speakersDayXOverlay: ', speakersDayXOverlay);
-  }, [isSpeakerOverlayOpen, speakersDayXOverlay]);
-
-  useEffect(() => {
-    // Toggle scrolling on the body element
-    if (isSpeakerOverlayOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-
-    // Cleanup to prevent side effects
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isSpeakerOverlayOpen]);
 
   const [backgroundSize, setBackgroundSize] = useState('100%'); // Default size
 
   useEffect(() => {
     const updateBackgroundSize = () => {
-      if (window.innerWidth < 640) {
-        setBackgroundSize('2000%');
-      } else if (window.innerWidth < 1024) {
-        setBackgroundSize('200%');
+      if (window.innerWidth < 680) {
+        setBackgroundSize('2200%');
+      } else if (window.innerWidth < 992) {
+        setBackgroundSize('1200%');
       } else {
-        setBackgroundSize('100%');
+        setBackgroundSize('700%');
       }
     };
 
@@ -95,21 +65,18 @@ export default function ProgramFlow() {
         </div>
         <EventDayDetails
           dayNumber="0"
-          setSpeakersDayXOverlay={setSpeakersDayXOverlay}
           activeSpeakerId={activeSpeakerId}
           setActiveSpeakerId={setActiveSpeakerId}
         ></EventDayDetails>
         <div id="speakers">
           <EventDayDetails
             dayNumber="1"
-            setSpeakersDayXOverlay={setSpeakersDayXOverlay}
             activeSpeakerId={activeSpeakerId}
             setActiveSpeakerId={setActiveSpeakerId}
           ></EventDayDetails>
         </div>
         <EventDayDetails
           dayNumber="2"
-          setSpeakersDayXOverlay={setSpeakersDayXOverlay}
           activeSpeakerId={activeSpeakerId}
           setActiveSpeakerId={setActiveSpeakerId}
         ></EventDayDetails>
