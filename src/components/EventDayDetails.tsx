@@ -6,21 +6,19 @@ import { useEffect, useState } from 'react';
 
 interface EventDayDetailsProps {
   dayNumber: string;
-  setSpeakersDayXOverlay: React.Dispatch<React.SetStateAction<number>>;
-  activeSpeakerId: number | null;
-  setActiveSpeakerId: React.Dispatch<React.SetStateAction<number | null>>;
+  activeSpeakerId: string | null;
+  setActiveSpeakerId: React.Dispatch<React.SetStateAction<string | null>>;
 }
 
 export default function EventDayDetails({
   dayNumber,
-  setSpeakersDayXOverlay,
   activeSpeakerId,
   setActiveSpeakerId,
 }: EventDayDetailsProps) {
   const [speakersData, setSpeakersData] = useState<SpeakerData[] | null>(null);
 
   useEffect(() => {
-    if (dayNumber !== '0') {
+    if (dayNumber) {
       import(`@/data/speakersDetailsDay${dayNumber}.json`).then((data) =>
         setSpeakersData(data.default)
       );
@@ -45,7 +43,6 @@ export default function EventDayDetails({
       {speakersData !== null ? (
         <SpeakerList
           speakersData={speakersData}
-          setSpeakersDayXOverlay={setSpeakersDayXOverlay}
           activeSpeakerId={activeSpeakerId}
           setActiveSpeakerId={setActiveSpeakerId}
         ></SpeakerList>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export type SpeakerData = {
   day: number;
-  id: number;
+  id: string;
   name: string;
   position: string;
   imageUrl: string;
@@ -14,28 +14,14 @@ export type SpeakerData = {
 
 const SpeakerList: React.FC<{
   speakersData: SpeakerData[];
-  setSpeakersDayXOverlay: React.Dispatch<React.SetStateAction<number>>;
-  activeSpeakerId: number | null;
-  setActiveSpeakerId: React.Dispatch<React.SetStateAction<number | null>>;
-}> = ({
-  speakersData,
-  setSpeakersDayXOverlay,
-  activeSpeakerId,
-  setActiveSpeakerId,
-}) => {
+  activeSpeakerId: string | null;
+  setActiveSpeakerId: React.Dispatch<React.SetStateAction<string | null>>;
+}> = ({ speakersData, activeSpeakerId, setActiveSpeakerId }) => {
   const bg = '/images/pagebg.png';
 
   // Toggle active speaker
-  const handleSpeakerClick = (id: number, day: number) => {
-    const isBelowLg = window.innerWidth < 992;
-
+  const handleSpeakerClick = (id: string) => {
     setActiveSpeakerId((prev) => (prev === id ? null : id));
-    if (isBelowLg) {
-      console.log('speakersData[0].day:', speakersData[0].day);
-      setSpeakersDayXOverlay(day);
-    } else {
-      setSpeakersDayXOverlay(-1);
-    }
   };
 
   const [detailCardVisibility, setDetailCardVisibility] = useState(false);
@@ -54,15 +40,11 @@ const SpeakerList: React.FC<{
 
   return (
     <div className="flex flex-col items-center space-y-8">
-      <div className="grid grid-cols-1 xsm:grid-cols-2 smd:grid-cols-3 justify-center gap-6 lg:gap-8">
+      <div className="p-10 xsm:p-0 flex flex-wrap justify-center gap-6 lg:gap-8">
         {speakersData.map((speaker, index) => {
           let state: 'normal' | 'active' | 'inactive' = 'normal';
           if (activeSpeakerId) {
-            if (
-              activeSpeakerId
-                .toString()
-                .startsWith(speaker.id.toString().slice(0, 1))
-            ) {
+            if (activeSpeakerId.startsWith(speaker.id.slice(0, 1))) {
               if (activeSpeakerId === speaker.id) {
                 state = 'active';
               } else if (activeSpeakerId !== null) {
