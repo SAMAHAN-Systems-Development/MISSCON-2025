@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   const missconLogo = '/images/MissconLogo.png';
@@ -139,17 +140,25 @@ export default function Footer() {
               </div>
             </a>
           </div>
-          <div className="">
+          <div className="z-40">
             <p className="text-center">
               <span className="font-semibold text-center">Organized by: </span>
               Ateneo International Studies Students Organization
             </p>
           </div>
 
-          <div className="mb-12">
+          <div className="mb-12 z-40">
             <p className="text-center">
               <span className="font-semibold">Developed by: </span>
-              SAMAHAN Systems Development
+              <Link
+                href="https://www.facebook.com/SAMAHANSysDev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="hover:underline">
+                  SAMAHAN Systems Development
+                </span>
+              </Link>
             </p>
           </div>
         </div>
@@ -352,7 +361,15 @@ export default function Footer() {
           <div className="absolute bottom-5 right-5 text-white font-gill_sans">
             <p>
               Developed by:{' '}
-              <span className="font-bold">SAMAHAN Systems Development</span>
+              <span className="font-bold hover:underline">
+                <Link
+                  href="https://www.facebook.com/SAMAHANSysDev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SAMAHAN Systems Development
+                </Link>
+              </span>
             </p>
           </div>
         </div>
