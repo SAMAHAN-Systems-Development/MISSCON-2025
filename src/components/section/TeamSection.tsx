@@ -5,12 +5,15 @@ import Card from '@/components/ui/Card';
 
 const Team = () => {
   return (
-    <div className="min-h-screen justify-items-center py-6 px-8 md:py-16 md:px-28 lg:py-20 lg:px-56">
+    <div className="min-h-screen justify-items-center mt-5 smd:mt-10 pb-6 md:pb-16 px-8 md:px-14 lg:pb-20 lg:px-28">
       {teamData.category.map((section, index) => (
-        <div key={index} className="mb-11 md:mb-40 lg:mb-48 w-11/12">
+        <div
+          key={index}
+          className="mb-16 lg:mb-28 w-11/12 max-w-[1150px] flex flex-col items-center"
+        >
           {/* Section Title */}
           <h2
-            className="text-4xl sm:text-5xl lg:text-7xl text-center mb-2 md:mb-6 font-pirata_one leading-10 lg:leading-snug"
+            className="text-4xl sm:text-5xl lg:text-7xl text-center mb-2 smd:mb-7 font-pirata_one leading-10 lg:leading-snug"
             style={{
               background: 'linear-gradient(to bottom, #DE1063, #5847BA)',
               WebkitBackgroundClip: 'text',
@@ -20,16 +23,12 @@ const Team = () => {
             {section.title}
           </h2>
           {/* Section Description */}
-          <p className="md:text-2xl lg:text-3xl text-xl text-dark-violet font-gill_sans text-center mb-14 lg:mb-36">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-dark-violet font-gill_sans text-center mb-5 lg:mb-16">
             {section.description}
           </p>
           {/* Members*/}
           <div
-            className={`grid ${
-              section.members.length % 3 === 0
-                ? 'grid-cols-2 gap-y-14 md:gap-x-24 lg:gap-y-24 justify-items-center'
-                : 'grid-cols-2 justify-items-center gap-x-8 gap-y-14 md:gap-x-24 lg:gap-y-24 lg:gap-x-60'
-            }`}
+            className={`grid grid-cols-2 justify-items-center gap-y-8 md:gap-y-10 lg:gap-y-12 xl:gap-y-14 w-[285px] 2xsm:w-[315px] xsm:w-[420px] smd:w-[480px] md:w-[520px] lg:w-[600px] xl:w-[800px]`}
           >
             {section.members.map((member, index) => (
               <div

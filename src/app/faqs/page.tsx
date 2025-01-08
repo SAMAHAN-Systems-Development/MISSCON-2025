@@ -4,18 +4,23 @@ import Image from 'next/image';
 import React from 'react';
 
 const FaqPage = () => {
+  const bg = '/images/pagebg.png';
   return (
-    <div className="relative w-full h-full min-h-screen">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image src={'images/BG-Plain.png'} alt="background" fill className="" />
-      </div>
+    <div
+      className="relative w-full h-full min-h-screen"
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: '400%',
+        backgroundPosition: 'top',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       {/* Foreground Image Section (Top) */}
       <div className="relative w-full h-36 overflow-hidden">
         <Image
           fill
           src={'images/BG.png'}
-          className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-28px]"
+          className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-80px]"
           alt={'foreground'}
         />
         <div
@@ -27,15 +32,15 @@ const FaqPage = () => {
         ></div>
       </div>
       {/* Content */}
-      <div className="relative z-10 text-center py-20 lg:py-32 px-4 sm:px-8">
-        <h1 className="flex justify-center text-5xl md:text-7xl mb-6 font-pirata_one text-violet">
+      <div className="relative z-10 text-center mt-5 smd:mt-10 pb-20 lg:pb-32 px-4 sm:px-8">
+        <h1 className="flex justify-center text-4xl sm:text-5xl lg:text-7xl leading-10 lg:leading-snug mb-6 font-pirata_one text-violet">
           Frequently Asked Questions
         </h1>
         <h2 className="text-3xl md:text-4xl p-8 font-pirata_one text-violet">
           General FAQs
         </h2>
         <AccordionComponent type="general" />
-        <h2 className="text-3xl md:text-4xl p-8 font-pirata_one text-violet">
+        <h2 className="text-3xl md:text-4xl pt-24 pb-8 font-pirata_one text-violet">
           Sponsorship FAQs
         </h2>
         <AccordionComponent type="sponsorship" />
