@@ -11,7 +11,7 @@ export default function MenuNavButtons({ text, href, onClick }: ButtonProps) {
   return (
     <Link
       href={href}
-      className="relative group w-full h-[70px] block"
+      className="relative group w-full h-16 xsm:h-[70px] block"
       onClick={onClick}
     >
       <div
@@ -25,8 +25,8 @@ export default function MenuNavButtons({ text, href, onClick }: ButtonProps) {
       ></div>
       <div
         className="
-          relative h-full flex items-center font-inandan text-white
-          text-4xl pl-16 xl:pl-24 group-hover:text-light-violet transition-colors duration-300
+          relative h-full flex items-center font-gill_sans text-white
+          text-2xl xsm:text-3xl pl-16 xl:pl-24 group-hover:text-light-violet transition-colors duration-300
         "
       >
         {text}
