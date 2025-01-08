@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <>
       <div
-        className="relative xl:hidden flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
+        className="relative lg:hidden flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
         style={{
           backgroundImage: `url(${wbbg2})`,
           backgroundSize: '1100%',
@@ -84,28 +84,26 @@ export default function Footer() {
               Meet the Developers
             </a>
           </div>
+
           <div className="h-[2px] w-72 bg-violet my-9 "></div>
-          <div className="font-medium text-xl mb-4">ADDRESS</div>
-          <div className="text-sm z-40 flex flex-col items-center w-40 text-center mb-9">
-            <p>6/F Community Center of the First Companions, </p>
-            <p>Ateneo de Davao University,</p>
-            <p>Roxas Ave, Poblacion District, Davao City, 8000 Davao del Sur</p>
-          </div>
 
-          <div className="font-medium text-xl mb-2">Telephone</div>
-          <div className="text-sm z-40 flex flex-col items-center w-40 text-center mb-7">
-            <p>+63 921 392 4001</p>
-          </div>
-
-          <div className="font-medium text-xl mb-2">Email</div>
-          <div className="text-sm z-40 flex flex-col items-center w-40 text-center mb-7">
+          <div className="font-medium text-xl mb-2">SOCIALS</div>
+          <div className="z-40 flex  items-center gap-x-4 mb-16">
             <a href="mailto:misscon2025@gmail.com" className="w-min">
-              <p>misscon2025@gmail.com</p>
+              <div className="flex gap-x-2">
+                <div className="flex items-center justify-center w-[26px] h-[26px]">
+                  <div className="relative w-[26px] h-[26px]">
+                    <Image
+                      draggable={false}
+                      fill
+                      src={emailIcon}
+                      className="absolute object-cover object-center"
+                      alt="/"
+                    />
+                  </div>
+                </div>
+              </div>
             </a>
-          </div>
-
-          <div className="font-medium text-xl mb-2">Socials</div>
-          <div className="z-40 flex  items-center mb-32 gap-x-4">
             <a href="https://www.instagram.com/misscon_2025/" className="w-min">
               <div className="flex gap-x-2">
                 <div className="flex items-center justify-center w-6 h-6">
@@ -140,6 +138,12 @@ export default function Footer() {
               </div>
             </a>
           </div>
+          <div className="font-medium text-xl mb-2">ADDRESS</div>
+          <div className="text-sm z-40 flex flex-col items-center w-40 text-center mb-32">
+            <p>Student Office 7, Arrupe Hall, Ateneo de Davao University,</p>
+            <p>E. Jacinto St., Poblacion, Davao City, Philippines 8000</p>
+          </div>
+
           <div className="z-40">
             <p className="text-center">
               <span className="font-semibold text-center">Organized by: </span>
@@ -177,7 +181,7 @@ export default function Footer() {
       </div>
 
       <div
-        className="relative hidden xl:flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
+        className="relative hidden lg:flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
         style={{
           backgroundImage: `url(${wbbg2})`,
           backgroundSize: '150%',
@@ -193,8 +197,8 @@ export default function Footer() {
             backgroundPosition: 'center',
           }}
         ></div>
-        <div className="h-min mt-16 flex justify-center items-center px-10 xl:gap-x-16 2xl:gap-x-28 ">
-          <div className="relative w-72 h-72">
+        <div className="h-min mt-16 flex justify-center items-center px-10 gap-x-12 xl:gap-x-16 2xl:gap-x-28 ">
+          <div className="relative w-56 h-56 xl:w-72 xl:h-72">
             <Image
               draggable={false}
               fill
@@ -203,15 +207,17 @@ export default function Footer() {
               alt="/"
             />
           </div>
-          <div className="h-full w-max flex items-center 2xl:gap-x-10">
+          <div className="h-full w-max flex items-center gap-x-14 2xl:gap-x-10">
             <div className="h-max w-max flex flex-col z-40">
-              <div className=" font-medium text-3xl mb-4 z-40">CONTACT</div>
+              <div className=" font-medium text-2xl xl:text-3xl mb-4 z-40">
+                CONTACT
+              </div>
 
               <div className="flex flex-col gap-y-3">
                 <a href="mailto:misscon2025@gmail.com" className="w-min">
                   <div className="flex gap-x-2">
-                    <div className="flex items-center">
-                      <div className="relative w-6 h-6">
+                    <div className="flex items-center justify-center w-5 h-5 xl:w-6 xl:h-6">
+                      <div className="relative w-5 h-5 xl:w-6 xl:h-6">
                         <Image
                           draggable={false}
                           fill
@@ -221,7 +227,7 @@ export default function Footer() {
                         />
                       </div>
                     </div>
-                    <div className="flex items-center leading-none mb-0 pb-0 underline text-xl z-40">
+                    <div className="flex items-center leading-none mb-0 pb-0 hover:underline text-lg xl:text-xl z-40">
                       misscon2025@gmail.com
                     </div>
                   </div>
@@ -232,8 +238,8 @@ export default function Footer() {
                   className="w-min"
                 >
                   <div className="flex gap-x-2">
-                    <div className="flex items-center justify-center w-6 h-6">
-                      <div className="relative w-6 h-6">
+                    <div className="flex items-center justify-center w-5 h-5 xl:w-6 xl:h-6">
+                      <div className="relative w-5 h-5 xl:w-6 xl:h-6">
                         <Image
                           draggable={false}
                           fill
@@ -244,7 +250,7 @@ export default function Footer() {
                       </div>
                     </div>
 
-                    <div className="flex items-center leading-none mb-0 pb-0 underline text-xl z-40">
+                    <div className="flex items-center leading-none mb-0 pb-0 hover:underline text-lg xl:text-xl z-40">
                       @misscon_2025
                     </div>
                   </div>
@@ -255,8 +261,8 @@ export default function Footer() {
                   className="w-max"
                 >
                   <div className="flex gap-x-2">
-                    <div className="flex items-center">
-                      <div className="relative w-6 h-6">
+                    <div className="flex items-center justify-center w-5 h-5 xl:w-6 xl:h-6">
+                      <div className="relative w-5 h-5 xl:w-6 xl:h-6">
                         <Image
                           draggable={false}
                           fill
@@ -266,22 +272,21 @@ export default function Footer() {
                         />
                       </div>
                     </div>
-                    <div className="flex items-center leading-none mb-0 pb-0 text-xl">
+                    <div className="flex items-center leading-none mb-0 pb-0 text-lg xl:text-xl hover:underline">
                       Mindanao International Studies Society Convention 2025
                     </div>
                   </div>
                 </a>
               </div>
-              <div className="h-[3px] 2xl:w-[500px] bg-violet my-7 "></div>
-              <div className="text-xl z-40">
-                <p>6/F Community Center of the First Companions, </p>
-                <p>Ateneo de Davao University,</p>
+              <div className="h-[3px] 2xl:w-[500px] bg-violet lg:my-5 xl:my-7 "></div>
+              <div className="text-lg xl:text-xl z-40">
                 <p>
-                  Roxas Ave, Poblacion District, Davao City, 8000 Davao del Sur
+                  Student Office 7, Arrupe Hall, Ateneo de Davao University,
                 </p>
+                <p>E. Jacinto St., Poblacion, Davao City, Philippines 8000</p>
               </div>
             </div>
-            <div className="flex flex-col gap-y-5 xl:ml-20 2xl:ml-20 font-medium text-2xl">
+            <div className="flex flex-col w-[130px] xl:w-[173px] gap-y-4 xl:gap-y-5 xl:ml-20 2xl:ml-20 font-medium text-xl xl:text-2xl">
               <a
                 href="/#about"
                 className="hover:underline hover:cursor-pointer z-40"
