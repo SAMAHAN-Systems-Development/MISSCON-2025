@@ -2,7 +2,6 @@
 import EventDayDetails from '@/components/EventDayDetails';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import lines from '../../../public/images/BG.png';
 
 export default function ProgramFlow() {
   const bg = '/images/pagebg.png';
@@ -47,7 +46,7 @@ export default function ProgramFlow() {
         <div className="relative w-full h-36 overflow-hidden">
           <Image
             fill
-            src={lines}
+            src={'images/BG.png'}
             className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-28px]"
             alt={'foreground'}
           />
@@ -86,7 +85,7 @@ export default function ProgramFlow() {
           <Image
             alt={'foreground'}
             fill
-            src={lines}
+            src={'images/BG.png'}
             className="absolute object-cover object-top opacity-40 scale-150 mt-20 2xl:mt-7"
           />
           <div

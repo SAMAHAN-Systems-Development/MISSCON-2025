@@ -2,21 +2,19 @@
 import AccordionComponent from '@/components/ui/AccordionFAQ';
 import Image from 'next/image';
 import React from 'react';
-import BackgroundImage from '../../../public/images/BG-Plain.png';
-import bg from '../../../public/images/BG.png';
 
 const FaqPage = () => {
   return (
     <div className="relative w-full h-full min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image src={BackgroundImage} alt="background" fill className="" />
+        <Image src={'images/BG-Plain.png'} alt="background" fill className="" />
       </div>
       {/* Foreground Image Section (Top) */}
       <div className="relative w-full h-36 overflow-hidden">
         <Image
           fill
-          src={bg}
+          src={'images/BG.png'}
           className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-28px]"
           alt={'foreground'}
         />
@@ -47,7 +45,7 @@ const FaqPage = () => {
         <Image
           alt={'foreground'}
           fill
-          src={bg}
+          src={'images/BG.png'}
           className="absolute object-cover object-top opacity-40 scale-150 mt-20 2xl:mt-7"
         />
         <div

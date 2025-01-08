@@ -4,8 +4,6 @@ import Image from 'next/image';
 import React from 'react';
 import CountdownTimer from '@/components/Countdown';
 // import WBup from '../../../public/images/WB-art-2-up.png';
-import BackgroundImage from '../../../public/images/AboutCountdownBg.png';
-import MissconLogo from '../../../public/images/WB-misscon-text.png';
 import MainButton from '@/components/ui/MainButton';
 import DownloadPrimerButton from '../ui/DownloadPrimerButton';
 
@@ -14,7 +12,7 @@ export default function AboutCountdown() {
     <div className="relative w-full h-full pt-20 pb-72">
       {/* Background Image Section */}
       <div className="absolute inset-0 z-0">
-        <Image src={BackgroundImage} alt={'background'} fill />
+        <Image src={'images/AboutCountdownBg.png'} alt={'background'} fill />
       </div>
 
       {/* Foreground Image Section
@@ -43,7 +41,7 @@ export default function AboutCountdown() {
         </h1>
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-[130px] xl:h-[130px]">
           <Image
-            src={MissconLogo}
+            src={'images/WB-misscon-text.png'}
             alt="foreground"
             fill
             className="object-contain"
