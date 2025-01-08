@@ -14,14 +14,28 @@ export type SpeakerData = {
 
 const SpeakerList: React.FC<{
   speakersData: SpeakerData[];
+  setSpeakersDayXOverlay: React.Dispatch<React.SetStateAction<number>>;
   activeSpeakerId: string | null;
   setActiveSpeakerId: React.Dispatch<React.SetStateAction<string | null>>;
-}> = ({ speakersData, activeSpeakerId, setActiveSpeakerId }) => {
+}> = ({
+  speakersData,
+  setSpeakersDayXOverlay,
+  activeSpeakerId,
+  setActiveSpeakerId,
+}) => {
   const bg = '/images/pagebg.png';
 
   // Toggle active speaker
-  const handleSpeakerClick = (id: string) => {
+  const handleSpeakerClick = (id: string, day: number) => {
+    const isBelowLg = window.innerWidth < 529;
+
     setActiveSpeakerId((prev) => (prev === id ? null : id));
+    if (isBelowLg) {
+      console.log('speakersData[0].day:', speakersData[0].day);
+      setSpeakersDayXOverlay(day);
+    } else {
+      setSpeakersDayXOverlay(-1);
+    }
   };
 
   const [detailCardVisibility, setDetailCardVisibility] = useState(false);
@@ -40,7 +54,7 @@ const SpeakerList: React.FC<{
 
   return (
     <div className="flex flex-col items-center space-y-8">
-      <div className="px-14 xsm:p-0 flex flex-wrap justify-center gap-6 lg:gap-8">
+      <div className="px-16 xsm:px-10 flex flex-wrap justify-center gap-6 lg:gap-8">
         {speakersData.map((speaker, index) => {
           let state: 'normal' | 'active' | 'inactive' = 'normal';
           if (activeSpeakerId) {
@@ -74,7 +88,7 @@ const SpeakerList: React.FC<{
       </div>
 
       <div
-        className={`flex relative z-10 shadow-lg items-center w-[300px] sm:w-[500px] lg:w-[700px] xl:w-[900px] h-min bg-white rounded-xl transition-opacity duration-300 ${detailCardVisibility ? 'opacity-100 p-5 sm:p-7 lg:p-9 xl:p-14' : 'opacity-0'}`}
+        className={`hidden xsm:flex relative z-10 shadow-lg items-center w-[300px] sm:w-[500px] lg:w-[700px] xl:w-[900px] h-min bg-white rounded-xl transition-opacity duration-300 ${detailCardVisibility ? 'opacity-100 p-5 sm:p-7 lg:p-9 xl:p-14' : 'opacity-0'}`}
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: '500%',
