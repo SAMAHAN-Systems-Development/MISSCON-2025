@@ -150,11 +150,7 @@ export default function Footer() {
           <div className="mb-12 z-40">
             <p className="text-center">
               <span className="font-semibold">Developed by: </span>
-              <Link
-                href="https://www.facebook.com/SAMAHANSysDev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="meet-the-developers">
                 <span className="hover:underline">
                   SAMAHAN Systems Development
                 </span>
@@ -362,11 +358,7 @@ export default function Footer() {
             <p>
               Developed by:{' '}
               <span className="font-bold hover:underline">
-                <Link
-                  href="https://www.facebook.com/SAMAHANSysDev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link href="meet-the-developers">
                   SAMAHAN Systems Development
                 </Link>
               </span>
