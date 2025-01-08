@@ -2,24 +2,15 @@
 import React from 'react';
 import Image from 'next/image';
 
-// export type Speaker = {
-//   day: number;
-//   id: number;
-//   name: string;
-//   position: string;
-//   imageUrl: string;
-//   bionote: string;
-// };
-
 const SpeakerDetailsMobile: React.FC<{
-  id: number;
+  id: string;
   name: string;
   position: string;
   imageUrl: string;
   bionote: string;
 }> = ({ id, name, position, imageUrl, bionote }) => {
   return (
-    <div className={`z-50 shadow-md w-[337px] p-6 h-min bg-white rounded-sm`}>
+    <div className={`z-50 shadow-md w-[337px] p-6 h-min bg-white rounded-lg`}>
       <div key={id} className="flex justify-center items-center gap-x-5 mb-5">
         <div
           className={`relative flex justify-center items-center rounded-full p-[2px] w-min h-min bg-gradient-to-b from-red to-violet`}

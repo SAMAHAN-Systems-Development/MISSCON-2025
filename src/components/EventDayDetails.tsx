@@ -6,12 +6,14 @@ import { useEffect, useState } from 'react';
 
 interface EventDayDetailsProps {
   dayNumber: string;
+  setSpeakersDayXOverlay: React.Dispatch<React.SetStateAction<number>>;
   activeSpeakerId: string | null;
   setActiveSpeakerId: React.Dispatch<React.SetStateAction<string | null>>;
 }
 
 export default function EventDayDetails({
   dayNumber,
+  setSpeakersDayXOverlay,
   activeSpeakerId,
   setActiveSpeakerId,
 }: EventDayDetailsProps) {
@@ -35,14 +37,12 @@ export default function EventDayDetails({
           Program Flow
         </p>
       </div>
-      <SeeProgramButton
-        day={dayNumber}
-        // date={`${dayNumber}`}
-      ></SeeProgramButton>
+      <SeeProgramButton day={dayNumber}></SeeProgramButton>
       <div className="h-4"></div>
       {speakersData !== null ? (
         <SpeakerList
           speakersData={speakersData}
+          setSpeakersDayXOverlay={setSpeakersDayXOverlay}
           activeSpeakerId={activeSpeakerId}
           setActiveSpeakerId={setActiveSpeakerId}
         ></SpeakerList>
