@@ -10,7 +10,7 @@ const FaqPage = () => {
       className="relative w-full h-full min-h-screen"
       style={{
         backgroundImage: `url(${bg})`,
-        backgroundSize: '400%',
+        backgroundSize: '500%',
         backgroundPosition: 'top',
         backgroundRepeat: 'no-repeat',
       }}
