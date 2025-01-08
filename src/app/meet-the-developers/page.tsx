@@ -2,8 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import bg from '../../../public/images/BG.png';
-import BackgroundImage from '../../../public/images/the-team-bg.png';
 import Card from '@/components/ui/Card';
 
 export default function MeetTheDevelopers() {
@@ -63,7 +61,7 @@ export default function MeetTheDevelopers() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={BackgroundImage}
+          src={'images/the-team-bg.png'}
           alt="background"
           fill
           className="object-cover"
@@ -74,7 +72,7 @@ export default function MeetTheDevelopers() {
       <div className="relative w-full h-36 overflow-hidden">
         <Image
           fill
-          src={bg}
+          src={'images/BG.png'}
           className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-80px]"
           alt={'foreground'}
         />
@@ -142,7 +140,7 @@ export default function MeetTheDevelopers() {
         <Image
           draggable={false}
           fill
-          src={bg}
+          src={'images/BG.png'}
           className="absolute object-cover object-top opacity-40 scale-150 mt-20 xl:mt-20 2xl:mt-7"
           alt="/"
         />
