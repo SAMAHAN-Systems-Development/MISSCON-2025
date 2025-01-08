@@ -78,7 +78,7 @@ export default function ProgramFlow() {
           <Image
             fill
             src={'images/BG.png'}
-            className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-28px]"
+            className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-80px]"
             alt={'foreground'}
           />
           <div
@@ -90,8 +90,10 @@ export default function ProgramFlow() {
           ></div>
         </div>
 
-        <div className="font-pirata_one text-[42px] md:text-5xl lg:text-6xl text-violet flex justify-center">
-          <p className="mt-10 mb-10 md:mb-16">Program Flow</p>
+        <div className="font-pirata_one text-4xl sm:text-5xl lg:text-7xl text-violet flex justify-center">
+          <p className="mt-5 smd:mt-10 leading-10 lg:leading-snug mb-10 md:mb-16">
+            Program Flow
+          </p>
         </div>
 
         <div id="speakers">

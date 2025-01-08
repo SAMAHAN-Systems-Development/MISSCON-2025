@@ -19,7 +19,7 @@ export default function HouseRules() {
         <Image
           fill
           src={'images/BG.png'}
-          className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-28px]"
+          className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px]"
           alt={'foreground'}
         />
         <div
@@ -31,8 +31,8 @@ export default function HouseRules() {
         ></div>
       </div>
       {/* Content */}
-      <div className="relative z-10 flex flex-col text-center gap-y-10 sm:gap-y-14 lg:gap-y-20 justify-items-center pt-48 pb-96 px-4 sm:px-8">
-        <h1 className="font-pirata_one leading-tight text-6xl lg:text-8xl text-violet">
+      <div className="relative z-10 flex flex-col text-center gap-y-10 sm:gap-y-14 lg:gap-y-20 justify-items-center mt-5 smd:mt-10 pb-10 2xl:pb-20 px-4 sm:px-8">
+        <h1 className="font-pirata_one leading-tight text-4xl sm:text-5xl lg:text-7xl text-violet">
           House <br /> Rules
         </h1>
         <div className="px-4 sm:px-8 lg:px-20">

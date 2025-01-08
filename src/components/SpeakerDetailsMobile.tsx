@@ -39,7 +39,7 @@ const SpeakerDetailsMobile: React.FC<{
           </div>
         </div>
       </div>
-      <div className="text-dark-violet font-gill_sans text-xs flex flex-col gap-y-4 text-justify">
+      <div className="text-dark-violet font-gill_sans text-sm flex flex-col gap-y-4 text-justify">
         {bionote.split('\n').map((line, index) => (
           <div key={index}>{line}</div>
         ))}
