@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   images: {
-    domains: ['misscon-2024.onrender.com'],
+    unoptimized: true,
   },
   basePath: '',
 };
