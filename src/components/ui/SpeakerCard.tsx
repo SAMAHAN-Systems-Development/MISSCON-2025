@@ -9,11 +9,12 @@ type SpeakerProps = {
   position: string;
   imageUrl: string;
   state: 'normal' | 'active' | 'inactive';
-  onClick: (id: string) => void;
+  onClick: (id: string, day: number) => void;
 };
 
 const SpeakerCard: React.FC<SpeakerProps> = ({
   id,
+  day,
   name,
   position,
   imageUrl,
@@ -21,13 +22,12 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
   onClick,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div
       className={`relative w-min flex flex-col items-center p-4 transition-transform duration-200 cursor-pointer `}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onClick={() => onClick(id)}
+      onClick={() => onClick(id, day)}
     >
       <div className="relative flex justify-center items-center w-36 xsm:w-24 md:w-36 lg:w-44 h-36 xsm:h-24 md:h-36 lg:h-44">
         <div
@@ -65,9 +65,9 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
             }`}
           ></div>
           <div
-            className={`absolute inset-0 opacity-0 transition-opacity rounded-full flex justify-center items-center text-white font-inandan text-[10px] lg:text-2xl ${
+            className={`absolute inset-0 opacity-0 transition-opacity rounded-full flex justify-center items-center text-white font-inandan text-xs smd:text-base lg:text-2xl ${
               isHovered ? 'opacity-100' : ''
-            } ${state === 'inactive' ? 'hidden' : ''}`}
+            } ${state === 'active' ? 'hidden' : ''}`}
           >
             See More
           </div>
