@@ -18,7 +18,7 @@ export default function SlideMenu() {
       <div
         className={`w-max h-screen transition-all duration-300 fixed top-0 left-0 z-50 ${openSlideMenu ? 'bg-custom-gradient-45% lg:bg-custom-gradient-15%' : ''}`}
       >
-        <div className="pt-12 pl-10 mb-5 z-50">
+        <div className="pt-5 pl-5 mb-5 z-50">
           <MenuButton
             active={openSlideMenu}
             onClick={onMenuButtonClick}
