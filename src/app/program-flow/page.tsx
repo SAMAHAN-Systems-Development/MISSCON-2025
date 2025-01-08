@@ -77,7 +77,7 @@ export default function ProgramFlow() {
         <div className="relative w-full h-36 overflow-hidden">
           <Image
             fill
-            src={'images/BG.png'}
+            src={lines}
             className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-28px]"
             alt={'foreground'}
           />
@@ -119,7 +119,7 @@ export default function ProgramFlow() {
           <Image
             alt={'foreground'}
             fill
-            src={'images/BG.png'}
+            src={lines}
             className="absolute object-cover object-top opacity-40 scale-150 mt-20 2xl:mt-7"
           />
           <div

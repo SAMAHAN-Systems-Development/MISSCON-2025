@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
+import bg from '../../../public/images/BG.png';
 
 const HeroSection = () => {
   const images = [
@@ -64,7 +65,7 @@ const HeroSection = () => {
       <div className="relative w-full h-36 overflow-hidden z-20 -top-14 md:hidden">
         <Image
           fill
-          src={'/images/BG.png'}
+          src={bg}
           className="absolute object-cover object-top rotate-180 scale-[1.7] opacity-20 mt-[-70px] xl:mt-[-80px] 2xl:mt-[-28px]"
           alt={'foreground'}
         />
