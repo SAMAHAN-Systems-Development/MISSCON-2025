@@ -197,7 +197,7 @@ export default function Footer() {
             backgroundPosition: 'center',
           }}
         ></div>
-        <div className="h-min mt-16 flex justify-center items-center px-10 gap-x-6 xl:gap-x-16 2xl:gap-x-28 ">
+        <div className="h-min mt-16 flex justify-center items-center px-10 gap-x-12 xl:gap-x-16 2xl:gap-x-28 ">
           <div className="relative w-56 h-56 xl:w-72 xl:h-72">
             <Image
               draggable={false}
@@ -207,7 +207,7 @@ export default function Footer() {
               alt="/"
             />
           </div>
-          <div className="h-full w-max flex items-center gap-x-10 2xl:gap-x-10">
+          <div className="h-full w-max flex items-center gap-x-14 2xl:gap-x-10">
             <div className="h-max w-max flex flex-col z-40">
               <div className=" font-medium text-2xl xl:text-3xl mb-4 z-40">
                 CONTACT
