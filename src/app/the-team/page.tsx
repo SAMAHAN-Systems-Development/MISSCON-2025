@@ -4,7 +4,7 @@ import Team from '@/components/section/TeamSection';
 
 export default function HouseRules() {
   return (
-    <div className="relative">
+    <div className="relative flex flex-col items-center w-full">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image

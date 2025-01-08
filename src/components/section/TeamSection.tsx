@@ -5,7 +5,7 @@ import Card from '@/components/ui/Card';
 
 const Team = () => {
   return (
-    <div className="min-h-screen justify-items-center mt-5 smd:mt-10 pb-6 md:pb-16 px-8 md:px-14 lg:pb-20 lg:px-28">
+    <div className="flex flex-col items-center w-full min-h-screen justify-items-center mt-5 smd:mt-10 pb-6 md:pb-16 px-8 md:px-14 lg:pb-20 lg:px-28">
       {teamData.category.map((section, index) => (
         <div
           key={index}
