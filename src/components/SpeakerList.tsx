@@ -40,7 +40,7 @@ const SpeakerList: React.FC<{
 
   return (
     <div className="flex flex-col items-center space-y-8">
-      <div className="p-10 xsm:p-0 flex flex-wrap justify-center gap-6 lg:gap-8">
+      <div className="px-14 xsm:p-0 flex flex-wrap justify-center gap-6 lg:gap-8">
         {speakersData.map((speaker, index) => {
           let state: 'normal' | 'active' | 'inactive' = 'normal';
           if (activeSpeakerId) {
