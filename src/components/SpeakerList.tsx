@@ -32,7 +32,6 @@ const SpeakerList: React.FC<{
     useState(false);
 
   useEffect(() => {
-    // Dynamically set the class based on activeSpeakerId
     const activeSpeaker = speakersData.find(
       (speaker) => speaker.id === activeSpeakerId
     );

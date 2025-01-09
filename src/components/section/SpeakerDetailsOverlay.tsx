@@ -36,7 +36,6 @@ const SpeakerDetailsOverlay: React.FC<{
         backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Close Button */}
       <div
         className="fixed top-8 right-4 w-20 h-20 hover:cursor-pointer z-50"
         onClick={() => {
