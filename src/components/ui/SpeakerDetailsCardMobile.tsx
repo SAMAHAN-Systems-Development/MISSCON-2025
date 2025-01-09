@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const SpeakerDetailsMobile: React.FC<{
+const SpeakerDetailsCardMobile: React.FC<{
   id: string;
   name: string;
   position: string;
@@ -48,4 +48,4 @@ const SpeakerDetailsMobile: React.FC<{
   );
 };
 
-export default SpeakerDetailsMobile;
+export default SpeakerDetailsCardMobile;

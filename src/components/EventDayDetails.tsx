@@ -1,7 +1,7 @@
 'use client';
 import SpeakerList from '@/components/SpeakerList';
 import SeeProgramButton from '@/components/ui/SeeProgramButton';
-import { SpeakerData } from '@/components/SpeakerList';
+import { Speaker } from '@/types/Speaker';
 import { useEffect, useState } from 'react';
 
 interface EventDayDetailsProps {
@@ -17,7 +17,7 @@ export default function EventDayDetails({
   activeSpeakerId,
   setActiveSpeakerId,
 }: EventDayDetailsProps) {
-  const [speakersData, setSpeakersData] = useState<SpeakerData[] | null>(null);
+  const [speakersData, setSpeakersData] = useState<Speaker[] | null>(null);
 
   useEffect(() => {
     if (dayNumber) {

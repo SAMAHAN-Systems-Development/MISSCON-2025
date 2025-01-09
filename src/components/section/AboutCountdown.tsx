@@ -1,9 +1,7 @@
 'use client';
 import Image from 'next/image';
-// import Link from 'next/link';
 import React from 'react';
-import CountdownTimer from '@/components/Countdown';
-// import WBup from '../../../public/images/WB-art-2-up.png';
+import CountdownTimer from '@/components/ui/Countdown';
 import MainButton from '@/components/ui/MainButton';
 import DownloadPrimerButton from '../ui/DownloadPrimerButton';
 
@@ -14,11 +12,6 @@ export default function AboutCountdown() {
       <div className="absolute inset-0 z-0">
         <Image src={'images/AboutCountdownBg.png'} alt={'background'} fill />
       </div>
-
-      {/* Foreground Image Section
-      <div className="absolute inset-x-0 inset-y-0 z-20">
-        <Image src={WBup} alt={'foreground'} height={100} width={1500} />
-      </div> */}
 
       {/* Foreground */}
       <div className="absolute top-0 left-0 w-full z-20">

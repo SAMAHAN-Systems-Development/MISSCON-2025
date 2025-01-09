@@ -348,7 +348,6 @@ export default function Footer() {
             }}
           ></div>
 
-          {/* Bottom-left text */}
           <div className="absolute bottom-5 left-5 text-white font-gill_sans">
             <p>
               Organized by:{' '}
@@ -358,7 +357,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Bottom-right text */}
           <div className="absolute bottom-5 right-5 text-white font-gill_sans">
             <p>
               Developed by:{' '}
