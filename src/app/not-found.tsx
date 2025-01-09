@@ -36,7 +36,7 @@ export default function ErrorPage() {
 
       {/* Error Title */}
       <div
-        className="text-9xl sm:text-7xl lg:text-9xl text-center mt-10 sm:mt-20 font-pirata_one leading-none relative z-10"
+        className="text-7xl lg:text-9xl text-center mt-10 font-pirata_one leading-none relative z-10"
         style={{
           background: 'linear-gradient(to bottom, #DE1063, #5847BA)',
           WebkitBackgroundClip: 'text',
@@ -52,7 +52,7 @@ export default function ErrorPage() {
       </div>
 
       {/* Back to Home Button */}
-      <div className="text-center mt-14 relative z-10">
+      <div className="text-center mt-10 lg:mt-14  relative z-10">
         <MainButton
           href="/"
           text="back to home"
