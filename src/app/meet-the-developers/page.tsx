@@ -31,6 +31,12 @@ export default function MeetTheDevelopers() {
       event: 'MISSCON 2025',
     },
     {
+      imageUrl: '/images/devs/10.jpg',
+      name: 'Maverick Pigao',
+      position: 'UI/UX Designer',
+      event: 'MISSCON 2025',
+    },
+    {
       imageUrl: '/images/devs/5.jpg',
       name: 'Arabella Mejorada',
       position: 'Front End Developer',
@@ -52,6 +58,12 @@ export default function MeetTheDevelopers() {
       imageUrl: '/images/devs/8.jpg',
       name: 'Jiyo Valmoria',
       position: 'QA & Back End Developer',
+      event: 'MISSCON 2025',
+    },
+    {
+      imageUrl: '/images/devs/9.jpg',
+      name: 'Francis Casas',
+      position: 'Back End Developer',
       event: 'MISSCON 2025',
     },
   ];
