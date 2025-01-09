@@ -21,7 +21,7 @@ const HeroSection = () => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000); // Change the image every 5 seconds
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, [images.length]);
 
   return (
@@ -50,7 +50,7 @@ const HeroSection = () => {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-white/90 to-violet/70"></div>
 
-      {/* Foreground Art at the Bottom */}
+      {/* Foreground */}
       <div className="absolute bottom-0 left-0 w-full z-20">
         <Image
           src="/images/WB-art-2-down.png"
@@ -61,7 +61,6 @@ const HeroSection = () => {
         />
       </div>
 
-      {/* Mobile Extra Overlay */}
       <div className="relative w-full h-36 overflow-hidden z-20 -top-14 md:hidden">
         <Image
           fill
@@ -78,10 +77,10 @@ const HeroSection = () => {
         ></div>
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-30 flex flex-col items-center justify-center text-center h-full pt-20 md:pt-0">
+      {/* Content */}
+      <div className="relative z-30 flex flex-col items-center justify-center text-center h-full mt-[-144px] md:mt-0">
         {/* Title */}
-        <h1 className="text-2xl sm:text-3xl md:text-4xl mx-9 font-pirata_one text-red mb-8 px-4">
+        <h1 className="absolute top-24 text-2xl sm:text-3xl md:text-4xl mx-9 font-pirata_one text-red">
           Official Website for Mindanao International Studies Society Convention
           2025
         </h1>
