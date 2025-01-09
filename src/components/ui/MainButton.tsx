@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 interface MainButtonProps {
   href: string;
   text?: string;
+  className?: string;
 }
 
 const MainButton: React.FC<MainButtonProps> = ({ href, text }) => {
