@@ -2,7 +2,7 @@
 import Image from 'next/image';
 // import Link from 'next/link';
 import React from 'react';
-import CountdownTimer from '@/components/Countdown';
+import CountdownTimer from '@/components/ui/Countdown';
 // import WBup from '../../../public/images/WB-art-2-up.png';
 import MainButton from '@/components/ui/MainButton';
 import DownloadPrimerButton from '../ui/DownloadPrimerButton';
