@@ -9,6 +9,9 @@ const SpeakerDetailsCard: React.FC<{
   speakerDetailsCardVisibility: boolean;
 }> = ({ speakersData, activeSpeakerId, speakerDetailsCardVisibility }) => {
   const bg = '/images/pagebg.png';
+  const day = speakersData.find(
+    (speaker) => speaker.id === activeSpeakerId
+  )?.day;
   return (
     <div
       className={`hidden xsm:flex relative z-10 shadow-lg items-center w-[300px] sm:w-[500px] lg:w-[700px] xl:w-[900px] h-min bg-white rounded-xl transition-opacity duration-300 ${speakerDetailsCardVisibility ? 'opacity-100 p-5 sm:p-7 lg:p-9 xl:p-14' : 'opacity-0'}`}
@@ -18,6 +21,7 @@ const SpeakerDetailsCard: React.FC<{
         backgroundPosition: 'top',
         backgroundRepeat: 'no-repeat',
       }}
+      id={`speakerDetailsCard${day}`}
     >
       <div
         className="absolute inset-0 opacity-10 rounded-xl "

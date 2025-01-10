@@ -23,7 +23,8 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div
+    <a
+      href={`#speakerDetailsCard${day}`}
       className={`relative w-min flex flex-col items-center p-4 transition-transform duration-200 cursor-pointer `}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -86,7 +87,7 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
           ))}
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
