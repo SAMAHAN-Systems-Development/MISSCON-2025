@@ -134,7 +134,7 @@ export default function MeetTheDevelopers() {
 
       {/* Cards Layout */}
       <div className="relative z-10 py-6 px-8 md:py-16 md:px-28 lg:py-20 lg:px-56">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-10 md:gap-x-16 lg:gap-y-16 lg:gap-x-24 justify-items-center">
+        <div className="grid grid-cols-1 smd:grid-cols-2 gap-y-10 md:gap-x-16 lg:gap-y-16 lg:gap-x-24 justify-items-center">
           {developers.map((dev, index) => (
             <Card
               key={index}
@@ -142,7 +142,6 @@ export default function MeetTheDevelopers() {
               name={dev.name}
               position={dev.position}
               event={dev.event}
-              type="developer"
             />
           ))}
         </div>
