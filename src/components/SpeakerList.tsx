@@ -62,16 +62,18 @@ const SpeakerList: React.FC<{
               key={index}
               className={`${index === 2 ? 'col-span-1 xsm:col-span-2 smd:col-span-1 flex justify-center' : ''}`}
             >
-              <SpeakerCard
-                day={speaker.day}
-                key={speaker.id}
-                id={speaker.id}
-                name={speaker.name}
-                position={speaker.position}
-                imageUrl={speaker.imageUrl}
-                state={state}
-                onClick={handleSpeakerClick}
-              />
+              <a href="#speakerDetailsCard">
+                <SpeakerCard
+                  day={speaker.day}
+                  key={speaker.id}
+                  id={speaker.id}
+                  name={speaker.name}
+                  position={speaker.position}
+                  imageUrl={speaker.imageUrl}
+                  state={state}
+                  onClick={handleSpeakerClick}
+                />
+              </a>
             </div>
           );
         })}
