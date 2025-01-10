@@ -16,7 +16,7 @@ export default function Footer() {
         className="relative lg:hidden flex flex-col justify-between w-full 2xl:h-[632px] font-gill_sans text-dark-violet"
         style={{
           backgroundImage: `url(${wbbg2})`,
-          backgroundSize: '1100%',
+          backgroundSize: '1300%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
@@ -147,7 +147,11 @@ export default function Footer() {
           <div className="z-40">
             <p className="text-center">
               <span className="font-semibold text-center">Organized by: </span>
-              Ateneo International Studies Students Organization
+              <Link href="the-team">
+                <span className="hover:underline">
+                  Ateneo International Studies Students Organization
+                </span>
+              </Link>
             </p>
           </div>
 
@@ -352,7 +356,11 @@ export default function Footer() {
             <p>
               Organized by:{' '}
               <span className="font-bold">
-                Ateneo International Studies Students Organization
+                <Link href="the-team">
+                  <span className="hover:underline">
+                    Ateneo International Studies Students Organization
+                  </span>
+                </Link>
               </span>
             </p>
           </div>
