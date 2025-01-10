@@ -31,7 +31,9 @@ const SpeakerDetailsCardMobile: React.FC<{
         </div>
 
         <div className="flex flex-col text-violet gap-y-1">
-          <p className="font-inandan text-xl h-min">{name}</p>
+          <p className="font-gill_sans leading-tight font-medium text-xl h-min">
+            {name}
+          </p>
           <div className="font-medium text-xs font-gill_sans h-min">
             {position.split('\n').map((line, index) => (
               <div key={index}>{line}</div>
