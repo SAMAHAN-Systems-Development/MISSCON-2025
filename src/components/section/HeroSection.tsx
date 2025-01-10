@@ -78,20 +78,20 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-30 flex flex-col items-center justify-center text-center h-full mt-[-144px] md:mt-0">
+      <div className="relative z-30 flex flex-col items-center justify-center text-center h-full -mt-40 md:-mt-5 lg:-mt-7 px-5">
         {/* Title */}
-        <h1 className="absolute top-24 text-2xl sm:text-3xl md:text-4xl mx-9 font-pirata_one text-red">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl mx-9 font-pirata_one text-red mb-6 2xsm:mb-10 xsm:mb-6 lg:mb-9 ">
           Official Website for Mindanao International Studies Society Convention
           2025
         </h1>
 
         {/* Logo */}
-        <div className="flex items-center justify-center mx-7">
+        <div className="relative h-72 w-72 2xsm:h-80 2xsm:w-80 xsm:h-96 xsm:w-96 lg:h-[420px] lg:w-[420px] p-7 overflow-hidden">
           <Image
             src="/images/MissconLogo.png"
             alt="MISSCON 2025 Logo"
-            width={400}
-            height={400}
+            className="absolute object-cover object-top"
+            fill
           />
         </div>
       </div>
