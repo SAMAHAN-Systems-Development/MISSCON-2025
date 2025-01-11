@@ -43,8 +43,8 @@
             "event": "The Genesis of the Mindanao International Studies Society Convention",
             "details": {
               "speaker": "Fr. Eric Anthony S. Escandor, SJ",
-              "position": "Chair, International Studies Department",
-              "organization": "Ateneo de Davao University"
+              "position": "Chaplain",
+              "organization": "Ateneo de Davao University - Senior High School"
             },
             "dressCode": ""
           },
@@ -133,15 +133,15 @@
             "details": {
               "speaker": "Day 1 Theme: Reconnecting Mindanao International Studies",
               "position": "",
-              "organization": ""
+              "organization": "The starting point of the conference is our positionality as students and scholars of International Studies in Mindanao. The morning panel seeks to acquaint participants with the history, present situation, and prospects of Mindanao IS/IR programs. From this positionality we are called to decolonize our view of the world through integration of the diverse and collective Mindanao experience in our study of the \"international\". Decolonizing our positionality ultimately allows us to make a deeper appreciation and more critical self-reflection of pressing issues."
             },
             "dressCode": ""
           },
           {
             "time": "9:55 - 10:25 PM",
-            "event": "Plenary Session #1: International Studies from the Pheriphery: The Past, Present, and Prospects of Mindanao International Studies Programs",
+            "event": "Plenary Session #1: International Studies from the Periphery: The Past, Present, and Prospects of Mindanao International Studies Programs",
             "details": {
-              "speaker": "Mr. John Harvey D. Games, MA",
+              "speaker": "Mr. John Harvey D. Gamas, MA",
               "position": "Assistant Professor IV, International Studies Department",
               "organization": "Ateneo de Davao University"
             },
@@ -163,8 +163,8 @@
                   "organization": "BARMM Bangsamoro Transition Authority"
                 },
                 {
-                  "position": "Professional Lecturer III,",
-                  "organization": "Asian Center, University of the Philippines - Diliman"
+                  "position": "Professional Lecturer III, Asian Center",
+                  "organization": "University of the Philippines - Diliman"
                 }
               ]
             },
@@ -172,21 +172,31 @@
           },
           {
             "time": "11:05 - 11:35 AM",
+            "event": "Plenary Session #3: Unpacking the Sulu Exclusion: Reflections on Moro Nationhood, Self-Determination, and Decolonization Option",
+            "details": {
+              "speaker": "Mansoor L. Limba, PhD, SCL",
+              "position": "Associate Professor, Islamic Studies Department",
+              "organization": "Ateneo de Davao University"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "11:35 - 11:55 AM",
             "event": "Open Forum",
             "dressCode": ""
           },
           {
-            "time": "11:35 - 11:40 AM",
+            "time": "11:55 - 12:00 PM",
             "event": "Announcements and Closing Spiels",
             "dressCode": ""
           },
           {
-            "time": "11:40 - 11:45 AM",
+            "time": "12:00 - 12:02 PM",
             "event": "Prayer for Lunch",
             "dressCode": ""
           },
           {
-            "time": "11:45 - 12:45 PM",
+            "time": "12:02 - 12:45 PM",
             "event": "Lunch",
             "dressCode": ""
           }
@@ -209,8 +219,8 @@
             "time": "1:15 - 4:00 PM",
             "event": "Activity: Weaving our Stories Together",
             "details": {
-              "speaker": "Ms. Hazel Meghan Hamille",
-              "position": "Assistant Professor",
+              "speaker": "Ms. Maria Lourdes S. Braceros, MS",
+              "position": "Assistant Professor, International Studies Department",
               "organization": "Ateneo de Davao University"
             },
             "dressCode": ""
@@ -237,10 +247,10 @@
           },
           {
             "time": "6:05 - 6:15 PM",
-            "event": "Message/s of Support",
+            "event": "Solidarity Message",
             "details": {
-              "speaker": "Faculty/Guest Speaker",
-              "position": "",
+              "speaker": "H.E. Amb. Hjayceelyn M. Quintana",
+              "position": "Permanent Representative of the Republic of the Philippines to ASEAN",
               "organization": ""
             },
             "dressCode": ""
@@ -314,13 +324,13 @@
             "details": {
               "speaker": "Day 2 Theme: Reconnecting with the Global Realities, Uncertainties, and Frontiers",
               "position": "",
-              "organization": ""
+              "organization": "From our Mindanao context, the conference will reconnect us to contemporary global realities and invite us to consider possible futures. The presentations will take us to a deep dive of regional and global security trends and uncertainties. We are called to take a closer look at the consequences of the growing complexity of cyberspace to gender, human rights, security, and politics, among others. Rather than cower in this fast-changing world, we are called to proactively engage with it. One such area of engagement is diplomatic practice - a popular career goal of IS/IR students."
             },
             "dressCode": ""
           },
           {
-            "time": "9:20 - 9:50 PM",
-            "event": "Plenary Session #3: Regional and Global Security Trends and Outlook",
+            "time": "9:20 - 10:50 PM",
+            "event": "Plenary Session #4: Regional and Global Security Trends and Outlook",
             "details": {
               "speaker": "Mr. Lucio Blanco Pitlo, III, MA",
               "positions": [
@@ -337,37 +347,32 @@
             "dressCode": ""
           },
           {
-            "time": "9:50 - 10:00 AM",
-            "event": "Open Forum",
-            "dressCode": ""
-          },
-          {
-            "time": "10:00 - 10:30 PM",
-            "event": "Plenary Session #4: Gender and International Security",
+            "time": "9:50 - 10:20 AM",
+            "event": "Plenary Session #5: Gender and International Security",
             "details": {
               "speaker": "Atty. Archill Niña Faller-Capistrano",
-              "position": "Assistant Professor",
+              "position": "Assistant Professor, Political Science Department",
               "organization": "University of the Philippines - Cebu"
             },
             "dressCode": ""
           },
           {
-            "time": "10:30  - 10:40 AM",
-            "event": "Open Forum and Snacks",
+            "time": "10:20  - 10:30 AM",
+            "event": "Snacks",
             "dressCode": ""
           },
           {
-            "time": "10:40 - 11:10 PM",
-            "event": "Plenary Session #5: International Relatins and Social Media",
+            "time": "10:30 - 11:00 AM",
+            "event": "Plenary Session #6: International Relations and Social Media",
             "details": {
-              "speaker": "Dr. Manuel R. Enverga III",
+              "speaker": "Dr. Manuel R. Enverga III, PhD",
               "position": "Director of European Studies Program",
-              "organization": "Ateneo de Manila University"
+              "organization": "Ateneo de Manila University; Jean Monnet Chair in European Studies"
             },
             "dressCode": ""
           },
           {
-            "time": "11:10  - 11:20 AM",
+            "time": "11:00  - 11:20 AM",
             "event": "Open Forum",
             "dressCode": ""
           },
@@ -392,22 +397,47 @@
             "dressCode": "Business Casual"
           },
           {
-            "time": "1:00 - 1:15 PM",
+            "time": "1:00 - 1:05 PM",
+            "event": "Opening Spiels",
+            "dressCode": ""
+          },
+          {
+            "time": "1:05 - 1:20 PM",
             "event": "Ice Breaker",
             "dressCode": ""
           },
           {
-            "time": "1:15 - 4:00 PM",
-            "event": "Activity",
+            "time": "1:20 - 2:50 PM",
+            "event": "Mindanao in Philippine-EU Relations",
             "details": {
-              "speaker": "Ms. Hazel Meghan Hamille",
-              "position": "Assistant Professor",
-              "organization": "Ateneo de Davao University"
+              "speaker": "H.E. Massimo Santoro",
+              "position": "Ambassador of the European Union to the Philippines",
+              "organization": ""
             },
             "dressCode": ""
           },
           {
-            "time": "4:00 - 5:30 PM",
+            "time": "2:50 - 3:10 PM",
+            "event": "Open Forum",
+            "dressCode": ""
+          },
+          {
+            "time": "3:10 - 3:35 PM",
+            "event": "On the Philippines' Foreign Service Officer Examination",
+            "details": {
+              "speaker": "Department of Foreign Affairs",
+              "position": "",
+              "organization": ""
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "3:35 - 3:55 PM",
+            "event": "Open Forum",
+            "dressCode": ""
+          },
+          {
+            "time": "3:55 - 5:30 PM",
             "event": "Free Time",
             "dressCode": ""
           }
@@ -429,11 +459,6 @@
           {
             "time": "5:50 - 6:00 PM",
             "event": "Message/s of Support",
-            "details": {
-              "speaker": "Faculty/Guest Speaker",
-              "position": "",
-              "organization": ""
-            },
             "dressCode": ""
           },
           {
