@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'MISSCON 2025',
   description:
     'The official Mindanao International Studies Society Convention (MISSCON) 2025 Website.',
+  openGraph: {
+    images: ['/images/MissconLogo.png'],
+  },
 };
 
 export default function Home() {
