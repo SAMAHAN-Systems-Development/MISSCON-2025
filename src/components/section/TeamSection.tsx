@@ -28,14 +28,14 @@ const Team = () => {
           </p>
           {/* Members*/}
           <div
-            className={`grid grid-cols-2 justify-items-center gap-y-8 md:gap-y-10 lg:gap-y-12 xl:gap-y-14 w-[285px] 2xsm:w-[315px] xsm:w-[420px] smd:w-[480px] md:w-[520px] lg:w-[600px] xl:w-[800px]`}
+            className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-center gap-y-8 md:gap-y-10 lg:gap-y-12 xl:gap-y-14 w-[285px] 2xsm:w-[315px] xsm:w-[420px] smd:w-[480px] md:w-[520px] lg:w-[600px] xl:w-[800px]`}
           >
             {section.members.map((member, index) => (
               <div
                 key={index}
                 className={`${
                   section.members.length % 3 === 0 && index % 3 === 0
-                    ? 'col-span-2 flex justify-center'
+                    ? 'col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-2 flex justify-center'
                     : 'flex justify-center'
                 }`}
               >
