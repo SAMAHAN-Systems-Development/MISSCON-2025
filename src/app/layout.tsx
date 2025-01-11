@@ -17,6 +17,7 @@ export default function RootLayout({
           href="{{ base_path }}/images/safari-pinned-tab.svg?v=M44lzPylqQ"
           color="#000000"
         ></link>
+        <meta property="og:image" content="/images/MissconLogo.png"></meta>
       </head>
       <body
         className={`${abel.variable} ${adamina.variable} ${gill_sans.variable} ${pirata_one.variable} ${inandan.variable} antialiased`}
