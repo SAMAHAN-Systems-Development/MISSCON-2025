@@ -66,7 +66,7 @@ export default function Footer() {
               House Rules
             </a>
             <a
-              href="faqs"
+              href="frequently-asked-questions"
               className="hover:underline hover:cursor-pointer z-40"
             >
               FAQs
@@ -316,7 +316,7 @@ export default function Footer() {
                 House Rules
               </a>
               <a
-                href="faqs"
+                href="frequently-asked-questions"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 FAQs

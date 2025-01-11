@@ -54,7 +54,7 @@ export default function SlideMenu() {
                 onClick={onMenuButtonClick}
               ></MenuNavButtons>
               <MenuNavButtons
-                href="faqs"
+                href="frequently-asked-questions"
                 text="FAQs"
                 onClick={onMenuButtonClick}
               ></MenuNavButtons>
