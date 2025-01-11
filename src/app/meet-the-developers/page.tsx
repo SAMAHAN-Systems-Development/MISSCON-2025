@@ -69,100 +69,103 @@ export default function MeetTheDevelopers() {
   ];
 
   return (
-    <div className="relative">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={'images/the-team-bg.png'}
-          alt="background"
-          fill
-          className="object-cover"
-        />
-      </div>
+    <>
+      <title>Meet the Developers</title>
+      <div className="relative">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={'images/the-team-bg.png'}
+            alt="background"
+            fill
+            className="object-cover"
+          />
+        </div>
 
-      {/* Foreground Image Section */}
-      <div className="relative w-full h-36 overflow-hidden">
-        <Image
-          fill
-          src={'images/BG.png'}
-          className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-80px]"
-          alt={'foreground'}
-        />
+        {/* Foreground Image Section */}
+        <div className="relative w-full h-36 overflow-hidden">
+          <Image
+            fill
+            src={'images/BG.png'}
+            className="absolute object-cover object-top rotate-180 scale-150 opacity-40 mt-[-58px] xl:mt-[-80px] 2xl:mt-[-80px]"
+            alt={'foreground'}
+          />
+          <div
+            className="absolute inset-0 opacity-50"
+            style={{
+              background:
+                'linear-gradient(to bottom, rgb(88,71,186) 1%, transparent)',
+            }}
+          />
+        </div>
+
+        {/* Page Title */}
         <div
-          className="absolute inset-0 opacity-50"
+          className="text-4xl sm:text-5xl lg:text-7xl text-center mt-5 smd:mt-10 mb-6 font-pirata_one leading-10 lg:leading-snug relative z-10"
           style={{
-            background:
-              'linear-gradient(to bottom, rgb(88,71,186) 1%, transparent)',
+            background: 'linear-gradient(to bottom, #DE1063, #5847BA)',
+            WebkitBackgroundClip: 'text',
+            color: 'transparent',
           }}
-        />
-      </div>
+        >
+          Meet the Developers
+        </div>
 
-      {/* Page Title */}
-      <div
-        className="text-4xl sm:text-5xl lg:text-7xl text-center mt-5 smd:mt-10 mb-6 font-pirata_one leading-10 lg:leading-snug relative z-10"
-        style={{
-          background: 'linear-gradient(to bottom, #DE1063, #5847BA)',
-          WebkitBackgroundClip: 'text',
-          color: 'transparent',
-        }}
-      >
-        Meet the Developers
-      </div>
+        {/* Body Text */}
+        <div className="text-center text-dark-violet font-gill_sans font-light text-sm sm:text-base lg:text-lg xl:text-xl mx-6 md:mx-12 lg:mx-20 mb-5 relative z-10">
+          <p className="font-semibold">
+            Made possible by SAMAHAN Systems Development
+          </p>
+          <p className="mt-2">
+            SAMAHAN Systems Development is dedicated to creating innovative
+            solutions that empower the Ateneo community.
+          </p>
+          <p className="inline-block mt-2">
+            Follow us on{' '}
+            <a
+              href="https://www.facebook.com/SAMAHANSysDev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-violet font-medium hover:underline hover:text-dark-violet inline-block"
+            >
+              Facebook
+            </a>{' '}
+            for more.
+          </p>
+        </div>
 
-      {/* Body Text */}
-      <div className="text-center text-dark-violet font-gill_sans font-light text-sm sm:text-base lg:text-lg xl:text-xl mx-6 md:mx-12 lg:mx-20 mb-5 relative z-10">
-        <p className="font-semibold">
-          Made possible by SAMAHAN Systems Development
-        </p>
-        <p className="mt-2">
-          SAMAHAN Systems Development is dedicated to creating innovative
-          solutions that empower the Ateneo community.
-        </p>
-        <p className="inline-block mt-2">
-          Follow us on{' '}
-          <a
-            href="https://www.facebook.com/SAMAHANSysDev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-violet font-medium hover:underline hover:text-dark-violet inline-block"
-          >
-            Facebook
-          </a>{' '}
-          for more.
-        </p>
-      </div>
+        {/* Cards Layout */}
+        <div className="relative z-10 py-6 px-8 md:py-16 md:px-28 lg:py-20 lg:px-56">
+          <div className="grid grid-cols-1 smd:grid-cols-2 gap-y-10 md:gap-x-16 lg:gap-y-16 lg:gap-x-24 justify-items-center">
+            {developers.map((dev, index) => (
+              <Card
+                key={index}
+                imageUrl={dev.imageUrl}
+                name={dev.name}
+                position={dev.position}
+                event={dev.event}
+              />
+            ))}
+          </div>
+        </div>
 
-      {/* Cards Layout */}
-      <div className="relative z-10 py-6 px-8 md:py-16 md:px-28 lg:py-20 lg:px-56">
-        <div className="grid grid-cols-1 smd:grid-cols-2 gap-y-10 md:gap-x-16 lg:gap-y-16 lg:gap-x-24 justify-items-center">
-          {developers.map((dev, index) => (
-            <Card
-              key={index}
-              imageUrl={dev.imageUrl}
-              name={dev.name}
-              position={dev.position}
-              event={dev.event}
-            />
-          ))}
+        <div className="relative w-full h-36 overflow-hidden">
+          <Image
+            draggable={false}
+            fill
+            src={'images/BG.png'}
+            className="absolute object-cover object-top opacity-40 scale-150 mt-20 xl:mt-20 2xl:mt-7"
+            alt="/"
+          />
+          <div
+            className="absolute inset-0 opacity-80"
+            style={{
+              background:
+                'linear-gradient(to top, rgb(198,203,210) 10%, transparent)',
+            }}
+          ></div>
         </div>
       </div>
-
-      <div className="relative w-full h-36 overflow-hidden">
-        <Image
-          draggable={false}
-          fill
-          src={'images/BG.png'}
-          className="absolute object-cover object-top opacity-40 scale-150 mt-20 xl:mt-20 2xl:mt-7"
-          alt="/"
-        />
-        <div
-          className="absolute inset-0 opacity-80"
-          style={{
-            background:
-              'linear-gradient(to top, rgb(198,203,210) 10%, transparent)',
-          }}
-        ></div>
-      </div>
-    </div>
+    </>
   );
 }
