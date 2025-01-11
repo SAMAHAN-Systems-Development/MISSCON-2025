@@ -10,6 +10,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/favicon.ico?v=M44lzPylqQ" sizes="any" />
+        <link
+          rel="mask-icon"
+          href="{{ base_path }}/images/safari-pinned-tab.svg?v=M44lzPylqQ"
+          color="#000000"
+        ></link>
+      </head>
       <body
         className={`${abel.variable} ${adamina.variable} ${gill_sans.variable} ${pirata_one.variable} ${inandan.variable} antialiased`}
       >
