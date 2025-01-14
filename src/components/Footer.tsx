@@ -41,55 +41,55 @@ export default function Footer() {
           </div>
           <div className="font-medium text-xl mb-4">QUICK LINKS</div>
           <div className="flex flex-col justify-center items-center text-center gap-y-2 font-medium text-base">
-            <a
+            <Link
               href="/#about"
               className="hover:underline hover:cursor-pointer z-40"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="program-flow"
               className="hover:underline hover:cursor-pointer z-40"
             >
               Program Flow
-            </a>
-            <a
+            </Link>
+            <Link
               href="program-flow/#speakers"
               className="hover:underline hover:cursor-pointer z-40"
             >
               Speakers
-            </a>
-            <a
+            </Link>
+            <Link
               href="house-rules"
               className="hover:underline hover:cursor-pointer z-40"
             >
               House Rules
-            </a>
-            <a
+            </Link>
+            <Link
               href="frequently-asked-questions"
               className="hover:underline hover:cursor-pointer z-40"
             >
               FAQs
-            </a>
-            <a
+            </Link>
+            <Link
               href="the-team"
               className="hover:underline hover:cursor-pointer z-40"
             >
               The Team
-            </a>
-            <a
+            </Link>
+            <Link
               href="meet-the-developers"
               className="hover:underline hover:cursor-pointer z-40"
             >
               Meet the Developers
-            </a>
+            </Link>
           </div>
 
           <div className="h-[2px] w-72 bg-violet my-9 "></div>
 
           <div className="font-medium text-xl mb-2">SOCIALS</div>
           <div className="z-40 flex  items-center gap-x-4 mb-16">
-            <a href="mailto:misscon2025@gmail.com" className="w-min">
+            <Link href="mailto:misscon2025@gmail.com" className="w-min">
               <div className="flex gap-x-2">
                 <div className="flex items-center justify-center w-[26px] h-[26px]">
                   <div className="relative w-[26px] h-[26px]">
@@ -103,8 +103,11 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-            </a>
-            <a href="https://www.instagram.com/misscon_2025/" className="w-min">
+            </Link>
+            <Link
+              href="https://www.instagram.com/misscon_2025/"
+              className="w-min"
+            >
               <div className="flex gap-x-2">
                 <div className="flex items-center justify-center w-6 h-6">
                   <div className="relative w-6 h-6">
@@ -118,8 +121,8 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.facebook.com/profile.php?id=61568212792268"
               className="w-max"
             >
@@ -136,7 +139,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
           <div className="font-medium text-xl mb-2">ADDRESS</div>
           <div className="text-sm z-40 flex flex-col items-center w-40 text-center mb-32">
@@ -218,7 +221,7 @@ export default function Footer() {
               </div>
 
               <div className="flex flex-col gap-y-3">
-                <a href="mailto:misscon2025@gmail.com" className="w-min">
+                <Link href="mailto:misscon2025@gmail.com" className="w-min">
                   <div className="flex gap-x-2">
                     <div className="flex items-center justify-center w-5 h-5 xl:w-6 xl:h-6">
                       <div className="relative w-5 h-5 xl:w-6 xl:h-6">
@@ -235,9 +238,9 @@ export default function Footer() {
                       misscon2025@gmail.com
                     </div>
                   </div>
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="https://www.instagram.com/misscon_2025/"
                   className="w-min"
                 >
@@ -258,9 +261,9 @@ export default function Footer() {
                       @misscon_2025
                     </div>
                   </div>
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="https://www.facebook.com/profile.php?id=61568212792268"
                   className="w-max"
                 >
@@ -280,7 +283,7 @@ export default function Footer() {
                       Mindanao International Studies Society Convention 2025
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="h-[3px] 2xl:w-[500px] bg-violet lg:my-5 xl:my-7 "></div>
               <div className="text-lg xl:text-xl z-40">
@@ -291,48 +294,48 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex flex-col w-[130px] xl:w-[173px] gap-y-4 xl:gap-y-5 xl:ml-20 2xl:ml-20 font-medium text-xl xl:text-2xl">
-              <a
+              <Link
                 href="/#about"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 About
-              </a>
-              <a
+              </Link>
+              <Link
                 href="program-flow"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 Program Flow
-              </a>
-              <a
+              </Link>
+              <Link
                 href="program-flow/#speakers"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 Speakers
-              </a>
-              <a
+              </Link>
+              <Link
                 href="house-rules"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 House Rules
-              </a>
-              <a
+              </Link>
+              <Link
                 href="frequently-asked-questions"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 FAQs
-              </a>
-              <a
+              </Link>
+              <Link
                 href="the-team"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 The Team
-              </a>
-              <a
+              </Link>
+              <Link
                 href="meet-the-developers"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 Meet the Developers
-              </a>
+              </Link>
             </div>
           </div>
         </div>

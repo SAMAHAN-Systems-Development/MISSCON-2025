@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import SpeakerCard from '@/components/ui/SpeakerCard';
 import SpeakerDetailsCard from '@/components/ui/SpeakerDetailsCard';
 import { Speaker } from '@/types/Speaker';
+import Link from 'next/link';
 
 const SpeakerList: React.FC<{
   speakersData: Speaker[];
@@ -62,7 +63,7 @@ const SpeakerList: React.FC<{
               key={index}
               className={`${index === 2 ? 'col-span-1 xsm:col-span-2 smd:col-span-1 flex justify-center' : ''}`}
             >
-              <a href="#speakerDetailsCard">
+              <Link href="#speakerDetailsCard">
                 <SpeakerCard
                   day={speaker.day}
                   key={speaker.id}
@@ -73,7 +74,7 @@ const SpeakerList: React.FC<{
                   state={state}
                   onClick={handleSpeakerClick}
                 />
-              </a>
+              </Link>
             </div>
           );
         })}
