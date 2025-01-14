@@ -64,7 +64,7 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
             }`}
           ></div>
           <div
-            className={`absolute inset-0 opacity-0 transition-opacity rounded-full flex justify-center items-center text-white font-inandan text-xs smd:text-base lg:text-2xl ${
+            className={`absolute inset-0 opacity-0 transition-opacity rounded-full flex justify-center items-center text-white font-gill_sans text-xs smd:text-base lg:text-2xl ${
               isHovered ? 'opacity-100' : ''
             } ${state === 'active' ? 'hidden' : ''}`}
           >
