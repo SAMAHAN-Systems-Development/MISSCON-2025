@@ -30,19 +30,17 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => onClick(id, day)}
     >
-      <div className="relative flex justify-center items-center w-36 xsm:w-24 md:w-36 lg:w-44 h-36 xsm:h-24 md:h-36 lg:h-44">
+      <div className="relative flex justify-center items-center w-36 lg:w-44 h-36 lg:h-44">
         <div
-          className={`relative flex justify-center items-center rounded-full p-1 xsm:p-[3px] md:p-1 lg:p-[5px] w-min h-min bg-gradient-to-b from-red to-violet`}
+          className={`relative flex justify-center items-center rounded-full p-1 lg:p-[5px] w-min h-min bg-gradient-to-b from-red to-violet`}
         >
           <div
             className={`relative w-min h-min rounded-full ${
-              isHovered
-                ? 'border-[4px] xsm:border-[3px] md:border-[4px] lg:border-[5px] border-white'
-                : ''
+              isHovered ? 'border-[4px] lg:border-[5px] border-white' : ''
             }`}
           >
             <div
-              className={`relative w-28 xsm:w-20 md:w-32 lg:w-40 h-28 xsm:h-20 md:h-32 lg:h-40 overflow-hidden rounded-full`}
+              className={`relative w-32 lg:w-40 h-32 lg:h-40 overflow-hidden rounded-full`}
             >
               <Image
                 draggable={false}
@@ -75,13 +73,13 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
         </div>
       </div>
 
-      <div className="text-dark-violet xsm:mt-3 md:mt-4 lg:mt-6 flex flex-col gap-y-2 items-center">
-        <p className="text-center font-gill_sans font-medium text-lg md:text-xl lg:text-2xl w-40 xsm:w-32 md:w-40 lg:w-64">
+      <div className="text-dark-violet mt-4 lg:mt-6 flex flex-col gap-y-2 items-center">
+        <p className="text-center font-gill_sans font-medium text-lg md:text-xl lg:text-2xl w-40 lg:w-64">
           {name}
         </p>
-        <div className="text-sm xsm:text-xs md:text-sm lg:text-base text-center font-gill_sans">
+        <div className="text-base lg:text-lg text-center font-gill_sans">
           {position.split('\n').map((line, index) => (
-            <div key={index} className="w-40 xsm:w-32 md:w-40 lg:w-64 italic">
+            <div key={index} className="w-40 lg:w-64 italic">
               {line}
             </div>
           ))}
