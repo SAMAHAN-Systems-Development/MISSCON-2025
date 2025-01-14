@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type SpeakerProps = {
   day: number;
@@ -23,7 +24,7 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <a
+    <Link
       href={`#speakerDetailsCard${day}`}
       className={`relative w-min flex flex-col items-center p-4 transition-transform duration-200 cursor-pointer `}
       onMouseEnter={() => setIsHovered(true)}
@@ -87,7 +88,7 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
           ))}
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Card from '@/components/ui/Card';
+import Link from 'next/link';
 
 export default function MeetTheDevelopers() {
   const developers = [
@@ -122,14 +123,14 @@ export default function MeetTheDevelopers() {
           </p>
           <p className="inline-block mt-2">
             Follow us on{' '}
-            <a
+            <Link
               href="https://www.facebook.com/SAMAHANSysDev"
               target="_blank"
               rel="noopener noreferrer"
               className="text-violet font-medium hover:underline hover:text-dark-violet inline-block"
             >
               Facebook
-            </a>{' '}
+            </Link>{' '}
             for more.
           </p>
         </div>

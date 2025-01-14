@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 
 interface MainButtonProps {
   href: string;
@@ -9,7 +10,7 @@ interface MainButtonProps {
 
 const MainButton: React.FC<MainButtonProps> = ({ href, text }) => {
   return (
-    <a
+    <Link
       href={href}
       className="bg-gradient-to-r from-violet to-purple
       hover:from-dark-violet hover:to-dark-violet text-white font-pirata_one text-3xl 
@@ -17,7 +18,7 @@ const MainButton: React.FC<MainButtonProps> = ({ href, text }) => {
       sm:rounded-2xl shadow-md hover:shadow-lg transition-all duration-500 ease-in-out"
     >
       {text || 'register here'}
-    </a>
+    </Link>
   );
 };
 
