@@ -136,19 +136,27 @@ export default function MeetTheDevelopers() {
         </div>
 
         {/* Cards Layout */}
-        <div className="relative z-10 py-6 px-8 md:py-16 md:px-28 lg:py-20 lg:px-56">
-          <div className="grid grid-cols-1 smd:grid-cols-2 gap-y-10 md:gap-x-16 lg:gap-y-16 lg:gap-x-24 justify-items-center">
+        <div className="relative z-10 py-6 px-8 md:py-16 md:px-14 lg:py-20 lg:px-28 flex justify-center">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-center gap-y-8 md:gap-y-10 lg:gap-y-12 xl:gap-y-14 gap-x-0"
+            style={{
+              maxWidth: '800px',
+              width: '100%',
+            }}
+          >
             {developers.map((dev, index) => (
-              <Card
-                key={index}
-                imageUrl={dev.imageUrl}
-                name={dev.name}
-                position={dev.position}
-                event={dev.event}
-              />
+              <div key={index} className="flex justify-center">
+                <Card
+                  imageUrl={dev.imageUrl}
+                  name={dev.name}
+                  position={dev.position}
+                  event={dev.event}
+                />
+              </div>
             ))}
           </div>
         </div>
+
 
         <div className="relative w-full h-36 overflow-hidden">
           <Image
