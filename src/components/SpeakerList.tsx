@@ -81,6 +81,7 @@ const SpeakerList: React.FC<{
 
       <SpeakerDetailsCard
         activeSpeakerId={activeSpeakerId}
+        setActiveSpeakerId={setActiveSpeakerId}
         speakerDetailsCardVisibility={speakerDetailsCardVisibility}
         speakersData={speakersData}
       ></SpeakerDetailsCard>

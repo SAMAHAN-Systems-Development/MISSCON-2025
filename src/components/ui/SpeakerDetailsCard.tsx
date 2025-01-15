@@ -2,19 +2,27 @@
 import React from 'react';
 import Image from 'next/image';
 import { Speaker } from '@/types/Speaker';
+import Link from 'next/link';
 
 const SpeakerDetailsCard: React.FC<{
   speakersData: Speaker[];
   activeSpeakerId: string | null;
+  setActiveSpeakerId: React.Dispatch<React.SetStateAction<string | null>>;
   speakerDetailsCardVisibility: boolean;
-}> = ({ speakersData, activeSpeakerId, speakerDetailsCardVisibility }) => {
+}> = ({
+  speakersData,
+  activeSpeakerId,
+  setActiveSpeakerId,
+  speakerDetailsCardVisibility,
+}) => {
   const bg = '/images/pagebg.png';
+  const closeButtonMobile = '/images/X with BG.png';
   const day = speakersData.find(
     (speaker) => speaker.id === activeSpeakerId
   )?.day;
   return (
     <div
-      className={`hidden xsm:flex relative z-10 shadow-lg items-center w-[300px] sm:w-[500px] lg:w-[700px] xl:w-[900px] h-min bg-white rounded-xl transition-opacity duration-300 ${speakerDetailsCardVisibility ? 'opacity-100 p-5 sm:p-7 lg:p-9 xl:p-14' : 'opacity-0'}`}
+      className={`hidden xsm:block relative z-10 shadow-lg items-center w-[300px] sm:w-[500px] lg:w-[700px] xl:w-[900px] h-min bg-white rounded-xl ${speakerDetailsCardVisibility ? 'opacity-100 p-5 sm:p-7 lg:p-9 xl:p-14 transition-opacity duration-300' : 'opacity-0'}`}
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: '500%',
@@ -30,6 +38,23 @@ const SpeakerDetailsCard: React.FC<{
             'linear-gradient(to right, rgb(88,71,186) 10%, transparent, rgb(88,71,186) 90%)',
         }}
       ></div>
+      <div className="relative h-12 sm:h-14 lg:h-16 xl:h-20 w-12 sm:w-14 lg:w-16 xl:w-20 ml-auto xl:mb-7">
+        <Link
+          className="w-full h-full hover:cursor-pointer z-50"
+          onClick={() => {
+            setActiveSpeakerId(null);
+          }}
+          href={`/program-flow/#day${day}`}
+        >
+          <Image
+            draggable={false}
+            fill
+            src={closeButtonMobile}
+            className="absolute inset-0 object-cover object-center transition-opacity duration-300"
+            alt="Close Button Mobile"
+          />
+        </Link>
+      </div>
       {speakersData
         .filter((speaker) => speaker.id === activeSpeakerId)
         .map((speaker) => (
