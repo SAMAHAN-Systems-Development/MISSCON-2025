@@ -43,9 +43,13 @@ const SpeakerList: React.FC<{
     }
   }, [activeSpeakerId, speakersData]);
 
+  const evenNumberSpeakers = speakersData.length % 2 === 0;
+
   return (
     <div className="flex flex-col items-center space-y-8">
-      <div className="px-16 xsm:px-10 flex flex-wrap justify-center gap-6 lg:gap-8">
+      <div
+        className={`px-16 xsm:px-10 md:px-16 lg:px-10 justify-center gap-6 lg:gap-8 ${evenNumberSpeakers ? 'flex flex-wrap sm:grid sm:grid-cols-2 2xl:grid-cols-4' : 'flex flex-wrap'}`}
+      >
         {speakersData.map((speaker, index) => {
           let state: 'normal' | 'active' | 'inactive' = 'normal';
           if (activeSpeakerId) {
@@ -61,7 +65,7 @@ const SpeakerList: React.FC<{
           return (
             <div
               key={index}
-              className={`${index === 2 ? 'col-span-1 xsm:col-span-2 smd:col-span-1 flex justify-center' : ''}`}
+              className={`${index === 2 ? 'flex justify-center' : ''}`}
             >
               <Link href="#speakerDetailsCard">
                 <SpeakerCard

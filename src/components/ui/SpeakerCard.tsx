@@ -26,7 +26,7 @@ const SpeakerCard: React.FC<SpeakerProps> = ({
   return (
     <Link
       href={`#speakerDetailsCard${day}`}
-      className={`relative w-min flex flex-col items-center p-4 transition-transform duration-200 cursor-pointer `}
+      className={`relative w-min flex flex-col items-center p-4 transition-transform duration-200 cursor-pointer`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => onClick(id, day)}
