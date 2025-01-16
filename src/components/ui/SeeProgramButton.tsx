@@ -22,11 +22,11 @@ const SeeProgramButton: React.FC<SeeProgramButtonProps> = ({ day }) => {
     <Accordion.Root
       type="single"
       collapsible
-      className="py-2 px-4 flex justify-center w-11/12 sm:w-10/12 2xl:w-[1200px]"
+      className="py-2 px-4 flex justify-center w-11/12 sm:w-10/12 2xl:w-[1250px]"
     >
       <Accordion.Item
         value="item-1"
-        className={`flex flex-col items-center justify-center w-full lg:w-[868px] 2xl:w-[1200px] bg-violet rounded-[4px] lg:rounded-md ${
+        className={`flex flex-col items-center justify-center w-full lg:w-[868px] 2xl:w-[1250px] bg-violet rounded-[4px] lg:rounded-md ${
           isAccordionOpen
             ? 'text-white bg-gradient-to-b from-violet to-white'
             : ''
