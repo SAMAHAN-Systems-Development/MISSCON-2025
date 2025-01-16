@@ -22,7 +22,7 @@ const SpeakerDetailsCard: React.FC<{
   )?.day;
   return (
     <div
-      className={`hidden xsm:block relative z-10 shadow-lg items-center w-[300px] sm:w-[500px] lg:w-[700px] xl:w-[900px] h-min bg-white rounded-xl ${speakerDetailsCardVisibility ? 'opacity-100 p-5 sm:p-7 lg:p-9 xl:p-14 transition-opacity duration-300' : 'opacity-0'}`}
+      className={`hidden xsm:block relative shadow-lg items-center w-[300px] sm:w-[500px] lg:w-[700px] xl:w-[900px] h-min bg-white rounded-xl ${speakerDetailsCardVisibility ? 'opacity-100 p-5 sm:p-7 lg:p-9 xl:p-14 transition-opacity duration-300' : 'opacity-0'}`}
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: '500%',
@@ -80,7 +80,7 @@ const SpeakerDetailsCard: React.FC<{
               </div>
             </div>
 
-            <div className="flex flex-col text-dark-violet sm:gap-y-0 lg:gap-y-1 xl:gap-y-2 h-min">
+            <div className="flex flex-col text-dark-violet sm:gap-y-0 lg:gap-y-1 xl:gap-y-2 h-min z-40">
               <p className="font-gill_sans font-medium text-lg sm:text-2xl lg:text-3xl xl:text-4xl text-center xl:text-left">
                 {speaker.name}
               </p>
