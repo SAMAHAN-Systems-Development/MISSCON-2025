@@ -48,7 +48,7 @@ export default function Footer() {
               About
             </Link>
             <Link
-              href="program-flow"
+              href="program-flow/#top"
               className="hover:underline hover:cursor-pointer z-40"
             >
               Program Flow
@@ -60,25 +60,25 @@ export default function Footer() {
               Speakers
             </Link>
             <Link
-              href="house-rules"
+              href="house-rules/#top"
               className="hover:underline hover:cursor-pointer z-40"
             >
               House Rules
             </Link>
             <Link
-              href="frequently-asked-questions"
+              href="frequently-asked-questions/#top"
               className="hover:underline hover:cursor-pointer z-40"
             >
               FAQs
             </Link>
             <Link
-              href="the-team"
+              href="the-team/#top"
               className="hover:underline hover:cursor-pointer z-40"
             >
               The Team
             </Link>
             <Link
-              href="meet-the-developers"
+              href="meet-the-developers/#top"
               className="hover:underline hover:cursor-pointer z-40"
             >
               Meet the Developers
@@ -305,7 +305,7 @@ export default function Footer() {
                 About
               </Link>
               <Link
-                href="program-flow"
+                href="program-flow/#top"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 Program Flow
@@ -317,25 +317,25 @@ export default function Footer() {
                 Speakers
               </Link>
               <Link
-                href="house-rules"
+                href="house-rules/#top"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 House Rules
               </Link>
               <Link
-                href="frequently-asked-questions"
+                href="frequently-asked-questions/#top"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 FAQs
               </Link>
               <Link
-                href="the-team"
+                href="the-team/#top"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 The Team
               </Link>
               <Link
-                href="meet-the-developers"
+                href="meet-the-developers/#top"
                 className="hover:underline hover:cursor-pointer z-40"
               >
                 Meet the Developers

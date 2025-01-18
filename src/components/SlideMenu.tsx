@@ -39,7 +39,7 @@ export default function SlideMenu() {
                 onClick={onMenuButtonClick}
               ></MenuNavButtons>
               <MenuNavButtons
-                href="program-flow"
+                href="program-flow/#top"
                 text="Program Flow"
                 onClick={onMenuButtonClick}
               ></MenuNavButtons>
@@ -49,17 +49,17 @@ export default function SlideMenu() {
                 onClick={onMenuButtonClick}
               ></MenuNavButtons>
               <MenuNavButtons
-                href="house-rules"
+                href="house-rules/#top"
                 text="House Rules"
                 onClick={onMenuButtonClick}
               ></MenuNavButtons>
               <MenuNavButtons
-                href="frequently-asked-questions"
+                href="frequently-asked-questions/#top"
                 text="FAQs"
                 onClick={onMenuButtonClick}
               ></MenuNavButtons>
               <MenuNavButtons
-                href="the-team"
+                href="the-team/#top"
                 text="The Team"
                 onClick={onMenuButtonClick}
               ></MenuNavButtons>
