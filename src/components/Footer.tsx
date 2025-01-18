@@ -105,6 +105,7 @@ export default function Footer() {
               </div>
             </Link>
             <Link
+              target="_blank"
               href="https://www.instagram.com/misscon_2025/"
               className="w-min"
             >
@@ -123,6 +124,7 @@ export default function Footer() {
               </div>
             </Link>
             <Link
+              target="_blank"
               href="https://www.facebook.com/profile.php?id=61568212792268"
               className="w-max"
             >
@@ -241,6 +243,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
+                  target="_blank"
                   href="https://www.instagram.com/misscon_2025/"
                   className="w-min"
                 >
@@ -264,6 +267,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
+                  target="_blank"
                   href="https://www.facebook.com/profile.php?id=61568212792268"
                   className="w-max"
                 >
