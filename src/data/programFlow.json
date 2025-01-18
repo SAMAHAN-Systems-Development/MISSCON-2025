@@ -63,12 +63,17 @@
             "dressCode": ""
           },
           {
-            "time": "6:40 – 6:45 PM",
-            "event": "Prayer for the Food",
+            "time": "6:40 – 6:50 PM",
+            "event": "Awarding of Certificates to Speakers",
             "dressCode": ""
           },
           {
-            "time": "6:45 – 7:30 PM",
+            "time": "6:50 – 6:55 PM",
+            "event": "Grace Before Meals",
+            "dressCode": ""
+          },
+          {
+            "time": "6:55 – 7:30 PM",
             "event": "Socials Night Dinner",
             "dressCode": ""
           },
@@ -186,17 +191,22 @@
             "dressCode": ""
           },
           {
-            "time": "11:55 - 12:00 PM",
+            "time": "11:55 - 12:05 PM",
+            "event": "Awarding of Certificates to Speakers",
+            "dressCode": ""
+          },
+          {
+            "time": "12:05 - 12:10 PM",
             "event": "Announcements and Closing Spiels",
             "dressCode": ""
           },
           {
-            "time": "12:00 - 12:02 PM",
-            "event": "Prayer for Lunch",
+            "time": "12:10 - 12:12 PM",
+            "event": "Grace Before Meals",
             "dressCode": ""
           },
           {
-            "time": "12:02 - 12:45 PM",
+            "time": "12:12 - 12:45 PM",
             "event": "Lunch",
             "dressCode": ""
           }
@@ -257,7 +267,7 @@
           },
           {
             "time": "6:15 - 6:20 PM",
-            "event": "Prayer for Dinner",
+            "event": "Grace Before Meals",
             "dressCode": ""
           },
           {
@@ -319,7 +329,7 @@
             "dressCode": ""
           },
           {
-            "time": "9:15 - 9:50 AM",
+            "time": "9:15 - 9:20 AM",
             "event": "Introduction to the Plenary Session and Speakers",
             "details": {
               "speaker": "Day 2 Theme: Reconnecting with the Global Realities, Uncertainties, and Frontiers",
@@ -330,7 +340,7 @@
           },
           {
             "time": "9:20 - 10:50 PM",
-            "event": "Plenary Session #4: Regional and Global Security Trends and Outlook",
+            "event": "Plenary Session #1: Regional and Global Security Trends and Outlook",
             "details": {
               "speaker": "Mr. Lucio Blanco Pitlo, III, MA",
               "positions": [
@@ -348,7 +358,7 @@
           },
           {
             "time": "9:50 - 10:20 AM",
-            "event": "Plenary Session #5: Gender and International Security",
+            "event": "Plenary Session #2: Gender and International Security",
             "details": {
               "speaker": "Atty. Archill Niña Faller-Capistrano",
               "position": "Assistant Professor, Political Science Department",
@@ -363,7 +373,7 @@
           },
           {
             "time": "10:30 - 11:00 AM",
-            "event": "Plenary Session #6: International Relations and Social Media",
+            "event": "Plenary Session #3: International Relations and Social Media",
             "details": {
               "speaker": "Dr. Manuel R. Enverga III, PhD",
               "position": "Director of European Studies Program",
@@ -377,12 +387,17 @@
             "dressCode": ""
           },
           {
-            "time": "11:20 - 11:25 AM",
-            "event": "Prayer for Lunch",
+            "time": "11:20  - 11:30 AM",
+            "event": "Awarding of Certificates to Speakers",
             "dressCode": ""
           },
           {
-            "time": "11:25 - 12:45 PM",
+            "time": "11:30 - 11:35 AM",
+            "event": "Grace Before Meals",
+            "dressCode": ""
+          },
+          {
+            "time": "11:35 - 12:45 PM",
             "event": "Lunch",
             "dressCode": ""
           }
@@ -407,7 +422,7 @@
             "dressCode": ""
           },
           {
-            "time": "1:20 - 2:50 PM",
+            "time": "1:20 - 2:20 PM",
             "event": "Mindanao in Philippine-EU Relations",
             "details": {
               "speaker": "H.E. Massimo Santoro",
@@ -417,12 +432,22 @@
             "dressCode": ""
           },
           {
-            "time": "2:50 - 3:10 PM",
+            "time": "2:20 - 2:40 PM",
             "event": "Open Forum",
             "dressCode": ""
           },
           {
-            "time": "3:10 - 3:35 PM",
+            "time": "2:40 - 2:45 PM",
+            "event": "Awarding of Certificates to Speakers",
+            "dressCode": ""
+          },
+          {
+            "time": "2:45 - 2:50 PM",
+            "event": "Snacks",
+            "dressCode": ""
+          },
+          {
+            "time": "2:50 - 3:10 PM",
             "event": "On the Philippines' Foreign Service Officer Examination",
             "details": {
               "speaker": "Department of Foreign Affairs",
@@ -432,12 +457,17 @@
             "dressCode": ""
           },
           {
-            "time": "3:35 - 3:55 PM",
+            "time": "3:10 - 3:30 PM",
             "event": "Open Forum",
             "dressCode": ""
           },
           {
-            "time": "3:55 - 5:30 PM",
+            "time": "3:30 - 3:35 PM",
+            "event": "Awarding of Certificates to Speakers",
+            "dressCode": ""
+          },
+          {
+            "time": "3:35 - 5:30 PM",
             "event": "Free Time",
             "dressCode": ""
           }
@@ -448,7 +478,7 @@
         "rows": [
           {
             "time": "5:30 – 5:45 PM",
-            "event": "Call Time for Delegates",
+            "event": "Call Time for Assembly of Delegates",
             "dressCode": "National Costume"
           },
           {
@@ -458,12 +488,12 @@
           },
           {
             "time": "5:50 - 6:00 PM",
-            "event": "Message/s of Support",
+            "event": "Messages from the Consular Corps",
             "dressCode": ""
           },
           {
             "time": "6:00 - 6:05 PM",
-            "event": "Prayer for Dinner",
+            "event": "Grace Before Meals",
             "dressCode": ""
           },
           {
