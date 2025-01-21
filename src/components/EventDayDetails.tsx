@@ -20,7 +20,7 @@ export default function EventDayDetails({
   const [speakersData, setSpeakersData] = useState<Speaker[] | null>(null);
 
   useEffect(() => {
-    if (dayNumber) {
+    if (dayNumber !== '3') {
       import(`@/data/speakersDetailsDay${dayNumber}.json`).then((data) =>
         setSpeakersData(data.default)
       );

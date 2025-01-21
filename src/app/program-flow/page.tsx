@@ -110,6 +110,12 @@ export default function ProgramFlow() {
               activeSpeakerId={activeSpeakerId}
               setActiveSpeakerId={setActiveSpeakerId}
             ></EventDayDetails>
+            <EventDayDetails
+              dayNumber="3"
+              setSpeakersDayXOverlay={setSpeakersDayXOverlay}
+              activeSpeakerId={activeSpeakerId}
+              setActiveSpeakerId={setActiveSpeakerId}
+            ></EventDayDetails>
           </div>
 
           <div className="relative w-full h-36 overflow-hidden">
