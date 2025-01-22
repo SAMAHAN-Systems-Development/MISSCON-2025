@@ -59,6 +59,26 @@ const SeeProgramButton: React.FC<SeeProgramButtonProps> = ({ day }) => {
                 <p className="text-center font-bold text-white mb-2">
                   [{programForDate.date}]
                 </p>
+                {programForDate.day === '1' && (
+                  <div className="mb-4 text-center">
+                    <p className="font-bold text-white">
+                    Day 1 Theme: Reconnecting Mindanao International Studies
+                    </p>
+                    <p className="text-white">
+                    The starting point of the conference is our positionality as students and scholars of International Studies in Mindanao. The morning panel seeks to acquaint participants with the history, present situation, and prospects of Mindanao IS/IR programs. From this positionality we are called to decolonize our view of the world through integration of the diverse and collective Mindanao experience in our study of the international. Decolonizing our positionality ultimately allows us to make a deeper appreciation and more critical self-reflection of pressing issues.
+                    </p>
+                  </div>
+                )}
+                {programForDate.day === '2' && (
+                  <div className="mb-4 text-center">
+                    <p className="font-bold text-white">
+                    Day 2 Theme: Reconnecting with the Global Realities, Uncertainties, and Frontiers
+                    </p>
+                    <p className="text-white">
+                    From our Mindanao context, the conference will reconnect us to contemporary global realities and invite us to consider possible futures. The presentations will take us to a deep dive of regional and global security trends and uncertainties. We are called to take a closer look at the consequences of the growing complexity of cyberspace to gender, human rights, security, and politics, among others. Rather than cower in this fast-changing world, we are called to proactively engage with it. One such area of engagement is diplomatic practice - a popular career goal of IS/IR students.
+                    </p>
+                  </div>
+                )}
                 <table className="table-auto w-full border border-[#340198] border-spacing-0 border-collapse">
                   <tbody>
                     {programForDate.sections.map((section, sectionIndex) => (
@@ -137,7 +157,6 @@ const SeeProgramButton: React.FC<SeeProgramButtonProps> = ({ day }) => {
                                 </div>
                               )}
                             </td>
-
                             <td className="text-center w-3/12 p-2 bg-[#B9AEFA]">
                               {row.dressCode}
                             </td>

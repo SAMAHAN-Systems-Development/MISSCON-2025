@@ -135,11 +135,6 @@
           {
             "time": "9:50 - 9:55 AM",
             "event": "Introduction to the Plenary Session and Speakers",
-            "details": {
-              "speaker": "Day 1 Theme: Reconnecting Mindanao International Studies",
-              "position": "",
-              "organization": "The starting point of the conference is our positionality as students and scholars of International Studies in Mindanao. The morning panel seeks to acquaint participants with the history, present situation, and prospects of Mindanao IS/IR programs. From this positionality we are called to decolonize our view of the world through integration of the diverse and collective Mindanao experience in our study of the \"international\". Decolonizing our positionality ultimately allows us to make a deeper appreciation and more critical self-reflection of pressing issues."
-            },
             "dressCode": ""
           },
           {
@@ -331,11 +326,6 @@
           {
             "time": "9:15 - 9:20 AM",
             "event": "Introduction to the Plenary Session and Speakers",
-            "details": {
-              "speaker": "Day 2 Theme: Reconnecting with the Global Realities, Uncertainties, and Frontiers",
-              "position": "",
-              "organization": "From our Mindanao context, the conference will reconnect us to contemporary global realities and invite us to consider possible futures. The presentations will take us to a deep dive of regional and global security trends and uncertainties. We are called to take a closer look at the consequences of the growing complexity of cyberspace to gender, human rights, security, and politics, among others. Rather than cower in this fast-changing world, we are called to proactively engage with it. One such area of engagement is diplomatic practice - a popular career goal of IS/IR students."
-            },
             "dressCode": ""
           },
           {
@@ -538,9 +528,14 @@
         "title": "Day 3 - Morning",
         "rows": [
           {
+            "time": "7:30 - 8:30 AM",
+            "event": "Breakfast",
+            "dressCode": "N/A"
+          },
+          {
             "time": "11:00 AM",
             "event": "Hotel Check-out",
-            "dressCode": "N/A"
+            "dressCode": ""
           }
         ]
       }
