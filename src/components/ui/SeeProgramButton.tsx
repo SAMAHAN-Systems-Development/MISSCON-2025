@@ -62,20 +62,41 @@ const SeeProgramButton: React.FC<SeeProgramButtonProps> = ({ day }) => {
                 {programForDate.day === '1' && (
                   <div className="mb-4 text-center">
                     <p className="font-bold text-white">
-                    Day 1 Theme: Reconnecting Mindanao International Studies
+                      Day 1 Theme: Reconnecting Mindanao International Studies
                     </p>
                     <p className="text-white">
-                    The starting point of the conference is our positionality as students and scholars of International Studies in Mindanao. The morning panel seeks to acquaint participants with the history, present situation, and prospects of Mindanao IS/IR programs. From this positionality we are called to decolonize our view of the world through integration of the diverse and collective Mindanao experience in our study of the international. Decolonizing our positionality ultimately allows us to make a deeper appreciation and more critical self-reflection of pressing issues.
+                      The starting point of the conference is our positionality
+                      as students and scholars of International Studies in
+                      Mindanao. The morning panel seeks to acquaint participants
+                      with the history, present situation, and prospects of
+                      Mindanao IS/IR programs. From this positionality we are
+                      called to decolonize our view of the world through
+                      integration of the diverse and collective Mindanao
+                      experience in our study of the international. Decolonizing
+                      our positionality ultimately allows us to make a deeper
+                      appreciation and more critical self-reflection of pressing
+                      issues.
                     </p>
                   </div>
                 )}
                 {programForDate.day === '2' && (
                   <div className="mb-4 text-center">
                     <p className="font-bold text-white">
-                    Day 2 Theme: Reconnecting with the Global Realities, Uncertainties, and Frontiers
+                      Day 2 Theme: Reconnecting with the Global Realities,
+                      Uncertainties, and Frontiers
                     </p>
                     <p className="text-white">
-                    From our Mindanao context, the conference will reconnect us to contemporary global realities and invite us to consider possible futures. The presentations will take us to a deep dive of regional and global security trends and uncertainties. We are called to take a closer look at the consequences of the growing complexity of cyberspace to gender, human rights, security, and politics, among others. Rather than cower in this fast-changing world, we are called to proactively engage with it. One such area of engagement is diplomatic practice - a popular career goal of IS/IR students.
+                      From our Mindanao context, the conference will reconnect
+                      us to contemporary global realities and invite us to
+                      consider possible futures. The presentations will take us
+                      to a deep dive of regional and global security trends and
+                      uncertainties. We are called to take a closer look at the
+                      consequences of the growing complexity of cyberspace to
+                      gender, human rights, security, and politics, among
+                      others. Rather than cower in this fast-changing world, we
+                      are called to proactively engage with it. One such area of
+                      engagement is diplomatic practice - a popular career goal
+                      of IS/IR students.
                     </p>
                   </div>
                 )}
@@ -105,43 +126,36 @@ const SeeProgramButton: React.FC<SeeProgramButtonProps> = ({ day }) => {
                               {row.details ? <b>{row.event}</b> : row.event}
                               {row.details && (
                                 <div className="ml-4 mt-2">
-                                  {/* Check if details is an object */}
+                                  {/* Check if details is an object and not an array */}
                                   {typeof row.details === 'object' &&
                                   !Array.isArray(row.details) ? (
                                     <>
-                                      {/* Display Speaker */}
-                                      <strong>{row.details.speaker}</strong>
-                                      <br />
-                                      {/* If multiple positions */}
-                                      {row.details.positions &&
-                                      Array.isArray(row.details.positions) ? (
-                                        row.details.positions.length > 0 ? (
-                                          row.details.positions.map(
-                                            (position, positionIndex) => (
-                                              <div key={positionIndex}>
-                                                {position.position ? (
-                                                  <i>{position.position}</i>
-                                                ) : null}{' '}
-                                                <br />
-                                                {position.organization
-                                                  ? position.organization
-                                                  : null}
-                                              </div>
-                                            )
+                                      {/* Check if multiple speakers exist */}
+                                      {Array.isArray(row.details.speakers) ? (
+                                        row.details.speakers.map(
+                                          (speaker, index) => (
+                                            <div key={index} className="mb-2">
+                                              <strong>{speaker.name}</strong>
+                                              <br />
+                                              {speaker.position && (
+                                                <i>{speaker.position}</i>
+                                              )}
+                                              <br />
+                                              {speaker.organization}
+                                            </div>
                                           )
-                                        ) : null
-                                      ) : row.details.position ||
-                                        row.details.organization ? (
+                                        )
+                                      ) : (
                                         <>
-                                          {row.details.position ? (
-                                            <i>{row.details.position}</i>
-                                          ) : null}{' '}
+                                          <strong>{row.details.speaker}</strong>
                                           <br />
-                                          {row.details.organization
-                                            ? row.details.organization
-                                            : null}
+                                          {row.details.position && (
+                                            <i>{row.details.position}</i>
+                                          )}
+                                          <br />
+                                          {row.details.organization}
                                         </>
-                                      ) : null}
+                                      )}
                                     </>
                                   ) : (
                                     /* Render details as a list if it's an array */
