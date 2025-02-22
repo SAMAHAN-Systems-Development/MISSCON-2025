@@ -126,47 +126,77 @@ const SeeProgramButton: React.FC<SeeProgramButtonProps> = ({ day }) => {
                               {row.details ? <b>{row.event}</b> : row.event}
                               {row.details && (
                                 <div className="ml-4 mt-2">
-                                  {/* Check if details is an object and not an array */}
-                                  {typeof row.details === 'object' &&
-                                  !Array.isArray(row.details) ? (
-                                    <>
-                                      {/* Check if multiple speakers exist */}
-                                      {Array.isArray(row.details.speakers) ? (
-                                        row.details.speakers.map(
-                                          (speaker, index) => (
-                                            <div key={index} className="mb-2">
-                                              <strong>{speaker.name}</strong>
-                                              <br />
+                                  {/* Check if multiple speakers exist */}
+                                  {Array.isArray(row.details.speakers) ? (
+                                    row.details.speakers.map(
+                                      (speaker, index) => (
+                                        <div key={index} className="mb-4">
+                                          {/* Speaker Name */}
+                                          <strong>{speaker.name}</strong>
+                                          <br />
+                                          {/* Check if the speaker has multiple positions */}
+                                          {Array.isArray(speaker.positions) &&
+                                          speaker.positions.length > 0 ? (
+                                            <div className="ml-4">
+                                              {speaker.positions.map(
+                                                (position, positionIndex) => (
+                                                  <div key={positionIndex}>
+                                                    {position.position && (
+                                                      <i>{position.position}</i>
+                                                    )}
+                                                    <br />
+                                                    {position.organization &&
+                                                      position.organization}
+                                                  </div>
+                                                )
+                                              )}
+                                            </div>
+                                          ) : (
+                                            <>
                                               {speaker.position && (
                                                 <i>{speaker.position}</i>
                                               )}
                                               <br />
-                                              {speaker.organization}
-                                            </div>
-                                          )
-                                        )
+                                              {speaker.organization &&
+                                                speaker.organization}
+                                            </>
+                                          )}
+                                        </div>
+                                      )
+                                    )
+                                  ) : (
+                                    /* Single Speaker Logic */
+                                    <>
+                                      <strong>{row.details.speaker}</strong>
+                                      <br />
+                                      {/* Check if the single speaker has multiple positions */}
+                                      {Array.isArray(row.details.positions) &&
+                                      row.details.positions.length > 0 ? (
+                                        <div className="ml-4">
+                                          {row.details.positions.map(
+                                            (position, positionIndex) => (
+                                              <div key={positionIndex}>
+                                                {position.position && (
+                                                  <i>{position.position}</i>
+                                                )}
+                                                <br />
+                                                {position.organization &&
+                                                  position.organization}
+                                              </div>
+                                            )
+                                          )}
+                                        </div>
                                       ) : (
                                         <>
-                                          <strong>{row.details.speaker}</strong>
-                                          <br />
                                           {row.details.position && (
                                             <i>{row.details.position}</i>
                                           )}
                                           <br />
-                                          {row.details.organization}
+                                          {row.details.organization &&
+                                            row.details.organization}
                                         </>
                                       )}
                                     </>
-                                  ) : (
-                                    /* Render details as a list if it's an array */
-                                    <ul className="list-decimal ml-8">
-                                      {Array.isArray(row.details) &&
-                                        row.details.map(
-                                          (detail, detailIndex) => (
-                                            <li key={detailIndex}>{detail}</li>
-                                          )
-                                        )}
-                                    </ul>
                                   )}
                                 </div>
                               )}
