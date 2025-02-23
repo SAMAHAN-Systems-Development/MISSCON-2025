@@ -123,81 +123,87 @@ const SeeProgramButton: React.FC<SeeProgramButtonProps> = ({ day }) => {
                               {row.time}
                             </td>
                             <td className="p-2 border bg-white border-[#340198]">
-                              {row.details ? <b>{row.event}</b> : row.event}
+                              <b>{row.event}</b>
                               {row.details && (
                                 <div className="ml-4 mt-2">
-                                  {/* Check if multiple speakers exist */}
-                                  {Array.isArray(row.details.speakers) ? (
-                                    row.details.speakers.map(
-                                      (speaker, index) => (
-                                        <div key={index} className="mb-4">
-                                          {/* Speaker Name */}
-                                          <strong>{speaker.name}</strong>
-                                          <br />
-                                          {/* Check if the speaker has multiple positions */}
-                                          {Array.isArray(speaker.positions) &&
-                                          speaker.positions.length > 0 ? (
-                                            <div className="ml-4">
-                                              {speaker.positions.map(
-                                                (position, positionIndex) => (
-                                                  <div key={positionIndex}>
-                                                    {position.position && (
-                                                      <i>{position.position}</i>
+                                  {Array.isArray(row.details)
+                                    ? // Case 1: details is an array of strings
+                                      row.details.map((item, index) => (
+                                        <div key={index}>{item}</div>
+                                      ))
+                                    : 'speakers' in row.details
+                                      ? // Case 2: details contains multiple speakers
+                                        (
+                                          row.details as {
+                                            speakers: {
+                                              name: string;
+                                              position?: string;
+                                              organization?: string;
+                                            }[];
+                                          }
+                                        ).speakers.map((speaker, index) => (
+                                          <div key={index} className="mb-4">
+                                            <strong>{speaker.name}</strong>
+                                            <br />
+                                            {speaker.position && (
+                                              <i>{speaker.position}</i>
+                                            )}
+                                            <br />
+                                            {speaker.organization}
+                                          </div>
+                                        ))
+                                      : 'speaker' in row.details
+                                        ? // Case 3: details contains a single speaker
+                                          (() => {
+                                            const speakerDetails =
+                                              row.details as {
+                                                speaker: string;
+                                                position?: string;
+                                                organization?: string;
+                                                positions?: {
+                                                  position: string;
+                                                  organization: string;
+                                                }[];
+                                              };
+                                            return (
+                                              <>
+                                                <strong>
+                                                  {speakerDetails.speaker}
+                                                </strong>
+                                                <br />
+                                                {speakerDetails.positions &&
+                                                speakerDetails.positions
+                                                  .length > 0 ? (
+                                                  speakerDetails.positions.map(
+                                                    (pos, posIndex) => (
+                                                      <div key={posIndex}>
+                                                        {pos.position && (
+                                                          <i>{pos.position}</i>
+                                                        )}
+                                                        <br />
+                                                        {pos.organization}
+                                                      </div>
+                                                    )
+                                                  )
+                                                ) : (
+                                                  <>
+                                                    {speakerDetails.position && (
+                                                      <i>
+                                                        {
+                                                          speakerDetails.position
+                                                        }
+                                                      </i>
                                                     )}
                                                     <br />
-                                                    {position.organization &&
-                                                      position.organization}
-                                                  </div>
-                                                )
-                                              )}
-                                            </div>
-                                          ) : (
-                                            <>
-                                              {speaker.position && (
-                                                <i>{speaker.position}</i>
-                                              )}
-                                              <br />
-                                              {speaker.organization &&
-                                                speaker.organization}
-                                            </>
-                                          )}
-                                        </div>
-                                      )
-                                    )
-                                  ) : (
-                                    /* Single Speaker Logic */
-                                    <>
-                                      <strong>{row.details.speaker}</strong>
-                                      <br />
-                                      {/* Check if the single speaker has multiple positions */}
-                                      {Array.isArray(row.details.positions) &&
-                                      row.details.positions.length > 0 ? (
-                                        <div className="ml-4">
-                                          {row.details.positions.map(
-                                            (position, positionIndex) => (
-                                              <div key={positionIndex}>
-                                                {position.position && (
-                                                  <i>{position.position}</i>
+                                                    {
+                                                      speakerDetails.organization
+                                                    }
+                                                  </>
                                                 )}
-                                                <br />
-                                                {position.organization &&
-                                                  position.organization}
-                                              </div>
-                                            )
-                                          )}
-                                        </div>
-                                      ) : (
-                                        <>
-                                          {row.details.position && (
-                                            <i>{row.details.position}</i>
-                                          )}
-                                          <br />
-                                          {row.details.organization &&
-                                            row.details.organization}
-                                        </>
-                                      )}
-                                    </>
-                                  )}
+                                              </>
+                                            );
+                                          })()
+                                        : null}
                                 </div>
                               )}
                             </td>
