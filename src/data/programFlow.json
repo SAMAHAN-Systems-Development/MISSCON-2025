@@ -29,7 +29,7 @@
             "dressCode": ""
           },
           {
-            "time": "5:40 – 5:45 PM",
+            "time": "5:40 – 5:50 PM",
             "event": "Opening Remarks",
             "details": {
               "speaker": "Fr. Karel San Juan, SJ",
@@ -39,7 +39,27 @@
             "dressCode": ""
           },
           {
-            "time": "5:45 – 6:00 PM",
+            "time": "5:50 – 5:55 PM",
+            "event": "Message of Support",
+            "details": {
+              "speaker": "Renante D. Pilapil, PhD",
+              "position": "Dean",
+              "organization": "School of Arts and Science, Ateneo de Davao University"
+            },
+            "dressCode": ""
+          },
+          {
+            "time": "5:55 – 6:00 PM",
+            "event": "Grace Before Meals",
+            "dressCode": ""
+          },
+          {
+            "time": "6:00 – 7:20 PM",
+            "event": "Socials Night Dinner",
+            "dressCode": ""
+          },
+          {
+            "time": "7:20 – 7:35 PM",
             "event": "The Genesis of the Mindanao International Studies Society Convention",
             "details": {
               "speaker": "Fr. Eric Anthony S. Escandor, SJ",
@@ -49,7 +69,12 @@
             "dressCode": ""
           },
           {
-            "time": "6:00 – 6:40 PM",
+            "time": "7:35 – 7:40 PM",
+            "event": "Awarding of Certificates to Speakers",
+            "dressCode": ""
+          },
+          {
+            "time": "7:40 – 8:10 PM",
             "event": "Introduction of MISS Member-Schools and their Organizations",
             "details": [
               "Ateneo de Davao University",
@@ -62,29 +87,14 @@
             ],
             "dressCode": ""
           },
+          { "time": "8:10 – 8:25 PM", "event": "Activity", "dressCode": "" },
           {
-            "time": "6:40 – 6:50 PM",
-            "event": "Awarding of Certificates to Speakers",
-            "dressCode": ""
-          },
-          {
-            "time": "6:50 – 6:55 PM",
-            "event": "Grace Before Meals",
-            "dressCode": ""
-          },
-          {
-            "time": "6:55 – 7:30 PM",
-            "event": "Socials Night Dinner",
-            "dressCode": ""
-          },
-          { "time": "7:30 – 7:45 PM", "event": "Activity", "dressCode": "" },
-          {
-            "time": "7:45 – 7:50 PM",
+            "time": "8:25 – 8:30 PM",
             "event": "Closing Spiels",
             "dressCode": ""
           },
           {
-            "time": "7:50 – 7:55 PM",
+            "time": "8:30 – 8:35 PM",
             "event": "Photo Opportunity",
             "dressCode": ""
           }
@@ -101,20 +111,13 @@
         "title": "Day 1 - Morning",
         "rows": [
           {
-            "time": "7:15 - 7:30 AM",
+            "time": "7:15 - 9:20 AM",
             "event": "Event Preparations",
             "dressCode": "Business Casual"
           },
           {
-            "time": "7:15 - 7:30 AM",
+            "time": "9:20 - 9:40 AM",
             "event": "Call Time for Assembly of Delegates",
-            "dressCode": ""
-          },
-          { "time": "7:30 - 8:30 AM", "event": "Breakfast", "dressCode": "" },
-          {
-            "time": "9:30 - 9:40 AM",
-            "event": "Preliminaries",
-            "details": ["Opening Prayer", "National Anthem"],
             "dressCode": ""
           },
           {
@@ -134,11 +137,16 @@
           },
           {
             "time": "9:50 - 9:55 AM",
+            "event": "Solidarity Message",
+            "dressCode": ""
+          },
+          {
+            "time": "9:55 - 10:00 AM",
             "event": "Introduction to the Plenary Session and Speakers",
             "dressCode": ""
           },
           {
-            "time": "9:55 - 10:25 PM",
+            "time": "10:00 - 10:30 PM",
             "event": "Plenary Session #1: International Studies from the Periphery: The Past, Present, and Prospects of Mindanao International Studies Programs",
             "details": {
               "speaker": "Mr. John Harvey D. Gamas, MA",
@@ -148,12 +156,12 @@
             "dressCode": ""
           },
           {
-            "time": "10:25 - 10:35 AM",
+            "time": "10:30 - 10:40 AM",
             "event": "Snacks",
             "dressCode": ""
           },
           {
-            "time": "10:35 - 11:05 PM",
+            "time": "10:40 - 11:10 PM",
             "event": "Plenary Session #2: Decolonizing International Studies through Mindanao",
             "details": {
               "speaker": "Nassef Manalibang Adiong, PhD",
@@ -171,7 +179,7 @@
             "dressCode": ""
           },
           {
-            "time": "11:05 - 11:35 AM",
+            "time": "11:10 - 11:40 AM",
             "event": "Plenary Session #3: Unpacking the Sulu Exclusion: Reflections on Moro Nationhood, Self-Determination, and Decolonization Option",
             "details": {
               "speaker": "Mansoor L. Limba, PhD, SCL",
@@ -181,12 +189,12 @@
             "dressCode": ""
           },
           {
-            "time": "11:35 - 11:55 AM",
+            "time": "11:40 - 12:00 PM",
             "event": "Open Forum",
             "dressCode": ""
           },
           {
-            "time": "11:55 - 12:05 PM",
+            "time": "12:00 - 12:05 PM",
             "event": "Awarding of Certificates to Speakers",
             "dressCode": ""
           },
@@ -246,12 +254,12 @@
             "dressCode": "Conference Shirt"
           },
           {
-            "time": "6:00 - 6:05 PM",
+            "time": "6:00 - 6:10 PM",
             "event": "Opening Spiels",
             "dressCode": ""
           },
           {
-            "time": "6:05 - 6:15 PM",
+            "time": "6:10 - 6:15 PM",
             "event": "Solidarity Message",
             "details": {
               "speaker": "H.E. Amb. Hjayceelyn M. Quintana",
@@ -302,25 +310,28 @@
         "title": "Day 2 - Morning",
         "rows": [
           {
-            "time": "7:15 - 7:30 AM",
+            "time": "7:15 - 8:50 AM",
             "event": "Event Preparations",
             "dressCode": "Business Casual"
           },
           {
-            "time": "7:15 - 7:30 AM",
+            "time": "8:50 - 9:05 AM",
             "event": "Call Time for Assembly of Delegates",
             "dressCode": ""
           },
-          { "time": "7:30 - 8:30 AM", "event": "Breakfast", "dressCode": "" },
           {
-            "time": "9:00 - 9:10 AM",
-            "event": "Preliminaries",
-            "details": ["Opening Prayer"],
+            "time": "9:08 - 9:10 AM",
+            "event": "Opening Spiels",
             "dressCode": ""
           },
           {
             "time": "9:10 - 9:15 AM",
-            "event": "Opening Spiels",
+            "event": "Solidarity Message",
+            "details": {
+              "speaker": "H.E. Amb. Antonio M. Lagdameo",
+              "position": "Permanent Representative of the Republic of the Philippines to the United Nations (UN)",
+              "organization": ""
+            },
             "dressCode": ""
           },
           {
@@ -351,8 +362,8 @@
             "event": "Plenary Session #2: Gender and International Security",
             "details": {
               "speaker": "Atty. Archill Niña Faller-Capistrano",
-              "position": "Assistant Professor, Political Science Department",
-              "organization": "University of the Philippines - Cebu"
+              "position": "Assistant Professor",
+              "organization": " Political Science Department, University of the Philippines - Cebu"
             },
             "dressCode": ""
           },
@@ -408,11 +419,6 @@
           },
           {
             "time": "1:05 - 1:20 PM",
-            "event": "Ice Breaker",
-            "dressCode": ""
-          },
-          {
-            "time": "1:20 - 2:20 PM",
             "event": "Mindanao in Philippine-EU Relations",
             "details": {
               "speaker": "H.E. Massimo Santoro",
@@ -422,22 +428,22 @@
             "dressCode": ""
           },
           {
-            "time": "2:20 - 2:40 PM",
+            "time": "1:20 - 2:20 PM",
             "event": "Open Forum",
             "dressCode": ""
           },
           {
-            "time": "2:40 - 2:45 PM",
+            "time": "2:20 - 2:40 PM",
             "event": "Awarding of Certificates to Speakers",
             "dressCode": ""
           },
           {
-            "time": "2:45 - 2:50 PM",
+            "time": "2:40 - 2:45 PM",
             "event": "Snacks",
             "dressCode": ""
           },
           {
-            "time": "2:50 - 3:10 PM",
+            "time": "2:45 - 2:50 PM",
             "event": "On the Philippines' Foreign Service Officer Examination",
             "details": {
               "speaker": "Department of Foreign Affairs",
@@ -447,17 +453,17 @@
             "dressCode": ""
           },
           {
-            "time": "3:10 - 3:30 PM",
+            "time": "2:50 - 3:10 PM",
             "event": "Open Forum",
             "dressCode": ""
           },
           {
-            "time": "3:30 - 3:35 PM",
+            "time": "3:10 - 3:30 PM",
             "event": "Awarding of Certificates to Speakers",
             "dressCode": ""
           },
           {
-            "time": "3:35 - 5:30 PM",
+            "time": "3:30 - 5:30 PM",
             "event": "Free Time",
             "dressCode": ""
           }
@@ -477,32 +483,51 @@
             "dressCode": ""
           },
           {
-            "time": "5:50 - 6:00 PM",
+            "time": "5:50 - 6:05 PM",
             "event": "Messages from the Consular Corps",
+            "details": {
+              "speakers": [
+                {
+                  "name": "Hon. Deddy Faisel Ahmad Salleh",
+                  "position": "Consul General",
+                  "organization": "Consul General of Malaysia in Davao City"
+                },
+                {
+                  "name": "Hon. Wang Mingqing",
+                  "position": "Deputy Consul General",
+                  "organization": "Deputy Consul General of the People's Republic of China in Davao City"
+                }
+              ]
+            },
             "dressCode": ""
           },
           {
-            "time": "6:00 - 6:05 PM",
+            "time": "6:05 - 6:10 PM",
             "event": "Grace Before Meals",
             "dressCode": ""
           },
           {
-            "time": "6:05 - 7:05 PM",
+            "time": "6:10 - 7:10 PM",
             "event": "Socials Night Dinner",
             "dressCode": ""
           },
           {
-            "time": "7:05 - 7:35 PM",
+            "time": "7:10 - 7:25 PM",
+            "event": "Intermission",
+            "dressCode": ""
+          },
+          {
+            "time": "7:25 - 8:05 PM",
             "event": "Awarding Ceremony",
             "dressCode": ""
           },
           {
-            "time": "7:35 - 7:45 PM",
+            "time": "8:05 - 8:15 PM",
             "event": "Turn-Over of MISSCON Hosting",
             "dressCode": ""
           },
           {
-            "time": "7:45 - 7:50 PM",
+            "time": "8:15 - 8:20 PM",
             "event": "Closing Remarks",
             "details": {
               "speaker": "Ms. Hannah Nicole Bitana",
@@ -512,7 +537,7 @@
             "dressCode": ""
           },
           {
-            "time": "7:50 - 8:00 PM",
+            "time": "8:20 - 8:30 PM",
             "event": "Photo Opportunity and Egress",
             "dressCode": ""
           }
@@ -527,11 +552,6 @@
       {
         "title": "Day 3 - Morning",
         "rows": [
-          {
-            "time": "7:30 - 8:30 AM",
-            "event": "Breakfast",
-            "dressCode": "N/A"
-          },
           {
             "time": "11:00 AM",
             "event": "Hotel Check-out",
