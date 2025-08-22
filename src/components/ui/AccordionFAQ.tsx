@@ -71,6 +71,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ type }) => {
                 </p>
 
                 {/* Location Map */}
+                {/* Comment */}
                 <div className="flex flex-row flex-wrap gap-10 justify-center items-center ">
                   {locationData.map((location, locIndex) => (
                     <div
